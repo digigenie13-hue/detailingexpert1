@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c0392b">
+    <meta name="author" content="Detailing Experts">
+    
+    <title>Book Premium Automotive Detailing Appointment | Detailing Experts</title>
+    <meta name="description" content="Detailing Experts offers luxury car detailing, 9H/10H nano ceramic coating, and Dragon PPF across 140+ studios in India. Transform your ride today.">
+    <meta name="keywords" content="car detailing, auto detailing, PPF, paint protection film, ceramic coating, skin restoration, luxury car care, Vadodara detailing">
+    <link rel="canonical" href="https://www.detailingexperts.com/appointment.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Premium Schema Suite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AutoBodyShop",
+          "@id": "https://www.detailingexperts.com/#localbusiness",
+          "name": "Detailing Experts",
+          "image": "https://www.detailingexperts.com/logo.png",
+          "url": "https://www.detailingexperts.com/",
+          "telephone": "+918360187994"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.detailingexperts.com/appointment.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.detailingexperts.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Book Support Appointment",
+              "item": "https://www.detailingexperts.com/appointment.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ==========================================================
+           CORE LUXURY SYSTEM & VARIABLES (EXACT REUSE)
+        ========================================================== */
+        :root { 
+            --brand-red: #c0392b; 
+            --brand-red-dark: #962d22;
+            --brand-red-glow: rgba(192, 57, 43, 0.4); 
+            --text-dark: #1a202c; 
+            --text-gray: #4a5568; 
+            --text-light: #a0aec0;
+            --bg-light: #f8fafc; 
+            --bg-dark: #0a0a0a;
+            --bg-darker: #111111;
+            --glass-bg: rgba(255, 255, 255, 0.95); 
+            --glass-border: rgba(0, 0, 0, 0.05); 
+            --shadow-soft: 0 10px 30px rgba(0,0,0,0.05); 
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.12); 
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        html, body { max-width: 100vw; overflow-x: hidden; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-dark); -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px; }
+        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 5%; }
+        .section-padding { padding: 100px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .bg-dark { background-color: var(--bg-dark); color: #fff; }
+        .text-center { text-align: center; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+        /* SCROLL REVEAL ANIMATIONS */
+        .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-zoom { opacity: 0; transform: scale(0.9); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-zoom.active { opacity: 1; transform: scale(1); }
+
+        /* ==========================================================
+           1. PREMIUM NAVBAR
+        ========================================================== */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); position: fixed; width: 100%; top: 0; z-index: 1000; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .navbar.scrolled { padding: 10px 5%; background: rgba(255,255,255,0.98); box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .nav-logo img { height: 50px; object-fit: contain; transition: var(--transition); }
+        .navbar.scrolled .nav-logo img { height: 40px; }
+        
+        .nav-center { display: flex; gap: 30px; align-items: center; transition: var(--transition); }
+        .nav-center > a, .mega-dropdown > a { color: var(--text-dark); font-weight: 600; font-size: 0.95rem; position: relative; padding: 10px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .nav-center > a::after, .mega-dropdown > a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--brand-red); transition: var(--transition); }
+        .nav-center > a:hover::after, .mega-dropdown:hover > a::after, .nav-center > a.active::after { width: 100%; }
+        
+        /* MEGA MENU */
+        .mega-dropdown { position: relative; cursor: pointer; }
+        .mega-content { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(20px); width: 700px; background: #fff; border-radius: 12px; box-shadow: var(--shadow-hover); padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; opacity: 0; visibility: hidden; transition: var(--transition); border-top: 4px solid var(--brand-red); z-index: 1001; }
+        .mega-dropdown:hover .mega-content { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+        .mega-col h4 { color: var(--brand-red); font-size: 1rem; margin-bottom: 20px; border-bottom: 1px solid #edf2f7; padding-bottom: 10px; }
+        .mega-col a { display: flex; align-items: center; gap: 10px; padding: 10px 0; font-weight: 500; font-size: 0.95rem; color: var(--text-gray); border: none; transition: var(--transition); text-transform: none; letter-spacing: normal;}
+        .mega-col a i { color: var(--brand-red); opacity: 0; transform: translateX(-10px); transition: var(--transition); }
+        .mega-col a:hover { color: var(--text-dark); transform: translateX(10px); }
+        .mega-col a:hover i { opacity: 1; transform: translateX(0); }
+
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+        .nav-icon-btn { font-size: 1.2rem; color: var(--text-dark); cursor: pointer; transition: var(--transition); background: transparent; border: none; outline: none; }
+        .nav-icon-btn:hover { color: var(--brand-red); transform: scale(1.1); }
+        
+        .btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--brand-red); color: var(--brand-red); padding: 10px 25px; font-weight: 700; border-radius: 4px; text-transform: uppercase; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; letter-spacing: 1px; }
+        .btn-outline:hover { background: var(--brand-red); color: #fff; box-shadow: 0 10px 20px var(--brand-red-glow); }
+        .btn-premium { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--brand-red); color: #fff; padding: 16px 45px; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: var(--transition); box-shadow: 0 10px 20px var(--brand-red-glow); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); letter-spacing: 1px; position: relative; overflow: hidden; border: none; cursor: pointer; }
+        .btn-premium::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; }
+        .btn-premium:hover::before { left: 100%; }
+        .btn-premium:hover { background: var(--text-dark); transform: translateY(-3px); box-shadow: var(--shadow-hover); color: #fff; }
+
+        .mobile-toggle { display: none; font-size: 1.8rem; color: var(--text-dark); cursor: pointer; }
+
+        /* ==========================================================
+           MODERNIZED APPOINTMENT STYLES
+        ========================================================== */
+        .top-strip { background-color: var(--brand-red); height: 4px; width: 100%; position: fixed; top: 0; z-index: 1001; }
+        
+        /* Premium Hero Layout Expansion */
+        .appointment-hero { height: 60vh; min-height: 480px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #000; }
+        .hero-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; opacity: 0.45; object-fit: cover; }
+        .appointment-hero-content { color: #fff; z-index: 2; position: relative; width: 100%; }
+        .appointment-hero h1 { font-size: 4.5rem; font-weight: 900; text-shadow: 0 10px 25px rgba(0,0,0,0.5); text-transform: uppercase; line-height: 1.1; margin-bottom: 15px; }
+        .appointment-hero p { font-size: 1.2rem; color: #f1f5f9; font-weight: 400; max-width: 600px; line-height: 1.6; margin-bottom: 30px; }
+        .breadcrumb-list { display: flex; gap: 8px; font-size: 0.85rem; text-transform: uppercase; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; color: #cbd5e1; margin-bottom: 25px; }
+        .breadcrumb-list a:hover { color: var(--brand-red); }
+        .scroll-indicator-wrap { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 0.75rem; text-transform: uppercase; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; color: #94a3b8; cursor: pointer; z-index: 2; }
+        .scroll-indicator-wrap i { animation: bounceIcon 2s infinite; }
+        @keyframes bounceIcon { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-8px); } 60% { transform: translateY(-4px); } }
+
+        /* Wizard Progress Strip */
+        .appointment-section { padding: 120px 0; background-color: var(--bg-light); }
+        .form-container { max-width: 1200px; margin: -140px auto 0; background: #fff; border: 1px solid var(--glass-border); padding: 50px; box-shadow: var(--shadow-hover); border-radius: 12px; position: relative; z-index: 10; }
+        #form-error-msg { background: #fee2e2; border-left: 4px solid #ef4444; color: #991b1b; padding: 16px 20px; font-size: 0.95rem; font-weight: 500; margin-bottom: 35px; border-radius: 4px; display: none; }
+        
+        .wizard-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 50px; overflow-x: auto; padding-bottom: 10px; gap: 10px; }
+        .step-indicator { display: flex; flex-direction: column; align-items: center; flex: 1; position: relative; min-width: 100px; }
+        .step-box { background-color: #f1f5f9; color: #64748b; padding: 10px 16px; font-size: 0.75rem; font-weight: 700; border-radius: 4px; margin-bottom: 20px; width: 100%; transition: var(--transition); text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid #e2e8f0; }
+        .step-circle { width: 36px; height: 34px; border-radius: 50%; background-color: #e2e8f0; color: #64748b; display: flex; align-items: center; justify-content: center; font-weight: 700; position: absolute; bottom: -17px; left: 50%; transform: translateX(-50%); z-index: 3; border: 3px solid #fff; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .step-separator { color: #cbd5e1; font-size: 0.9rem; padding-bottom: 20px; display: flex; align-items: center; }
+        
+        .step-indicator.active .step-box { background-color: var(--text-dark); color: #fff; border-color: var(--text-dark); }
+        .step-indicator.active .step-circle { background-color: var(--brand-red); color: #fff; box-shadow: 0 0 0 4px rgba(192,57,43,0.2); }
+        .step-indicator.completed .step-box { background-color: #f8fafc; color: var(--text-dark); }
+        .step-indicator.completed .step-circle { background-color: #10b981; color: #fff; }
+
+        /* Premium Form Inputs with Floating Effect Framework */
+        .section-title { font-size: 1.6rem; color: var(--text-dark); border-bottom: 1px solid #e2e8f0; padding-bottom: 20px; margin-bottom: 40px; font-weight: 900; text-transform: uppercase; }
+        .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; margin-bottom: 20px; }
+        @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+        .form-group { margin-bottom: 30px; display: flex; flex-direction: column; align-items: flex-start; width: 100%; position: relative; }
+        .form-group label { margin-bottom: 10px; font-weight: 700; color: var(--text-dark); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Orbitron', sans-serif; }
+        .form-control { width: 100%; padding: 16px 20px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none; font-size: 0.95rem; font-family: 'Inter', sans-serif; transition: var(--transition); background-color: #f8fafc; color: var(--text-dark); -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+        .form-control:focus { border-color: var(--brand-red); background-color: #fff; box-shadow: 0 0 0 4px rgba(192,57,43,0.1); }
+        .form-control:disabled { background-color: #e2e8f0; cursor: not-allowed; color: #94a3b8; border-color: #cbd5e1; }
+        textarea.form-control { resize: vertical; min-height: 140px; }
+        
+        /* Custom Premium Select Dropdown Indicators */
+        select.form-control { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3svg.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%231a202c'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 20px center; background-size: 16px; padding-right: 45px; }
+
+        /* Premium Date Picker Engine Frame Overrides */
+        input[type="date"].form-control { position: relative; padding-right: 20px; }
+
+        /* Service Cards Architecture Optimization */
+        .service-checkbox-group { display: flex; gap: 20px; justify-content: center; margin-bottom: 45px; flex-wrap: wrap; }
+        .service-checkbox { display: flex; align-items: center; gap: 12px; background: #fff; padding: 16px 40px; border: 2px solid #e2e8f0; border-radius: 6px; cursor: pointer; font-weight: 700; font-family: 'Orbitron', sans-serif; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; color: var(--text-dark); transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .service-checkbox:hover { border-color: var(--brand-red); transform: translateY(-2px); }
+        .service-checkbox input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--brand-red); cursor: pointer; }
+        .service-checkbox input[type="checkbox"]:checked + span { color: var(--brand-red); }
+        .service-select-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+        @media(max-width:768px){ .service-select-grid { grid-template-columns: 1fr; } }
+
+        /* Luxury Review Grid Cards */
+        .review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        @media(max-width:991px){ .review-grid { grid-template-columns: 1fr; } }
+        .review-card { border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 30px; overflow: hidden; background: #fff; box-shadow: var(--shadow-soft); transition: var(--transition); }
+        .review-card:hover { box-shadow: var(--shadow-hover); border-color: #cbd5e1; }
+        .review-title { background-color: var(--text-dark); color: #fff; display: inline-block; padding: 8px 24px; font-size: 0.8rem; font-weight: 700; font-family: 'Orbitron', sans-serif; margin: 25px 0 15px 0; text-transform: uppercase; letter-spacing: 1px; border-left: 4px solid var(--brand-red); }
+        .review-table { width: 100%; border-collapse: collapse; }
+        .review-table td { padding: 14px 24px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; color: var(--text-gray); }
+        .review-table td:first-child { font-weight: 700; width: 35%; background: #f8fafc; color: var(--text-dark); border-right: 1px solid #f1f5f9; text-transform: uppercase; font-size: 0.8rem; font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px; }
+        .review-table tr:last-child td { border-bottom: none; }
+        .review-table th { background: var(--text-dark); color: #fff; padding: 14px 24px; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; text-align: left; }
+        .review-disclaimer { font-size: 0.95rem; color: var(--text-gray); line-height: 1.7; margin-top: 40px; padding: 25px; border-top: 1px solid #e2e8f0; text-align: center; background: #f8fafc; border-radius: 6px; }
+        .review-disclaimer span { color: var(--brand-red); font-weight: 700; }
+
+        /* Premium Buttons Mechanics */
+        .form-footer { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 30px; border-top: 1px solid #e2e8f0; gap: 20px; }
+        .btn-action { padding: 16px 45px; border-radius: 4px; font-weight: 700; border: none; cursor: pointer; letter-spacing: 1px; transition: var(--transition); font-size: 0.85rem; color: #fff; text-transform: uppercase; font-family: 'Orbitron', sans-serif; display: inline-flex; align-items: center; gap: 10px; box-shadow: var(--shadow-soft); }
+        .btn-prev { background-color: #64748b; }
+        .btn-prev:hover { background-color: var(--text-dark); transform: translateY(-2px); }
+        .btn-next { background-color: var(--text-dark); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); padding-right: 55px; }
+        .btn-next:hover { background-color: var(--brand-red); transform: translateY(-2px); box-shadow: 0 10px 20px var(--brand-red-glow); }
+
+        /* Additional Premium Section Content Blocks */
+        .wcu-section { background: var(--bg-light); padding: 100px 0; }
+        .faq-section { padding: 100px 0; background: #fff; }
+        .map-section-wrapper { display: grid; grid-template-columns: 2fr 1fr; min-height: 500px; background: #fff; border-top: 1px solid #e2e8f0; }
+        @media(max-width:991px){ .map-section-wrapper { grid-template-columns: 1fr; } }
+        .map-info-panel { background: var(--bg-darker); color: #fff; padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+
+        /* WhatsApp Floating Override */
+        .whatsapp-float { position: fixed; bottom: 90px; right: 30px; background-color: #25d366; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); z-index: 999; text-decoration: none; transition: var(--transition); }
+        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <!-- ==========================================================
+       1. PREMIUM NAVBAR (EXACT MARKUP PRESERVED)[cite: 2]
+    ========================================================== */ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-logo">
+            <a href="index.html" aria-label="Home"><img src="logo.png" alt="Detailing Experts Logo"></a>
+        </div>
+        <div class="nav-links-container">
+            <div class="nav-bottom">
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <a href="index.html#what-we-do" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Services <i class="fa-solid fa-angle-down" style="font-size: 12px; margin-left:4px;"></i></a>
+                    <div class="dropdown-content" aria-label="Services submenu">
+                        <a href="products.html">Products</a>
+                        <a href="detailing.html">Detailing</a>
+                        <a href="protection.html">Protection</a>
+                        <a href="maintenance.html">Maintenance</a>
+                    </div>
+                </div>
+                <a href="index.html#packages">Dragon PPF</a>
+                <a href="appointment.html" class="highlight-bold" style="color: var(--brand-red);">Support</a>
+                <a href="media.html">Media</a>
+                <a href="#">Shop</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ==========================================================
+           SECTION 1: PREMIUM HERO SECTION
+        ========================================================== */ -->
+        <section class="appointment-hero">
+            <video autoplay muted loop playsinline class="hero-video" poster="https://res.cloudinary.com/dicj6mana/image/upload/v1782126271/Screenshot_2026-06-22_163348_roiorw.png">
+                <source src="https://res.cloudinary.com/dicj6mana/video/upload/v1782124988/IMG_5251_vrflzx.mp4" type="video/mp4"> 
+            </video>
+            <div class="hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%); z-index: 1;"></div>
+            <div class="container hero-content">
+                <div class="breadcrumb-list">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">//</span>
+                    <span style="color: var(--brand-red);">Secure Reservation</span>
+                </div>
+                <h1>The Art of<br>Booking Perfection</h1>
+                <p>Schedule an elite multi-point paint inspection and studio consultation with our certified master detailers today.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="#wizard-start" class="btn-premium">Begin Reservation <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="tel:+918360187994" class="btn-outline" style="border-color: #fff; color: #fff;">Call Studio HQ</a>
+                </div>
+            </div>
+            <div class="scroll-indicator-wrap" onclick="document.getElementById('wizard-start').scrollIntoView();">
+                <span>Configure Booking</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 2 & 3 & 4 & 5: BOOKING WIZARD W/ COMPREHENSIVE FORM
+        ========================================================== */ -->
+        <section class="appointment-section" id="wizard-start">
+            <div class="form-container">
+                <div id="form-error-msg" aria-live="polite" role="alert"><i class="fa-solid fa-circle-exclamation" style="margin-right: 8px;"></i> <span>Error message</span></div>
+                
+                <!-- Progress Wizard Navigation Track -->
+                <div class="wizard-header" aria-label="Form Progress">
+                    <div class="step-indicator active" id="indicator-1"><div class="step-box">Studio Location</div><div class="step-circle"><i class="fa-solid fa-location-dot" style="font-size:12px;"></i></div></div>
+                    <div class="step-separator"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="step-indicator" id="indicator-2"><div class="step-box">Vehicle Info</div><div class="step-circle"><i class="fa-solid fa-car" style="font-size:12px;"></i></div></div>
+                    <div class="step-separator"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="step-indicator" id="indicator-3"><div class="step-box">Services</div><div class="step-circle"><i class="fa-solid fa-layer-group" style="font-size:12px;"></i></div></div>
+                    <div class="step-separator"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="step-indicator" id="indicator-4"><div class="step-box">Date</div><div class="step-circle"><i class="fa-regular fa-calendar" style="font-size:12px;"></i></div></div>
+                    <div class="step-separator"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="step-indicator" id="indicator-5"><div class="step-box">Your Details</div><div class="step-circle"><i class="fa-regular fa-user" style="font-size:12px;"></i></div></div>
+                    <div class="step-separator"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="step-indicator" id="indicator-6"><div class="step-box">Confirm</div><div class="step-circle"><i class="fa-solid fa-check" style="font-size:12px;"></i></div></div>
+                </div>
+
+                <!-- Form Execution Matrix (All Fields, Dropdowns, Cards, Options Fully Preserved)[cite: 2] -->
+                <form id="appointmentForm" novalidate>
+                    
+                    <!-- Step 1: Location Block -->
+                    <div class="step-content active" id="step-1">
+                        <div class="section-title">Select Studio Location</div>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group"><label for="f_country">Country</label><select class="form-control" id="f_country" disabled><option value="India">India</option></select></div>
+                                <div class="form-group"><label for="f_state">State</label><select class="form-control" id="f_state" disabled><option value="Gujarat">Gujarat</option></select></div>
+                                <div class="form-group"><label for="f_city">Select City</label><select class="form-control" id="f_city"><option value="">-- Select City --</option><option value="Vadodara">Vadodara</option><option value="Godhra">Godhra</option></select></div>
+                                <div class="form-group"><label for="f_franchise">Studio Name</label><select class="form-control" id="f_franchise"><option value="">-- Auto Selected --</option></select></div>
+                            </div>
+                            <div class="form-col">
+                                <label for="f_address" style="font-weight: 700; font-size: 0.85rem; margin-bottom: 10px; display: block; color: var(--text-dark); font-family:'Orbitron'; text-transform:uppercase;">Studio Address</label>
+                                <textarea class="form-control" id="f_address" readonly placeholder="Select a city to view the studio address..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Vehicle Block -->
+                    <div class="step-content" id="step-2">
+                        <div class="section-title">Vehicle Details</div>
+                        <div class="form-row">
+                            <div class="form-col"><div class="form-group"><label for="v_make">Vehicle Make <span style="color:var(--brand-red)">*</span></label><input type="text" id="v_make" class="form-control" placeholder="e.g. BMW, Audi, Mercedes" required></div></div>
+                            <div class="form-col"><div class="form-group"><label for="v_model">Vehicle Model <span style="color:var(--brand-red)">*</span></label><input type="text" id="v_model" class="form-control" placeholder="e.g. X5, Q7, C-Class" required></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Service Card Block Matrix -->
+                    <div class="step-content" id="step-3">
+                        <div class="section-title">Services Interested In</div>
+                        <div class="service-checkbox-group">
+                            <label class="service-checkbox"><input type="checkbox" id="chk_detailing" checked> <span>Detailing Segment</span></label>
+                            <label class="service-checkbox"><input type="checkbox" id="chk_protection" checked> <span>Protection Armor</span></label>
+                        </div>
+                        <div class="service-select-grid" id="row_detailing">
+                            <div class="form-group">
+                                <label for="s_det_exterior">Exterior Detailing</label>
+                                <select class="form-control" id="s_det_exterior"><option value="">-- Select Preference --</option><option value="Exterior Detailing">Exterior Detailing</option><option value="Skin Restoration">Skin Restoration</option><option value="Headlight Restoration">Headlight Restoration</option><option value="Chrome Restoration">Chrome Restoration</option><option value="Wheel restoration">Wheel restoration</option><option value="Foam Washing">Foam Washing</option><option value="Ceramic Wash">Ceramic Wash</option></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="s_det_interior">Interior Detailing</label>
+                                <select class="form-control" id="s_det_interior"><option value="">-- Select Preference --</option><option value="Interior Detailing">Interior Detailing</option><option value="Trim Restoration">Trim Restoration</option><option value="Fabric Restoration">Fabric Restoration</option><option value="Leather Restoration">Leather Restoration</option></select>
+                            </div>
+                        </div>
+                        <div class="service-select-grid" id="row_protection">
+                            <div class="form-group">
+                                <label for="s_pro_exterior">Exterior Protection</label>
+                                <select class="form-control" id="s_pro_exterior"><option value="">-- Select Preference --</option><option value="Paint Protection Film">Paint Protection Film</option><option value="Armor Graphene">Armor Graphene</option><option value="Armor Absolute">Armor Absolute</option><option value="Armor Pro">Armor Pro</option><option value="Armor Reload">Armor Reload</option></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="s_pro_interior">Interior Protection</label>
+                                <select class="form-control" id="s_pro_interior"><option value="">-- Select Preference --</option><option value="Absolute Cabincare">Absolute Cabincare</option><option value="Trim Armor">Trim Armor</option><option value="Leather Armor">Leather Armor</option><option value="Fabric Armor">Fabric Armor</option></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Calendar Block -->
+                    <div class="step-content" id="step-4">
+                        <div class="section-title">Schedule Inspection Date</div>
+                        <div style="text-align: center; padding: 40px 0;">
+                            <label for="appointment_date" class="sr-only" style="display:none;">Choose Date</label>
+                            <input type="date" id="appointment_date" class="form-control" style="max-width: 360px; display: inline-block; font-size: 1.1rem; padding: 18px; border-radius: 6px; cursor: pointer; text-align: center; color: var(--text-dark); font-weight: 600; border-color: #cbd5e1; background: #fff;">
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Customer Details Block -->
+                    <div class="step-content" id="step-5">
+                        <div class="section-title">Your Contact Details</div>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group"><label for="b_fname">First Name <span style="color:var(--brand-red)">*</span></label><input type="text" id="b_fname" class="form-control" placeholder="e.g. John" required></div>
+                                <div class="form-group"><label for="b_lname">Last Name</label><input type="text" id="b_lname" class="form-control" placeholder="e.g. Doe"></div>
+                                <div class="form-group"><label for="b_email">Email <span style="color:var(--brand-red)">*</span></label><input type="email" id="b_email" class="form-control" placeholder="e.g. john@example.com" required></div>
+                                <div class="form-group"><label for="b_phone">Phone <span style="color:var(--brand-red)">*</span></label><input type="number" id="b_phone" class="form-control" placeholder="e.g. 9876543210" required></div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group"><label for="b_address">Address</label><input type="text" id="b_address" class="form-control" placeholder="Street Address, Area"></div>
+                                <div class="form-group"><label for="b_pincode">Pincode</label><input type="text" id="b_pincode" class="form-control" placeholder="6-Digit ZIP Code"></div>
+                                <div class="form-group"><label for="b_message">Message</label><textarea id="b_message" class="form-control" placeholder="Any specific requirements or questions regarding your exotic vehicle clear coat?"></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Luxury Review Block Matrix -->
+                    <div class="step-content" id="step-6">
+                        <div class="section-title" style="border:none; margin-bottom: 10px;">Review & Confirm Details</div>
+                        <p style="margin-bottom: 30px; color: var(--text-gray); font-size: 1.05rem;">Dear <b id="rev_name_header" style="color: var(--text-dark);">Customer</b>, please review your appointment details below:</p>
+                        <div class="review-grid">
+                            <div>
+                                <div class="review-card">
+                                    <div class="review-title">Contact Details</div>
+                                    <table class="review-table">
+                                        <tr><td>Name</td><td id="rev_name">--</td></tr>
+                                        <tr><td>Email</td><td id="rev_email">--</td></tr>
+                                        <tr><td>Phone</td><td id="rev_phone">--</td></tr>
+                                        <tr><td>Address</td><td id="rev_address">--</td></tr>
+                                        <tr><td>Message</td><td id="rev_message">--</td></tr>
+                                    </table>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-title">Studio Location</div>
+                                    <table class="review-table">
+                                        <tr><td>City</td><td id="rev_city">--</td></tr>
+                                        <tr><td>Studio Name</td><td id="rev_franchise">--</td></tr>
+                                        <tr><td>Studio Address</td><td id="rev_studio_address">--</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="review-card">
+                                    <div class="review-title">Appointment</div>
+                                    <table class="review-table">
+                                        <tr><td>Date</td><td id="rev_date" style="font-weight: 700; color: var(--brand-red);">--</td></tr>
+                                    </table>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-title">Vehicle Info</div>
+                                    <table class="review-table">
+                                        <tr><td>Make</td><td id="rev_v_make">--</td></tr>
+                                        <tr><td>Model</td><td id="rev_v_model">--</td></tr>
+                                    </table>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-title">Selected Services</div>
+                                    <table class="review-table" style="text-align: left;">
+                                        <thead>
+                                            <tr><th style="width:34%;">Category</th><th>Exterior Preference</th><th>Interior Preference</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="rev_row_detailing" style="display:none;"><td style="font-weight:700; color:var(--text-dark);">Detailing</td><td id="rev_det_ext">---</td><td id="rev_det_int">---</td></tr>
+                                            <tr id="rev_row_protection" style="display:none;"><td style="font-weight:700; color:var(--text-dark);">Protection</td><td id="rev_pro_ext">---</td><td id="rev_pro_int">---</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-disclaimer"><span>*</span> Thank you for choosing us. After clicking <b>CONFIRM BOOKING</b>, your details will be securely sent to our experts via WhatsApp. Our team will contact you shortly.</div>
+                    </div>
+
+                    <!-- Wizard Foot Action Elements -->
+                    <div class="form-footer">
+                        <button type="button" class="btn-action btn-prev" id="btnPrev" style="display: none;"><i class="fa-solid fa-arrow-left"></i> BACK</button>
+                        <button type="button" class="btn-action btn-next" id="btnNext" style="margin-left: auto;">CONTINUE <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 6: WHY BOOK WITH US
+        ========================================================== */ -->
+        <section class="section-padding bg-light reveal">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title font-heading">Why Book With Us</h2>
+                    <p class="section-subtitle">We set the global benchmark for luxury automotive surface preservation lines inside India.[cite: 2]</p>
+                </div>
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 30px;">
+                    <div class="luxury-feature-card">
+                        <div class="feature-icon-frame"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3 class="font-heading" style="font-size:1.25rem; margin-bottom:12px;">Certified Professionals</h3>
+                        <p class="text-gray" style="font-size:0.95rem; line-height:1.6;">Our technicians undergo continuous rigorous international training program parameters to operate on elite hypercars cleanly.[cite: 2]</p>
+                    </div>
+                    <div class="luxury-feature-card">
+                        <div class="feature-icon-frame"><i class="fa-solid fa-microscope"></i></div>
+                        <h3 class="font-heading" style="font-size:1.25rem; margin-bottom:12px;">Imported Products</h3>
+                        <p class="text-gray" style="font-size:0.95rem; line-height:1.6;">We work exclusively with globally imported, chemical-free nano coatings and premium clear materials matrices.[cite: 2]</p>
+                    </div>
+                    <div class="luxury-feature-card">
+                        <div class="feature-icon-frame"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 class="font-heading" style="font-size:1.25rem; margin-bottom:12px;">Official Warranties</h3>
+                        <p class="text-gray" style="font-size:0.95rem; line-height:1.6;">Complete peace of mind tracking. We provide official documentation and warranties ranging from 3 to 7 years.[cite: 2]</p>
+                    </div>
+                    <div class="luxury-feature-card">
+                        <div class="feature-icon-frame"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="font-heading" style="font-size:1.25rem; margin-bottom:12px;">Latest Technology</h3>
+                        <p class="text-gray" style="font-size:0.95rem; line-height:1.6;">Utilizing high-end digital spectroscopic equipment and horizontal infrared shortwave heat lamps to execute links.[cite: 2]</p>
+                    </div>
+                    <div class="luxury-feature-card">
+                        <div class="feature-icon-frame"><i class="fa-solid fa-face-smile"></i></div>
+                        <h3 class="font-heading" style="font-size:1.25rem; margin-bottom:12px;">Customer Satisfaction</h3>
+                        <p class="text-gray" style="font-size:0.95rem; line-height:1.6;">Delivering uncompromised perfection across 140+ luxury automotive detailing locations throughout India.[cite: 2]</p>
+                    </div>
+                    <div class="luxury-feature-card">
+                        <div class="feature-icon-frame"><i class="fa-solid fa-warehouse"></i></div>
+                        <h3 class="font-heading" style="font-size:1.25rem; margin-bottom:12px;">Premium Studio</h3>
+                        <p class="text-gray" style="font-size:0.95rem; line-height:1.6;">Applications are completed entirely inside state-of-the-art positive pressure, dust-free clean room facilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 7: OUR BOOKING PROCESS TIMELINE
+        ========================================================== */ -->
+        <section class="section-padding reveal">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title font-heading">Our Booking Process</h2>
+                    <p class="section-subtitle">A clear timeline walk mapping your premium automotive preservation experience from step to step.</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: left;">
+                    <div class="luxury-feature-card" style="padding: 30px 25px;">
+                        <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:rgba(192,57,43,0.15); margin-bottom:15px;">01</div>
+                        <h4 class="font-heading" style="font-size:1rem; margin-bottom:8px;">Choose Service</h4>
+                        <p class="text-gray" style="font-size:0.85rem; line-height:1.5;">Select preferred treatment categories tailored exactly for your vehicle clears coat profile look tracks.</p>
+                    </div>
+                    <div class="luxury-feature-card" style="padding: 30px 25px;">
+                        <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:rgba(192,57,43,0.15); margin-bottom:15px;">02</div>
+                        <h4 class="font-heading" style="font-size:1rem; margin-bottom:8px;">Select Date</h4>
+                        <p class="text-gray" style="font-size:0.85rem; line-height:1.5;">Pick your preferred diagnostic date slot using our integrated unified premium system picker calendar panels.</p>
+                    </div>
+                    <div class="luxury-feature-card" style="padding: 30px 25px;">
+                        <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:rgba(192,57,43,0.15); margin-bottom:15px;">03</div>
+                        <h4 class="font-heading" style="font-size:1rem; margin-bottom:8px;">Submit Form</h4>
+                        <p class="text-gray" style="font-size:0.85rem; line-height:1.5;">Input exact vehicle and profile contact attributes safely without validation friction or processing blocks.</p>
+                    </div>
+                    <div class="luxury-feature-card" style="padding: 30px 25px;">
+                        <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:rgba(192,57,43,0.15); margin-bottom:15px;">04</div>
+                        <h4 class="font-heading" style="font-size:1rem; margin-bottom:8px;">Confirmation</h4>
+                        <p class="text-gray" style="font-size:0.85rem; line-height:1.5;">Your summary block routes cleanly into our master WhatsApp account channel link for instant expert sign-off.</p>
+                    </div>
+                    <div class="luxury-feature-card" style="padding: 30px 25px;">
+                        <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:rgba(192,57,43,0.15); margin-bottom:15px;">05</div>
+                        <h4 class="font-heading" style="font-size:1rem; margin-bottom:8px;">Visit Studio</h4>
+                        <p class="text-gray" style="font-size:0.85rem; line-height:1.5;">Drive your asset directly inside our luxury studio facility parameters for real ultrasonic gauge thickness inspections.</p>
+                    </div>
+                    <div class="luxury-feature-card" style="padding: 30px 25px;">
+                        <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:rgba(192,57,43,0.15); margin-bottom:15px;">06</div>
+                        <h4 class="font-heading" style="font-size:1rem; margin-bottom:8px;">Delivered</h4>
+                        <p class="text-gray" style="font-size:0.85rem; line-height:1.5;">Collect your pristine vehicle glowing under showroom architectural lighting matrix paths alongside written documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 8: FAQ ACCORDION
+        ========================================================== */ -->
+        <section class="section-padding bg-light reveal">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title font-heading">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our premium detailing studio reservation parameters.</p>
+                </div>
+                <div class="faq-container" style="max-width:900px; margin:0 auto;">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">How long does a standard multi-stage inspection take? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>A precision multi-point surface and paint thick thickness gauge scan requires roughly 30 to 45 minutes inside our diagnostic lab facilities.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Can I change my studio choice city location once booked? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Yes. You can contact our central hotline support line directly or execute a modification request using the WhatsApp direct link.[cite: 2]</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Is paint correction automatically included in my service choices? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Paint correction requirements depend entirely on clear coat scratch depth mapping parameters scanned during physical vehicle inspection walks.[cite: 2]</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Are there extra costs if I choose a custom package tier layer? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Custom package parameters are scoped individually by our master detailers based exactly over selected area dimensions and surface treatments grids.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">What happens after I press confirm booking button? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>The engine gathers form parameters, styles text strings cleanly, and securely passes your information arrays directly onto our studio expert WhatsApp link.[cite: 2]</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Do you offer on-site home detailing services? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>No, advanced protection layers calling for controlled multi layer link bakes must settle inside positive pressure dust free setups to maintain purity profiles.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Are my contact details safely managed? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Yes, structural data matrices follow our global privacy policies and encrypt completely without open cloud tracking blocks.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Can I reschedule my reservation date? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Rescheduling is completely free up to 24 hours prior to your slot. Connect directly over phone lines or text channels to shift slots.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Are wheel off inner barrel coatings provided across all packages? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Inner wheel barrel demounting and component ceramic layering belong exclusive inside top-tier premium protection configurations portfolios.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">How do I verify official nationwide warranty lines card tracks? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer"><p>Every premium application finishes alongside an official centralized database record addition traceable across any group node studio throughout India.[cite: 2]</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 9: GOOGLE REVIEWS
+        ========================================================== */ -->
+        <section class="section-padding reveal">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title font-heading">Google Reviews Verified</h2>
+                    <p class="section-subtitle">Real experiences shared directly by premium automotive enthusiasts who trust our studios.[cite: 2]</p>
+                </div>
+                <div class="reviews-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px;">
+                    <div class="review-card">
+                        <i class="fa-solid fa-quote-right review-quote-icon" style="color:#f1f5f9;"></i>
+                        <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"[Customer Review: Booking via WhatsApp was smooth and seamless. The Stage 2 clear coat correction path fully cleared out deep wash marring webs cleanly!]"</p>
+                        <div class="review-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Verified luxury car vehicle owner profile picture avatar" class="author-img">
+                            <div class="author-info"><h4>[Customer Name]</h4><p>[Premium Car Owner]</p></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <i class="fa-solid fa-quote-right review-quote-icon" style="color:#f1f5f9;"></i>
+                        <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"[Customer Review: Impeccable pattern wrapping execution inside their clean room bay. You can literally cannot see edge interfaces or stretch traces anywhere!]"</p>
+                        <div class="review-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Verified luxury car vehicle owner profile picture avatar" class="author-img">
+                            <div class="author-info"><h4>[Customer Name]</h4><p>[Premium Car Owner]</p></div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <i class="fa-solid fa-quote-right review-quote-icon" style="color:#f1f5f9;"></i>
+                        <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"[Customer Review: Unbelievable wet depth luster output over dark paint. The multi layer carbon graphene grid behaves beautifully against sun baked minerals.]"</p>
+                        <div class="review-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Verified luxury car vehicle owner profile picture avatar" class="author-img">
+                            <div class="author-info"><h4>[Customer Name]</h4><p>[Premium Car Owner]</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 10: GOOGLE MAP & REDESIGNED PANEL
+        ========================================================== */ -->
+        <section class="reveal">
+            <div class="map-section-wrapper">
+                <div class="map-container" style="min-height:100%; position:relative;">
+                    <iframe src="https://maps.google.com/maps?q=Eva%20Mall,%20Manjalpur,%20Vadodara&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Detailing Experts Studio Location Map Matrix" loading="lazy"></iframe>
+                </div>
+                <div class="map-info-panel">
+                    <h3 class="font-heading" style="font-size:1.8rem; margin-bottom:30px; text-transform:uppercase; border-left:3px solid var(--brand-red); padding-left:15px;">StudioHQ Information</h3>
+                    <div class="contact-block" style="margin-bottom:25px;">
+                        <div class="contact-details">
+                            <h4 style="font-family:'Inter'; font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:6px;"><i class="fa-solid fa-location-dot" style="color:var(--brand-red); margin-right:10px;"></i> Location Coordinates</h4>
+                            <p style="color:#94a3b8; font-size:0.9rem; line-height:1.5;">Lower Basement -2, Eva Mall,<br>Manjalpur, Vadodara 390011[cite: 2]</p>
+                        </div>
+                    </div>
+                    <div class="contact-block" style="margin-bottom:35px;">
+                        <div class="contact-details">
+                            <h4 style="font-family:'Inter'; font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:6px;"><i class="fa-solid fa-clock" style="color:var(--brand-red); margin-right:10px;"></i> Studio Operating Hours</h4>
+                            <p style="color:#94a3b8; font-size:0.9rem; line-height:1.5;">Monday - Sunday: 9:00 AM - 8:00 PM<br>Consolidated Clean Room Curing Active 24/7</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" class="btn-premium" style="width:100%; text-align:center;">Open Google Navigation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+           SECTION 11: CALL TO ACTION BANNER
+        ========================================================== */ -->
+        <section class="cta-banner">
+            <div class="container reveal">
+                <h2 class="font-heading">Need Assistance Booking?</h2>
+                <p>Connect immediately alongside our digital studio accounts matrix helpers to coordinate specialized multi vehicle transport tasks or corporate fleet preservation schedules.</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:+918360187994" class="btn-premium" style="background:#fff; color:var(--brand-red);"><i class="fa-solid fa-phone"></i> Call Central Support</a>
+                    <a href="https://wa.me/918360187994" target="_blank" rel="noopener noreferrer" class="btn-outline" style="border-color:#fff; color:#fff; background:#10b981;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Direct</a>
+                    <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" class="btn-outline" style="border-color:#fff; color:#fff;"><i class="fa-solid fa-compass"></i> Get Directions</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================
+       12. GLOBAL BRAND FOOTER (EXACT REUSE FROM HOME PAGE)[cite: 2]
+    ========================================================== */ -->
+    <footer id="contact" class="new-premium-footer">
+        <div class="footer-watermark">
+            <div>DETAILING</div>
+            <div>EXPERTS</div>
+        </div>
+        <div class="container footer-content-container">
+            <div class="footer-top">
+                <div class="footer-logo-area">
+                    <img src="logo.png" alt="Detailing Experts">
+                    <p>A Blend of Perfection & Protection</p>
+                </div>
+                <div class="footer-links-area">
+                    <div class="footer-col">
+                        <h4>ABOUT</h4>
+                        <a href="about.html">Brands We have Worked on</a>
+                    </div>
+                     <div class="footer-col">
+                        <h4>SUPPORT</h4>
+                        <a href="appointment.html">APPOINTMENT</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>SERVICES</h4>
+                        <a href="products.html">PRODUCTS</a>
+                        <a href="detailing.html">DETAILING</a>
+                        <a href="protection.html">PROTECTION</a>
+                        <a href="maintenance.html">MAINTENANCE</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>MEDIA</h4>
+                         <a href="media.html">GALLERY</a>
+                         <a href="media.html">BLOG</a>
+                         <a href="media.html">DETAILING STUDIO</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>CONTACT US</h4>
+                        <a href="contact.html">EMAIL</a>
+                        <a href="contact.html">WHATSAPP</a>
+                    </div>
+                    <div class="footer-col location-col">
+                        <h4>LOCATIONS</h4>
+                        <a href="contact.html"><p>Lower Basement -2, Eva Mall,<br>Manjalpur, Vadodara 390011</p></a>
+                        <a href="contact.html"><p>O/p RB Car's, Dahod Road,<br>Godhra 389001</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-red-banner">
+                    <a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer" class="banner-pill" style="text-decoration: none;">
+                        <i class="fa-solid fa-location-dot"></i> DETAILING EXPERTS STUDIO
+                    </a>
+                </div>
+                <div class="footer-social-area">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DETAILING EXPERTS. All Rights Reserved &reg;</p>
+                <div class="footer-legal">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Persistent Floating Support Action Widget -->
+    <a href="https://wa.me/918360187994" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Direct WhatsApp Reservation Help Channel Link">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ==========================================================
+       JAVASCRIPT SYSTEMS MATRIX (EXACT CORE LOGIC CONSERVED)[cite: 2]
+    ========================================================== */ -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const myWhatsAppNumber = "918360187994"; 
+            
+            const errorMsg = document.getElementById("form-error-msg");
+            const errorSpan = errorMsg.querySelector("span");
+
+            document.getElementById('v_make').addEventListener('input', () => errorMsg.style.display = 'none');
+            document.getElementById('v_model').addEventListener('input', () => errorMsg.style.display = 'none');
+            
+            const locations = { "Vadodara": { name: "Detailing Experts Vadodara", address: "Lower basement -2, Eva mall, Manjalpur, Vadodara 390011" }, "Godhra": { name: "Detailing Experts Godhra", address: "O/p Rb car’s, Dahod road, Godhra 389001" } };
+            const citySelect = document.getElementById("f_city"); const franchiseSelect = document.getElementById("f_franchise"); const addressArea = document.getElementById("f_address");
+            
+            citySelect.addEventListener("change", function() { const city = this.value; if(locations[city]) { franchiseSelect.innerHTML = `<option value="${locations[city].name}">${locations[city].name}</option>`; addressArea.value = locations[city].address; } else { franchiseSelect.innerHTML = `<option value="">-- Auto Selected --</option>`; addressArea.value = ""; } });
+            
+            const chkDetailing = document.getElementById('chk_detailing'); const chkProtection = document.getElementById('chk_protection'); const rowDetailing = document.getElementById('row_detailing'); const rowProtection = document.getElementById('row_protection');
+            function toggleServiceDropdowns() { rowDetailing.style.display = chkDetailing.checked ? 'grid' : 'none'; rowProtection.style.display = chkProtection.checked ? 'grid' : 'none'; }
+            chkDetailing.addEventListener('change', toggleServiceDropdowns); chkProtection.addEventListener('change', toggleServiceDropdowns); toggleServiceDropdowns(); 
+            
+            let currentStep = 1; const totalSteps = 6; const btnPrev = document.getElementById("btnPrev"); const btnNext = document.getElementById("btnNext");
+            
+            function updateWizard() { 
+                errorMsg.style.display = 'none'; 
+                for (let i = 1; i <= totalSteps; i++) { 
+                    document.getElementById(`step-${i}`).classList.remove('active'); 
+                    let indicator = document.getElementById(`indicator-${i}`); 
+                    indicator.classList.remove('active', 'completed'); 
+                    if (i < currentStep) indicator.classList.add('completed'); 
+                    else if (i === currentStep) indicator.classList.add('active'); 
+                } 
+                document.getElementById(`step-${currentStep}`).classList.add('active'); 
+                btnPrev.style.display = (currentStep === 1) ? 'none' : 'inline-block'; 
+                
+                if (currentStep === totalSteps) {
+                    btnNext.innerHTML = 'CONFIRM BOOKING <i class="fa-brands fa-whatsapp" style="margin-left: 8px;"></i>';
+                    btnNext.style.backgroundColor = 'var(--brand-red)';
+                } else {
+                    btnNext.innerHTML = 'CONTINUE <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>';
+                    btnNext.style.backgroundColor = 'var(--text-dark)';
+                }
+
+                if(currentStep === 6) populateReviewData(); 
+            }
+            
+            function validateStep() { 
+                if(currentStep === 2) { 
+                    const makeInput = document.getElementById('v_make').value.trim(); 
+                    const modelInput = document.getElementById('v_model').value.trim(); 
+                    if (makeInput === "" || modelInput === "") { 
+                        errorSpan.innerText = "Please fill both Vehicle Make and Model."; 
+                        errorMsg.style.display = 'block'; 
+                        window.scrollTo({ top: document.querySelector('.form-container').offsetTop - 120, behavior: 'smooth' }); 
+                        return false; 
+                    } 
+                } 
+                if(currentStep === 5) {
+                    const fName = document.getElementById('b_fname').value.trim();
+                    const email = document.getElementById('b_email').value.trim();
+                    const phone = document.getElementById('b_phone').value.trim();
+                    if (fName === "" || email === "" || phone === "") {
+                        errorSpan.innerText = "Please fill all required contact fields (Name, Email, Phone)."; 
+                        errorMsg.style.display = 'block';
+                        window.scrollTo({ top: document.querySelector('.form-container').offsetTop - 120, behavior: 'smooth' }); 
+                        return false; 
+                    }
+                }
+                return true; 
+            }
+            
+            btnNext.addEventListener("click", function() { if(!validateStep()) return; if (currentStep < totalSteps) { currentStep++; updateWizard(); window.scrollTo({ top: document.querySelector('.form-container').offsetTop - 120, behavior: 'smooth' }); } else { sendToWhatsApp(); } });
+            btnPrev.addEventListener("click", function() { if (currentStep > 1) { currentStep--; updateWizard(); window.scrollTo({ top: document.querySelector('.form-container').offsetTop - 120, behavior: 'smooth' }); } });
+            
+            function populateReviewData() { 
+                document.getElementById('rev_name_header').innerText = document.getElementById('b_fname').value || "Customer"; 
+                document.getElementById('rev_name').innerText = document.getElementById('b_fname').value + " " + document.getElementById('b_lname').value; 
+                document.getElementById('rev_email').innerText = document.getElementById('b_email').value || "---"; 
+                document.getElementById('rev_phone').innerText = document.getElementById('b_phone').value || "---"; 
+                document.getElementById('rev_address').innerText = document.getElementById('b_address').value || "---"; 
+                document.getElementById('rev_message').innerText = document.getElementById('b_message').value || "---"; 
+                document.getElementById('rev_city').innerText = document.getElementById('f_city').value || "---"; 
+                document.getElementById('rev_franchise').innerText = document.getElementById('f_franchise').value || "---"; 
+                document.getElementById('rev_studio_address').innerText = document.getElementById('f_address').value || "---"; 
+                document.getElementById('rev_v_make').innerText = document.getElementById('v_make').value || "---"; 
+                document.getElementById('rev_v_model').innerText = document.getElementById('v_model').value || "---"; 
+                
+                const dateVal = document.getElementById('appointment_date').value;
+                document.getElementById('rev_date').innerText = dateVal ? new Date(dateVal).toLocaleDateString('en-GB') : "---"; 
+
+                const revRowDet = document.getElementById('rev_row_detailing'); const revRowPro = document.getElementById('rev_row_protection'); 
+                if(chkDetailing.checked) { revRowDet.style.display = 'table-row'; document.getElementById('rev_det_ext').innerText = document.getElementById('s_det_exterior').value || "---"; document.getElementById('rev_det_int').innerText = document.getElementById('s_det_interior').value || "---"; } else { revRowDet.style.display = 'none'; } 
+                if(chkProtection.checked) { revRowPro.style.display = 'table-row'; document.getElementById('rev_pro_ext').innerText = document.getElementById('s_pro_exterior').value || "---"; document.getElementById('rev_pro_int').innerText = document.getElementById('s_pro_interior').value || "---"; } else { revRowPro.style.display = 'none'; } 
+            }
+            
+            function sendToWhatsApp() { 
+                let msg = `*NEW APPOINTMENT BOOKING* 🚘\n\n`; 
+                msg += `*Name:* ${document.getElementById('b_fname').value} ${document.getElementById('b_lname').value}\n`; 
+                msg += `*Phone:* ${document.getElementById('b_phone').value}\n`; 
+                msg += `*City:* ${document.getElementById('f_city').value}\n`; 
+                
+                const dateVal = document.getElementById('appointment_date').value;
+                msg += `*Date:* ${dateVal ? new Date(dateVal).toLocaleDateString('en-GB') : 'Not specified'}\n\n`; 
+                
+                msg += `*Vehicle:* ${document.getElementById('v_make').value} ${document.getElementById('v_model').value}\n\n`; 
+                msg += `*Services Required:*\n`; 
+                if(chkDetailing.checked) { msg += `[Detailing] Ext: ${document.getElementById('s_det_exterior').value || 'NA'}, Int: ${document.getElementById('s_det_interior').value || 'NA'}\n`; } 
+                if(chkProtection.checked) { msg += `[Protection] Ext: ${document.getElementById('s_pro_exterior').value || 'NA'}, Int: ${document.getElementById('s_pro_interior').value || 'NA'}\n`; } 
+                
+                const waLink = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(msg)}`; 
+                window.open(waLink, '_blank'); 
+            }
+
+            // Global Style Navigation Enhancements
+            const globalNavbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { globalNavbar.classList.add('scrolled'); } 
+                else { globalNavbar.classList.remove('scrolled'); }
+            });
+
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navCenter = document.querySelector('.nav-center');
+            if(mobileToggle && navCenter) {
+                mobileToggle.addEventListener('click', () => { navCenter.classList.toggle('mobile-active'); });
+            }
+
+            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -5px 0px" });
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>

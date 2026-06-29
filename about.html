@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c0392b">
+    <meta name="author" content="Detailing Experts">
+    
+    <title>About Us | Premium Auto Detailing & Ceramic Coating</title>
+    <meta name="description" content="Discover the story behind Detailing Experts. Our mission, our master team, and our commitment to automotive perfection through advanced detailing technology.">
+    <meta name="keywords" content="about detailing experts, auto detailing company, luxury car care, certified detailers, ceramic coating experts">
+    <link rel="canonical" href="https://www.detailingexperts.com/about.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AutoBodyShop",
+          "@id": "https://www.detailingexperts.com/#localbusiness",
+          "name": "Detailing Experts",
+          "image": "https://www.detailingexperts.com/logo.png",
+          "url": "https://www.detailingexperts.com/",
+          "telephone": "+918360187994",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lower Basement -2, Eva Mall, Manjalpur",
+            "addressLocality": "Vadodara",
+            "postalCode": "390011",
+            "addressCountry": "IN"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.detailingexperts.com/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://www.detailingexperts.com/about.html"
+          }]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ==========================================================
+           CORE LUXURY SYSTEM & VARIABLES
+        ========================================================== */
+        :root { 
+            --brand-red: #c0392b; 
+            --brand-red-dark: #962d22;
+            --brand-red-glow: rgba(192, 57, 43, 0.4); 
+            --text-dark: #1a202c; 
+            --text-gray: #4a5568; 
+            --text-light: #a0aec0;
+            --bg-light: #f8fafc; 
+            --bg-dark: #0a0a0a;
+            --glass-bg: rgba(255, 255, 255, 0.98); 
+            --shadow-soft: 0 10px 30px rgba(0,0,0,0.05); 
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.12); 
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        html, body { max-width: 100vw; overflow-x: hidden; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-dark); -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px; }
+        .container { width: 100%; max-width: 1300px; margin: 0 auto; padding: 0 5%; }
+        .section-padding { padding: 90px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .bg-dark { background-color: var(--bg-dark); color: #fff; }
+        .text-center { text-align: center; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+        /* SCROLL REVEAL ANIMATIONS */
+        .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-zoom { opacity: 0; transform: scale(0.9); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-zoom.active { opacity: 1; transform: scale(1); }
+        .reveal-left { opacity: 0; transform: translateX(-40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-left.active { opacity: 1; transform: translateX(0); }
+        .reveal-right { opacity: 0; transform: translateX(40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-right.active { opacity: 1; transform: translateX(0); }
+
+        /* ==========================================================
+           1. EXACT NAVBAR RECONSTRUCTION (IMAGE 1 FIX)
+        ========================================================== */
+        
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .navbar.scrolled { padding: 10px 5%; background: rgba(255,255,255,0.98); box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .nav-logo img { height: 50px; object-fit: contain; transition: var(--transition); }
+        .navbar.scrolled .nav-logo img { height: 40px; }
+        
+        .nav-center { display: flex; gap: 30px; align-items: center; transition: var(--transition); }
+        .nav-center > a, .mega-dropdown > a { color: var(--text-dark); font-weight: 600; font-size: 0.95rem; position: relative; padding: 10px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .nav-center > a::after, .mega-dropdown > a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--brand-red); transition: var(--transition); }
+        .nav-center > a:hover::after, .mega-dropdown:hover > a::after, .nav-center > a.active::after { width: 100%; }
+        
+ /* MEGA MENU */
+        .mega-dropdown { position: relative; cursor: pointer; }
+        .mega-content { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(20px); width: 700px; background: #fff; border-radius: 12px; box-shadow: var(--shadow-hover); padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; opacity: 0; visibility: hidden; transition: var(--transition); border-top: 4px solid var(--brand-red); z-index: 1001; }
+        .mega-dropdown:hover .mega-content { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+        .mega-col h4 { color: var(--brand-red); font-size: 1rem; margin-bottom: 20px; border-bottom: 1px solid #edf2f7; padding-bottom: 10px; }
+        .mega-col a { display: flex; align-items: center; gap: 10px; padding: 10px 0; font-weight: 500; font-size: 0.95rem; color: var(--text-gray); border: none; transition: var(--transition); text-transform: none; letter-spacing: normal;}
+        .mega-col a i { color: var(--brand-red); opacity: 0; transform: translateX(-10px); transition: var(--transition); }
+        .mega-col a:hover { color: var(--text-dark); transform: translateX(10px); }
+        .mega-col a:hover i { opacity: 1; transform: translateX(0); }
+
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+        .nav-icon-btn { font-size: 1.2rem; color: var(--text-dark); cursor: pointer; transition: var(--transition); background: transparent; border: none; outline: none; }
+        .nav-icon-btn:hover { color: var(--brand-red); transform: scale(1.1); }
+        
+        .btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--brand-red); color: var(--brand-red); padding: 10px 25px; font-weight: 700; border-radius: 4px; text-transform: uppercase; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; letter-spacing: 1px; background: transparent; cursor: pointer; }
+        .btn-outline:hover { background: var(--brand-red); color: #fff; box-shadow: 0 10px 20px var(--brand-red-glow); }
+        .btn-premium { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--brand-red); color: #fff; padding: 16px 45px; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: var(--transition); box-shadow: 0 10px 20px var(--brand-red-glow); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); letter-spacing: 1px; position: relative; overflow: hidden; border: none; cursor: pointer; text-decoration: none; }
+        .btn-premium::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; }
+        .btn-premium:hover::before { left: 100%; }
+        .btn-premium:hover { background: var(--text-dark); transform: translateY(-3px); box-shadow: var(--shadow-hover); color: #fff; }
+
+        .mobile-toggle { display: none; font-size: 1.8rem; color: var(--text-dark); cursor: pointer; }
+        /* ==========================================================
+           2. PAGE HERO (IMAGE 1 FIX)
+        ========================================================== */
+        .page-hero { height: 60vh; min-height: 450px; display: flex; align-items: center; justify-content: center; position: relative; background: url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2000') center/cover fixed; margin-top: 0; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.85) 100%); z-index: 1; }
+        .hero-content { position: relative; z-index: 2; text-align: center; color: #fff; max-width: 900px; width: 100%; padding: 0 20px; }
+        .breadcrumb { font-size: 0.9rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; color: #a0aec0; }
+        .breadcrumb a { color: #fff; transition: var(--transition); }
+        .breadcrumb a:hover { color: var(--brand-red); }
+        .breadcrumb .active-crumb { color: var(--brand-red); }
+        .page-hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 20px; line-height: 1.1; text-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .hero-desc { font-size: 1.1rem; color: #e2e8f0; margin-bottom: 40px; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;}
+        .hero-btns { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+        /* ==========================================================
+           SHARED SECTION STYLES
+        ========================================================== */
+        .section-title { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 20px; color: var(--text-dark); text-transform: uppercase; line-height: 1.2; }
+        .section-subtitle { font-size: 1.1rem; color: var(--text-gray); margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+        /* 3. COMPANY INTRO */
+        .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .intro-image-wrapper { position: relative; border-radius: 20px; }
+        .intro-img { border-radius: 20px; box-shadow: var(--shadow-hover); width: 100%; height: 500px; object-fit: cover; }
+        .experience-badge { position: absolute; bottom: -20px; right: -20px; background: var(--brand-red); color: #fff; padding: 30px; border-radius: 16px; text-align: center; box-shadow: 0 15px 30px rgba(192,57,43,0.4); }
+        .experience-badge h3 { font-size: 2.5rem; margin-bottom: 5px; line-height: 1; }
+        .intro-text p { color: var(--text-gray); line-height: 1.8; margin-bottom: 20px; font-size: 1.05rem; }
+        .founder-quote { font-family: 'Inter', sans-serif; font-style: italic; color: var(--brand-red); font-size: 1.3rem; margin-bottom: 30px; border-left: 4px solid var(--brand-red); padding-left: 20px; line-height: 1.5;}
+        .feature-list { list-style: none; margin-bottom: 30px; }
+        .feature-list li { margin-bottom: 15px; font-weight: 500; display: flex; align-items: flex-start; gap: 10px; color: var(--text-dark); }
+        .feature-list i { color: var(--brand-red); margin-top: 4px; }
+
+        /* 4. MISSION & VISION */
+        .mission-vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .mv-card { padding: 50px; border-radius: 20px; text-align: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); transition: var(--transition); }
+        .mv-card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.1); border-color: var(--brand-red); }
+        .mv-icon { font-size: 3rem; color: var(--brand-red); margin-bottom: 20px; }
+        .mv-card h3 { font-size: 2rem; margin-bottom: 20px; }
+        .mv-card p { line-height: 1.7; font-size: 1.1rem; color: #e2e8f0; }
+
+        /* 5. CORE VALUES */
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .value-card { background: #fff; padding: 40px; border-radius: 16px; text-align: center; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #edf2f7; }
+        .value-card i { font-size: 2.5rem; color: var(--brand-red); margin-bottom: 20px; transition: var(--transition); }
+        .value-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); border-color: var(--brand-red); }
+        .value-card:hover i { transform: scale(1.1); }
+        .value-card h4 { font-size: 1.3rem; margin-bottom: 15px; }
+        .value-card p { color: var(--text-gray); line-height: 1.6; }
+
+        /* 6. WHY CHOOSE US */
+        .wcu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .wcu-premium-card { background: #fff; padding: 40px 30px; border-radius: 20px; display: flex; flex-direction: column; align-items: flex-start; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid rgba(0,0,0,0.03); position: relative; overflow: hidden; z-index: 1;}
+        .wcu-premium-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--brand-red); transform: scaleY(0); transform-origin: bottom; transition: var(--transition); z-index: -1;}
+        .wcu-premium-card:hover::before { transform: scaleY(1); }
+        .wcu-premium-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .wcu-icon-box { width: 70px; height: 70px; margin-bottom: 25px; background: var(--bg-light); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--brand-red); transition: var(--transition); }
+        .wcu-premium-card:hover .wcu-icon-box { background: var(--brand-red); color: #fff; border-radius: 50%; }
+        .wcu-premium-card h4 { font-size: 1.3rem; margin-bottom: 10px; }
+        .wcu-premium-card p { color: var(--text-gray); line-height: 1.6; margin: 0;}
+
+        /* 7. OUR PROCESS (Horizontal Timeline) */
+        .horizontal-timeline { display: flex; justify-content: space-between; position: relative; max-width: 1200px; margin: 60px auto 0; }
+        .horizontal-timeline::before { content: ''; position: absolute; top: 40px; left: 50px; right: 50px; height: 2px; background: rgba(255,255,255,0.1); z-index: 0; }
+        .timeline-step { flex: 1; text-align: center; position: relative; z-index: 1; }
+        .step-icon { width: 80px; height: 80px; margin: 0 auto 20px; background: var(--bg-dark); border: 2px solid var(--brand-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--brand-red); box-shadow: 0 0 20px rgba(0,0,0,0.5); transition: var(--transition); }
+        .timeline-step:hover .step-icon { background: var(--brand-red); color: #fff; transform: scale(1.1); box-shadow: 0 0 20px var(--brand-red-glow); }
+        .timeline-step h4 { font-size: 1.1rem; }
+
+        /* ==========================================================
+           8. COMPANY STATISTICS (IMAGE 2 FIX - NO OVERLAPPING)
+        ========================================================== */
+        /* Removed border-top/bottom to fix Image 3 lines issue */
+        .stats-wrap { background: var(--bg-dark); padding: 70px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 40px; text-align: center; }
+        .stat-box { padding: 10px; }
+        .stat-box h3 { font-size: clamp(2.5rem, 4vw, 3.5rem); color: #fff; margin: 0 0 10px 0; font-weight: 900; line-height: 1; }
+        .stat-box h3 span { color: var(--brand-red); }
+        .stat-box p { color: var(--text-light); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; font-weight: 600; margin: 0; line-height: 1.4; }
+
+        /* 9. MEET OUR TEAM */
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .team-card { background: #fff; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #edf2f7; }
+        .team-card:hover { transform: translateY(-15px); box-shadow: var(--shadow-hover); border-color: var(--brand-red); }
+        .team-img-wrapper { position: relative; width: 160px; height: 160px; margin: 0 auto 25px; border-radius: 50%; padding: 5px; border: 2px dashed var(--brand-red); overflow: hidden; transition: var(--transition); }
+        .team-img-wrapper img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; transition: var(--transition); }
+        .team-card:hover .team-img-wrapper img { transform: scale(1.1); filter: brightness(0.6); }
+        .team-socials { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 10px; opacity: 0; transition: var(--transition); }
+        .team-card:hover .team-socials { opacity: 1; }
+        .team-socials a { width: 40px; height: 40px; background: var(--brand-red); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition);}
+        .team-socials a:hover { background: #fff; color: var(--brand-red); }
+        .designation { color: var(--brand-red); font-weight: 600; margin: 10px 0 5px; text-transform: uppercase; font-size: 0.9rem; }
+        .experience { color: var(--text-gray); font-size: 0.9rem; }
+
+        /* 10. STUDIO GALLERY (Masonry) */
+        .masonry-gallery { columns: 3 300px; column-gap: 20px; }
+        .masonry-item { break-inside: avoid; margin-bottom: 20px; position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; background: #000;}
+        .masonry-item img { width: 100%; height: auto; border-radius: 12px; transition: 0.5s; opacity: 0.9;}
+        .masonry-item:hover img { transform: scale(1.08); opacity: 0.4; }
+        .gallery-hover { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; opacity: 0; transition: var(--transition); }
+        .masonry-item:hover .gallery-hover { opacity: 1; }
+        .gallery-hover i { font-size: 2.5rem; margin-bottom: 10px; transform: translateY(20px); transition: 0.4s; }
+        .masonry-item:hover .gallery-hover i { transform: translateY(0); }
+        .gallery-hover p { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; }
+
+        /* Lightbox */
+        .lightbox { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); backdrop-filter: blur(5px); }
+        .lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 90vh; position: relative; top: 50%; transform: translateY(-50%); border-radius: 8px; box-shadow: 0 0 50px rgba(0,0,0,0.8); animation: zoomIn 0.3s ease; }
+        @keyframes zoomIn { from {transform: translateY(-50%) scale(0.9); opacity:0;} to {transform: translateY(-50%) scale(1); opacity:1;} }
+        .close-lightbox { position: absolute; top: 20px; right: 40px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s; z-index: 2001; }
+        .close-lightbox:hover { color: var(--brand-red); }
+
+        /* 11. TECHNOLOGY WE USE */
+        .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .tech-card { background: #fff; border-radius: 16px; padding: 40px 30px; text-align: center; border: 1px solid #edf2f7; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .tech-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); border-color: var(--brand-red); }
+        .tech-icon { font-size: 3rem; color: var(--text-dark); margin-bottom: 20px; transition: var(--transition); }
+        .tech-card:hover .tech-icon { color: var(--brand-red); }
+
+        /* 12. BRAND PARTNERS (Fixed missing lines logic) */
+        .brands-marquee { overflow: hidden; background: #fff; padding: 60px 0; display: flex; flex-direction: column; justify-content: center;}
+        .marquee-track { display: flex; width: 200%; animation: marquee 30s linear infinite; gap: 80px; align-items: center; }
+        .marquee-track img { height: 60px; width: auto; filter: grayscale(100%); opacity: 0.5; transition: var(--transition); }
+        .marquee-track img:hover { filter: grayscale(0%); opacity: 1; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* 13. AWARDS & CERTIFICATIONS */
+        .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .award-card { background: var(--bg-dark); color: #fff; padding: 40px; border-radius: 16px; text-align: center; border: 1px solid #222; transition: var(--transition); position: relative; overflow: hidden; }
+        .award-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(45deg, transparent, rgba(192,57,43,0.1), transparent); opacity: 0; transition: var(--transition); }
+        .award-card:hover::after { opacity: 1; }
+        .award-card i { font-size: 3rem; color: #FFD700; margin-bottom: 20px; }
+        .award-card:hover { transform: translateY(-10px); border-color: var(--brand-red); box-shadow: 0 10px 30px var(--brand-red-glow); }
+
+        /* 14. CUSTOMER REVIEWS */
+        .reviews-wrapper { display: flex; gap: 30px; overflow-x: auto; padding: 20px 0 40px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+        .reviews-wrapper::-webkit-scrollbar { display: none; }
+        .review-card { min-width: 400px; background: #fff; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-soft); scroll-snap-align: start; border: 1px solid #edf2f7; position: relative; }
+        .review-platform { position: absolute; top: 30px; right: 30px; font-size: 1.5rem; color: #4285F4; }
+        .review-stars { color: #fbbc05; font-size: 1.1rem; margin-bottom: 20px; }
+        .review-text { font-size: 1rem; color: var(--text-dark); line-height: 1.7; font-style: italic; margin-bottom: 30px; }
+        .review-author h4 { font-family: 'Inter', sans-serif; font-size: 1.1rem; margin-bottom: 5px; }
+        .review-author p { font-size: 0.9rem; color: var(--text-gray); }
+
+        /* 15. FAQ ACCORDION */
+        .faq-container { max-width: 800px; margin: 0 auto; width: 100%; }
+        .faq-item { margin-bottom: 15px; border-radius: 12px; border: 1px solid #edf2f7; background: #fff; overflow: hidden; transition: var(--transition); }
+        .faq-item:hover { border-color: var(--brand-red); box-shadow: var(--shadow-soft); }
+        .faq-question { width: 100%; text-align: left; padding: 25px 30px; background: none; border: none; font-size: 1.1rem; font-weight: 600; font-family: 'Inter', sans-serif; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; outline: none; transition: 0.3s; }
+        .faq-question i { color: var(--brand-red); font-size: 1.2rem; transition: var(--transition); flex-shrink: 0; margin-left: 15px; }
+        .faq-answer { padding: 0 30px; max-height: 0; overflow: hidden; transition: all 0.4s ease; color: var(--text-gray); line-height: 1.7; }
+        .faq-item.active .faq-answer { padding: 0 30px 25px; max-height: 1000px; }
+        .faq-item.active .faq-question i { transform: rotate(45deg); }
+        .faq-item.active .faq-question { color: var(--brand-red); }
+
+        /* 16. PREMIUM CTA */
+        .premium-cta { position: relative; padding: 120px 5%; text-align: center; color: #fff; background: url('https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2000') center/cover fixed; }
+        .cta-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(192,57,43,0.85) 100%); }
+        .cta-content { position: relative; z-index: 2; }
+        .cta-content h2 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px; line-height: 1.1; }
+        .cta-content p { font-size: 1.3rem; margin-bottom: 40px; color: #e2e8f0;}
+        .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+        /* 17. GOOGLE MAP & CONTACT */
+        .map-section { position: relative; height: 600px; width: 100%; display: flex; align-items: center; }
+        .map-section iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; z-index: 1; }
+        .map-info { position: relative; z-index: 2; margin-left: 5%; padding: 40px; border-radius: 20px; max-width: 400px; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); color: #fff; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .map-info h3 { font-size: 1.8rem; margin-bottom: 25px; color: #fff; }
+        .map-info p { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; color: #e2e8f0; line-height: 1.6; font-family: 'Inter', sans-serif;}
+        .map-info i { color: var(--brand-red); font-size: 1.2rem; width: 20px; text-align: center; }
+
+        /* ==========================================================
+           18. EXACT FOOTER RECONSTRUCTION (FROM HOME PAGE)
+        ========================================================== */
+        .new-premium-footer { background: #111; color: #fff; padding: 80px 5% 30px; position: relative; overflow: hidden; }
+        .footer-watermark { position: absolute; font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 10vw; color: rgba(255,255,255,0.02); line-height: 0.85; top: 50px; left: 0; pointer-events: none; z-index: 0; }
+        .footer-content-container { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
+        .footer-top { display: flex; flex-wrap: wrap; gap: 50px; justify-content: space-between; border-bottom: 1px solid #222; padding-bottom: 50px; margin-bottom: 30px; }
+        .footer-logo-area { max-width: 300px; }
+        .footer-logo-area img { height: 60px; margin-bottom: 15px; filter: brightness(0) invert(1); }
+        .footer-logo-area p { color: #a0aec0; font-size: 1rem; line-height: 1.6;}
+        .footer-links-area { display: flex; flex-wrap: wrap; gap: 60px; }
+        .footer-col h4 { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; color: #fff; margin-bottom: 20px; border-bottom: 2px solid var(--brand-red); padding-bottom: 10px; display: inline-block; letter-spacing: 1px; }
+        .footer-col a { display: block; color: #a0aec0; margin-bottom: 12px; font-size: 0.95rem; transition: 0.3s; text-transform: uppercase; font-weight: 500;}
+        .footer-col a:hover { color: var(--brand-red); padding-left: 5px; }
+        .footer-bottom { text-align: center; color: #718096; font-size: 0.9rem; margin-top: 20px;}
+
+        /* STICKY MOBILE BOTTOM BAR */
+        .sticky-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); display: flex; z-index: 9999; }
+        .sticky-btn { flex: 1; text-align: center; padding: 15px 0; font-weight: 700; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 8px; transition: var(--transition); }
+        .sticky-call { background: var(--text-dark); color: #fff; }
+        .sticky-wa { background: #25d366; color: #fff; }
+        .sticky-book { background: var(--brand-red); color: #fff; }
+        .sticky-btn:hover { filter: brightness(1.1); }
+
+        /* ==========================================================
+           RESPONSIVE FIXES
+        ========================================================== */
+        @media (max-width: 1200px) {
+            .intro-grid { gap: 40px; }
+            .experience-badge { right: 0; bottom: 0; border-radius: 20px 0 20px 0; }
+            .horizontal-timeline { flex-direction: column; max-width: 400px; margin: 60px auto 0; }
+            .horizontal-timeline::before { left: 40px; top: 0; bottom: 0; width: 2px; height: auto; }
+            .timeline-step { display: flex; align-items: center; text-align: left; margin-bottom: 40px; }
+            .step-icon { margin: 0 30px 0 0; flex-shrink: 0; }
+        }
+
+        @media (max-width: 991px) {
+            /* Mobile Navbar Layout */
+            .nav-links-container { position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 0 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease; z-index: 1000; display: block; border-top: 1px solid transparent;}
+            .nav-links-container.mobile-active { max-height: 80vh; opacity: 1; padding: 20px; border-top-color: #edf2f7; overflow-y: auto; }
+            .nav-bottom { flex-direction: column; align-items: flex-start; gap: 0; width: 100%; }
+            .nav-bottom > a, .dropdown { width: 100%; padding: 15px 0; border-bottom: 1px solid #f1f5f9; margin: 0;}
+            .dropdown-content { position: static; box-shadow: none; border: none; padding: 10px 0 0 15px; display: none; }
+            .dropdown.active .dropdown-content { display: flex; }
+            .nav-actions { margin: 20px 0 0 0; padding: 0; border: none; width: 100%; justify-content: flex-start; }
+            .nav-actions .btn-book-nav { display: none; }
+            .mobile-toggle { display: block; }
+            
+            .intro-grid { grid-template-columns: 1fr; }
+            .intro-img { height: 400px; }
+            .mission-vision-grid { grid-template-columns: 1fr; }
+            .masonry-gallery { columns: 2 300px; }
+            .map-info { margin: 0 auto; max-width: 90%; }
+            .footer-links-area { gap: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            .page-hero { height: 50vh; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .sticky-btn span { display: none; }
+            .sticky-btn i { font-size: 1.4rem; }
+            .new-premium-footer { padding-bottom: 90px; } /* Space for sticky bar */
+        }
+
+        @media (max-width: 480px) {
+            .hero-btns, .cta-buttons { flex-direction: column; width: 100%; }
+            .hero-btns a, .cta-buttons a { width: 100%; text-align: center; }
+            .masonry-gallery { columns: 1 100%; }
+            .review-card { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+   <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Detailing Experts Logo"></a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            
+            <div class="mega-dropdown">
+                <a href="services.html" class="active">Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                <div class="mega-content">
+                    <div class="mega-col">
+                        <h4 class="font-heading">Core Detailing</h4>
+                        <a href="exterior.html"><i class="fa-solid fa-car"></i> Exterior Detailing</a>
+                        <a href="interior.html"><i class="fa-solid fa-couch"></i> Interior Detailing</a>
+                        <a href="paint-correction.html"><i class="fa-solid fa-spray-can-sparkles"></i> Paint Correction (SRS)</a>
+                        <a href="engine.html"><i class="fa-solid fa-gears"></i> Engine Bay Detailing</a>
+                    </div>
+                    <div class="mega-col">
+                        <h4 class="font-heading">Premium Protection</h4>
+                        <a href="ceramic-coating.html"><i class="fa-solid fa-shield-halved"></i> 9H/10H Ceramic Coating</a>
+                        <a href="graphene-coating.html"><i class="fa-solid fa-gem"></i> Armor Graphene Coating</a>
+                        <a href="ppf.html"><i class="fa-solid fa-layer-group"></i> Dragon PPF Installation</a>
+                        <a href="glass.html"><i class="fa-regular fa-window-maximize"></i> Windshield & Glass Armor</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="products.html">Products</a>
+            <a href="media.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="nav-icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="tel:+918360187994" class="nav-icon-btn" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+            <a href="appointment.html" class="btn-outline">Book Now</a>
+           
+    </nav>
+
+    <header class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+            <div class="breadcrumb">
+                
+            </div>
+            <h1 class="font-heading">Engineering Automotive Perfection</h1>
+            <p class="hero-desc">Discover the mastery, technology, and passion behind Detailing Experts.</p>
+            <div class="hero-btns">
+                <a href="appointment.html" class="btn-premium">Book Appointment <i class="fa-solid fa-calendar-check"></i></a>
+                <a href="detailing.html" class="btn-outline-light">Explore Services</a>
+            </div>
+           
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding bg-light">
+        <div class="container intro-grid">
+            <div class="intro-image-wrapper reveal-left">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1200" alt="Detailing Experts Studio" class="intro-img" loading="lazy">
+                <div class="experience-badge">
+                    <h3 class="font-heading">10+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+            </div>
+            <div class="intro-text reveal-right">
+                <h2 class="section-title font-heading">The Standard of Luxury Car Care</h2>
+                <h4 class="founder-quote">"We don't just wash cars; we preserve the soul of the machine." — Vikram Singh</h4>
+                <p>Welcome to Detailing Experts, where automotive passion meets scientific precision. Established in 2016, we recognized early on that luxury vehicle owners needed more than standard cleaning—they needed advanced preservation.</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check"></i> Globally trained & certified master detailers.</li>
+                    <li><i class="fa-solid fa-check"></i> Proprietary 10H ceramic and graphene technologies.</li>
+                    <li><i class="fa-solid fa-check"></i> State-of-the-art climate-controlled studios.</li>
+                </ul>
+                <a href="contact.html" class="btn-premium mt-4">Find A Studio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container text-center reveal">
+            <h2 class="section-title font-heading">Our Story</h2>
+            <p class="section-subtitle">Detailing Experts started with a singular vision: to elevate car care from a standard chore to an intricate science. Today, we are India's most trusted chain of auto detailing studios, serving thousands of enthusiasts who demand nothing but absolute perfection.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <div class="mv-card reveal">
+                    <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3 class="font-heading">Our Mission</h3>
+                    <p>To deliver unparalleled automotive detailing and protection services through continuous innovation, premium products, and exceptional craftsmanship.</p>
+                </div>
+                <div class="mv-card reveal" style="transition-delay: 0.2s;">
+                    <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="font-heading">Our Vision</h3>
+                    <p>To be the world's most trusted and recognized name in luxury automotive care, setting the global benchmark for quality and customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Our Core Values</h2>
+                <p class="section-subtitle">The principles that drive our pursuit of perfection.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card reveal"><i class="fa-solid fa-handshake"></i><h4 class="font-heading">Integrity</h4><p>Honest assessments and ethical service.</p></div>
+                <div class="value-card reveal"><i class="fa-solid fa-gem"></i><h4 class="font-heading">Quality</h4><p>Only the finest materials and techniques.</p></div>
+                <div class="value-card reveal"><i class="fa-solid fa-lightbulb"></i><h4 class="font-heading">Innovation</h4><p>Constantly evolving our nano-technology.</p></div>
+                <div class="value-card reveal"><i class="fa-solid fa-trophy"></i><h4 class="font-heading">Excellence</h4><p>Settling for nothing less than perfection.</p></div>
+                <div class="value-card reveal"><i class="fa-solid fa-magnifying-glass"></i><h4 class="font-heading">Transparency</h4><p>Clear communication and pricing.</p></div>
+                <div class="value-card reveal"><i class="fa-solid fa-heart"></i><h4 class="font-heading">Satisfaction</h4><p>Ensuring complete client delight.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Why Choose Us</h2>
+                <p class="section-subtitle">What separates us from standard car washes.</p>
+            </div>
+            <div class="wcu-grid">
+                <div class="wcu-premium-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4 class="font-heading">Certified Experts</h4>
+                    <p>Our detailers undergo rigorous international training programs.</p>
+                </div>
+                <div class="wcu-premium-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                    <h4 class="font-heading">Premium Products</h4>
+                    <p>We use globally imported, chemical-free nano coatings.</p>
+                </div>
+                <div class="wcu-premium-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-microscope"></i></div>
+                    <h4 class="font-heading">Advanced Equipment</h4>
+                    <p>Equipped with modern tech for precision paint correction.</p>
+                </div>
+                <div class="wcu-premium-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                    <h4 class="font-heading">Genuine Warranty</h4>
+                    <p>Official written warranties ranging from 3 to 7 years.</p>
+                </div>
+                <div class="wcu-premium-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-tags"></i></div>
+                    <h4 class="font-heading">Affordable Pricing</h4>
+                    <p>Luxury treatments tailored to fit competitive packages.</p>
+                </div>
+                <div class="wcu-premium-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-headset"></i></div>
+                    <h4 class="font-heading">Professional Support</h4>
+                    <p>Dedicated aftercare support and maintenance guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white">
+        <div class="container text-center reveal">
+            <h2 class="section-title font-heading" style="color: #fff;">Our Master Process</h2>
+            <p class="section-subtitle" style="color: var(--text-light);">A systematic approach to flawless preservation.</p>
+            
+            <div class="horizontal-timeline">
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h4 class="font-heading">Inspection</h4>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="fa-solid fa-shower"></i></div>
+                    <h4 class="font-heading">Cleaning</h4>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h4 class="font-heading">Paint Correction</h4>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="font-heading">Ceramic / PPF</h4>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <h4 class="font-heading">Final Inspection</h4>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-icon"><i class="fa-solid fa-key"></i></div>
+                    <h4 class="font-heading">Delivery</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-wrap">
+        <div class="container stats-grid">
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="15000">0</h3>
+                <p>Cars Detailed</p>
+            </div>
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Ceramic Coatings</p>
+            </div>
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="2000">0</h3>
+                <p>PPF Installations</p>
+            </div>
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="25000">0</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="4.9">0</h3>
+                <p>Google Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Meet Our Master Team</h2>
+                <p class="section-subtitle">The skilled artisans behind every gloss and reflection.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&h=400" alt="Vikram Singh" loading="lazy">
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-heading">Vikram Singh</h3>
+                    <p class="designation">Founder & Lead Detailer</p>
+                    <p class="experience">10 Years Experience</p>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&h=400" alt="Anjali Verma" loading="lazy">
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-heading">Anjali Verma</h3>
+                    <p class="designation">Operations Director</p>
+                    <p class="experience">7 Years Experience</p>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&h=400" alt="Rajesh Kumar" loading="lazy">
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-heading">Rajesh Kumar</h3>
+                    <p class="designation">Lead PPF Technician</p>
+                    <p class="experience">8 Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Studio Gallery</h2>
+                <p class="section-subtitle">Take a tour inside our premium facilities.</p>
+            </div>
+            <div class="masonry-gallery reveal">
+                <div class="masonry-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800" alt="Workshop" loading="lazy">
+                    <div class="gallery-hover"><i class="fa-solid fa-expand"></i><p>Workshop</p></div>
+                </div>
+                <div class="masonry-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800" alt="Ceramic Room" loading="lazy">
+                    <div class="gallery-hover"><i class="fa-solid fa-expand"></i><p>Ceramic Room</p></div>
+                </div>
+                <div class="masonry-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1600705663737-0130dbfaab0f?q=80&w=800" alt="PPF Room" loading="lazy">
+                    <div class="gallery-hover"><i class="fa-solid fa-expand"></i><p>PPF Room</p></div>
+                </div>
+                <div class="masonry-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800" alt="Luxury Cars" loading="lazy">
+                    <div class="gallery-hover"><i class="fa-solid fa-expand"></i><p>Luxury Cars</p></div>
+                </div>
+                <div class="masonry-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800" alt="Reception" loading="lazy">
+                    <div class="gallery-hover"><i class="fa-solid fa-expand"></i><p>Reception</p></div>
+                </div>
+                <div class="masonry-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1600706432502-77a0e2e32771?q=80&w=800" alt="Before & After" loading="lazy">
+                    <div class="gallery-hover"><i class="fa-solid fa-expand"></i><p>Before & After</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">×</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged Image">
+    </div>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Technology & Equipment</h2>
+                <p class="section-subtitle">We invest in the world's best tools to guarantee absolute perfection.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card reveal">
+                    <i class="fa-solid fa-shield-cat tech-icon"></i>
+                    <h4 class="font-heading">Ceramic Technology</h4>
+                    <p>Cross-linking 10H polymers that bond with the clear coat.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fa-solid fa-gem tech-icon"></i>
+                    <h4 class="font-heading">Graphene Coating</h4>
+                    <p>Infused with reduced Graphene Oxide to lower surface temp.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fa-solid fa-spray-can-sparkles tech-icon"></i>
+                    <h4 class="font-heading">Paint Correction</h4>
+                    <p>Dual-action Italian polishers for hologram-free finishes.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fa-solid fa-gauge-high tech-icon"></i>
+                    <h4 class="font-heading">Paint Thickness Meter</h4>
+                    <p>Digital gauges to safely measure clear coat micron levels.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fa-solid fa-temperature-arrow-up tech-icon"></i>
+                    <h4 class="font-heading">Infrared Curing</h4>
+                    <p>Short-wave IR lamps used to instantly bake nano coatings.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fa-solid fa-droplet tech-icon"></i>
+                    <h4 class="font-heading">Steam Cleaning</h4>
+                    <p>High-pressure hot steam to naturally sanitize interiors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands-marquee bg-dark">
+        <div class="text-center" style="margin-bottom: 30px;"><h3 class="font-heading text-white">Our Brand Partners</h3></div>
+        <div class="marquee-track">
+            <img src="https://lh3.googleusercontent.com/d/1pigukYOG55qugRQlbrbLloIFZWqFj8I3" alt="Audi Partner">
+            <img src="https://lh3.googleusercontent.com/d/1be8qaR0vyTmQLcwY8NrtgG421RQ3XD_D" alt="BMW Partner">
+            <img src="https://lh3.googleusercontent.com/d/1rw5474ULplyjb6Q9MckqgNTj6sUlUh9r" alt="Mercedes Partner">
+            <img src="https://lh3.googleusercontent.com/d/1nGosV_xTBAl_zPdUm3Xt-qisHqZiKfrs" alt="Porsche Partner">
+            <img src="https://lh3.googleusercontent.com/d/111DGqGMlH-9J6p0m8NbJr8lqS_QYOAlS" alt="Jaguar Partner">
+            <img src="https://lh3.googleusercontent.com/d/1pigukYOG55qugRQlbrbLloIFZWqFj8I3" alt="Audi Partner">
+            <img src="https://lh3.googleusercontent.com/d/1be8qaR0vyTmQLcwY8NrtgG421RQ3XD_D" alt="BMW Partner">
+            <img src="https://lh3.googleusercontent.com/d/1rw5474ULplyjb6Q9MckqgNTj6sUlUh9r" alt="Mercedes Partner">
+            <img src="https://lh3.googleusercontent.com/d/1nGosV_xTBAl_zPdUm3Xt-qisHqZiKfrs" alt="Porsche Partner">
+            <img src="https://lh3.googleusercontent.com/d/111DGqGMlH-9J6p0m8NbJr8lqS_QYOAlS" alt="Jaguar Partner">
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Awards & Certifications</h2>
+            </div>
+            <div class="awards-grid">
+                <div class="award-card reveal">
+                    <i class="fa-solid fa-award"></i>
+                    <h4 class="font-heading">ISO 9001:2015</h4>
+                    <p>Quality Management System Certified.</p>
+                </div>
+                <div class="award-card reveal">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h4 class="font-heading">Authorized Installer</h4>
+                    <p>Certified by leading PPF brands globally.</p>
+                </div>
+                <div class="award-card reveal">
+                    <i class="fa-solid fa-shield-check"></i>
+                    <h4 class="font-heading">Official Warranty</h4>
+                    <p>Backed by nationwide guarantee systems.</p>
+                </div>
+                <div class="award-card reveal">
+                    <i class="fa-solid fa-star"></i>
+                    <h4 class="font-heading">Best Detailing 2025</h4>
+                    <p>Setting the industry benchmark for excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Client Testimonials</h2>
+                <p class="section-subtitle">What luxury car owners say about us.</p>
+            </div>
+            <div class="reviews-wrapper reveal">
+                <div class="review-card">
+                    <i class="fa-brands fa-google review-platform"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Incredible service and attention to detail. The team removed scratches I thought were permanent. My car looks better than new."</p>
+                    <div class="review-author">
+                        <h4>Karan Mehta</h4>
+                        <p>Porsche 911 Owner</p>
+                    </div>
+                </div>
+                <div class="review-card video-review">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=600" alt="Video Review" loading="lazy">
+                        <i class="fa-solid fa-circle-play play-btn"></i>
+                    </div>
+                    <div class="review-author" style="padding: 15px 30px;">
+                        <h4>Neha Sharma</h4>
+                        <p>Video Testimonial - Dragon PPF</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <i class="fa-brands fa-google review-platform"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Highly recommend the ceramic coating. The water simply beads off, making washing so much easier. Exceptional craftsmanship."</p>
+                    <div class="review-author">
+                        <h4>Amit Patel</h4>
+                        <p>BMW X5 Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question font-heading">Are you authorized installers? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, all our studios are staffed by factory-trained and certified technicians, ensuring your vehicle warranty remains intact.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question font-heading">What is the difference between Ceramic Coating and PPF? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Ceramic coating is a liquid nano-polymer that bonds with paint to provide gloss and chemical resistance. PPF is a physical self-healing film that protects against rock chips and deep scratches.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question font-heading">How long does the detailing process take? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>A standard detail takes 4-6 hours. Ceramic coating usually takes 1-2 days due to intense paint correction and curing. Full PPF installation takes 3-5 days.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question font-heading">Do you provide an official warranty? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes. All our Ceramic Coating and PPF packages come with an official written warranty ranging from 3 to 7 years depending on the selected tier.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question font-heading">How do I maintain my coated vehicle? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>We recommend washing the car every two weeks using a pH-neutral shampoo and the two-bucket method. Avoid automated brush washes.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="premium-cta reveal">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <h2 class="font-heading">Ready To Protect Your Vehicle?</h2>
+            <p>Join thousands of satisfied luxury car owners across India.</p>
+            <div class="cta-buttons">
+                <a href="appointment.html" class="btn-premium btn-white-text">Book Appointment</a>
+                <a href="tel:+918360187994" class="btn-outline-light"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <a href="https://wa.me/918360187994" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section reveal">
+        <div class="map-info">
+            <h3 class="font-heading">Visit Our Studio</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Lower Basement -2, Eva Mall, Manjalpur, Vadodara 390011</p>
+            <p><i class="fa-regular fa-clock"></i> Monday - Sunday: 9:00 AM - 8:00 PM</p>
+            <div class="map-btns">
+                <a href="tel:+918360187994" class="btn-premium w-100 mt-3 text-center"><i class="fa-solid fa-phone"></i> Call Us</a>
+            </div>
+        </div>
+        <iframe src="https://maps.google.com/maps?q=Vadodara&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" aria-label="Location Map"></iframe>
+    </section>
+
+     <footer class="footer">
+        <div class="footer-watermark">DETAILING</div>
+        <div class="footer-grid">
+            <div class="footer-col reveal">
+                <a href="index.html" class="footer-logo"><img src="logo.png" alt="Detailing Experts"></a>
+                <p class="footer-about">Detailing Experts is India's premier luxury automotive detailing studio. With over 140+ locations, we specialize in advanced Skin Restoration, 10H Armor Graphene Coatings, and Self-Healing Dragon PPF to protect your prized investment.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                <h4 class="footer-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="paint-correction.html">Paint Correction (SRS)</a></li>
+                    <li><a href="ceramic-coating.html">Ceramic Coating</a></li>
+                    <li><a href="graphene-coating.html">Graphene Coating</a></li>
+                    <li><a href="ppf.html">Paint Protection Film</a></li>
+                    <li><a href="interior-detailing.html">Interior Detailing</a></li>
+                    <li><a href="maintenance.html">Maintenance Wash</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="media.html">Gallery & Videos</a></li>
+                    <li><a href="blog.html">Detailing Blog</a></li>
+                    <li><a href="franchise.html">Franchise Inquiry</a></li>
+                    <li><a href="contact.html">Find a Studio</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.3s;">
+                <h4 class="footer-title">Stay Protected</h4>
+                <p class="footer-about">Subscribe to our newsletter for the latest car care tips, exclusive offers, and product launches.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-premium" style="width: 100%; padding: 12px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom reveal" style="transition-delay: 0.4s;">
+            <p>© 2026 Detailing Experts. All Rights Reserved. Protected by Dragon PPF.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+    <div class="sticky-bar">
+        <a href="tel:+918360187994" class="sticky-btn sticky-call"><i class="fa-solid fa-phone"></i> <span>Call Us</span></a>
+        <a href="https://wa.me/918360187994" target="_blank" rel="noopener noreferrer" class="sticky-btn sticky-wa"><i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span></a>
+        <a href="appointment.html" class="sticky-btn sticky-book"><i class="fa-regular fa-calendar-check"></i> <span>Book Now</span></a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Sticky Navbar & Scroll Styling
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 2. Mobile Menu Toggle
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const navLinksContainer = document.getElementById('nav-links-container');
+            if(mobileToggle && navLinksContainer) {
+                mobileToggle.addEventListener('click', () => {
+                    navLinksContainer.classList.toggle('mobile-active');
+                });
+            }
+
+            // Mobile Dropdown Toggle
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    if(window.innerWidth <= 991) {
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            });
+
+            // 3. Scroll Reveal Animations (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom, .reveal-left, .reveal-right');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 4. Animated Counters
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const countersInThisSection = entry.target.querySelectorAll('.counter');
+                        countersInThisSection.forEach(counter => {
+                            const rawTarget = counter.getAttribute('data-target');
+                            const target = parseFloat(rawTarget);
+                            if(isNaN(target)) return;
+
+                            const isFloat = target % 1 !== 0;
+                            const speed = 150; 
+                            
+                            const updateCount = () => {
+                                const count = parseFloat(counter.innerText) || 0;
+                                const inc = target / speed;
+                                
+                                if (count < target) {
+                                    counter.innerText = isFloat ? (count + inc).toFixed(1) : Math.ceil(count + inc);
+                                    setTimeout(updateCount, 20);
+                                } else {
+                                    counter.innerText = target;
+                                }
+                            };
+                            updateCount();
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.stats-wrap').forEach(section => {
+                counterObserver.observe(section);
+            });
+
+            // 5. FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if(question) {
+                    question.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        faqItems.forEach(faq => faq.classList.remove('active'));
+                        if (!isActive) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            // 6. Lightbox for Gallery
+            window.openLightbox = function(element) {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightbox-img');
+                const img = element.querySelector('img');
+                
+                if (lightbox && lightboxImg && img) {
+                    lightbox.style.display = "block";
+                    lightboxImg.src = img.src;
+                    document.body.style.overflow = "hidden";
+                }
+            };
+
+            window.closeLightbox = function() {
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox) {
+                    lightbox.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            };
+
+            const lightbox = document.getElementById('lightbox');
+            if(lightbox) {
+                lightbox.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeLightbox();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

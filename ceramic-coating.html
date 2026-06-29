@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c0392b">
+    <meta name="author" content="Detailing Experts">
+    
+    <title>Nano Ceramic Paint Protection Services | Detailing Experts</title>
+    <meta name="description" content="Experience professional-grade 9H/10H Nano Ceramic Coatings. Shield your vehicle with exceptional gloss, extreme scratch resistance, and long-term certified warranty support.">
+    <meta name="keywords" content="ceramic coating, car detailing, 9H ceramic coating, nano paint protection, luxury car care, auto detailing">
+    <link rel="canonical" href="https://www.detailingexperts.com/ceramic-coating">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- SEO JSON-LD Schema Matrix for Ceramic Coating Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.detailingexperts.com/ceramic-coating#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.detailingexperts.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://www.detailingexperts.com/services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ceramic Coating",
+              "item": "https://www.detailingexperts.com/ceramic-coating"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.detailingexperts.com/ceramic-coating#service",
+          "serviceType": "Premium Nano Ceramic Coating",
+          "provider": {
+            "@type": "AutoBodyShop",
+            "name": "Detailing Experts",
+            "image": "https://www.detailingexperts.com/logo.png",
+            "telephone": "+918360187994"
+          },
+          "description": "Professional multi-layer 9H/10H ceramic paint protection with structural surface preparation, surface gloss amplification, and certified multi-year written warranty protection."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ==========================================================
+           CORE LUXURY SYSTEM & VARIABLES (REUSED FROM HOME)[cite: 1]
+        ========================================================== */
+        :root { 
+            --brand-red: #c0392b; 
+            --brand-red-dark: #962d22;
+            --brand-red-glow: rgba(192, 57, 43, 0.4); 
+            --text-dark: #1a202c; 
+            --text-gray: #4a5568; 
+            --text-light: #a0aec0;
+            --bg-light: #f8fafc; 
+            --bg-dark: #0a0a0a;
+            --bg-darker: #111111;
+            --glass-bg: rgba(255, 255, 255, 0.95); 
+            --glass-border: rgba(0, 0, 0, 0.05); 
+            --shadow-soft: 0 10px 30px rgba(0,0,0,0.05); 
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.12); 
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        html, body { max-width: 100vw; overflow-x: hidden; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-dark); -webkit-font-smoothing: antialiased; padding-top: 80px; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px; }
+        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 5%; }
+        .section-padding { padding: 100px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .bg-dark { background-color: var(--bg-dark); color: #fff; }
+        .text-center { text-align: center; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+        /* SCROLL REVEAL ANIMATIONS */
+        .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-zoom { opacity: 0; transform: scale(0.9); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-zoom.active { opacity: 1; transform: scale(1); }
+
+        /* ==========================================================
+           1. PREMIUM NAVBAR[cite: 1]
+        ========================================================== */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .navbar.scrolled { padding: 10px 5%; background: rgba(255,255,255,0.98); box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .nav-logo img { height: 50px; object-fit: contain; transition: var(--transition); }
+        .navbar.scrolled .nav-logo img { height: 40px; }
+        
+        .nav-center { display: flex; gap: 30px; align-items: center; transition: var(--transition); }
+        .nav-center > a, .mega-dropdown > a { color: var(--text-dark); font-weight: 600; font-size: 0.95rem; position: relative; padding: 10px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .nav-center > a::after, .mega-dropdown > a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--brand-red); transition: var(--transition); }
+        .nav-center > a:hover::after, .mega-dropdown:hover > a::after, .nav-center > a.active::after { width: 100%; }
+        
+        /* MEGA MENU */
+        .mega-dropdown { position: relative; cursor: pointer; }
+        .mega-content { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(20px); width: 700px; background: #fff; border-radius: 12px; box-shadow: var(--shadow-hover); padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; opacity: 0; visibility: hidden; transition: var(--transition); border-top: 4px solid var(--brand-red); z-index: 1001; }
+        .mega-dropdown:hover .mega-content { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+        .mega-col h4 { color: var(--brand-red); font-size: 1rem; margin-bottom: 20px; border-bottom: 1px solid #edf2f7; padding-bottom: 10px; }
+        .mega-col a { display: flex; align-items: center; gap: 10px; padding: 10px 0; font-weight: 500; font-size: 0.95rem; color: var(--text-gray); border: none; transition: var(--transition); text-transform: none; letter-spacing: normal;}
+        .mega-col a i { color: var(--brand-red); opacity: 0; transform: translateX(-10px); transition: var(--transition); }
+        .mega-col a:hover { color: var(--text-dark); transform: translateX(10px); }
+        .mega-col a:hover i { opacity: 1; transform: translateX(0); }
+
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+        .nav-icon-btn { font-size: 1.2rem; color: var(--text-dark); cursor: pointer; transition: var(--transition); background: transparent; border: none; outline: none; }
+        .nav-icon-btn:hover { color: var(--brand-red); transform: scale(1.1); }
+        
+        .btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--brand-red); color: var(--brand-red); padding: 10px 25px; font-weight: 700; border-radius: 4px; text-transform: uppercase; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; letter-spacing: 1px; background: transparent; cursor: pointer; }
+        .btn-outline:hover { background: var(--brand-red); color: #fff; box-shadow: 0 10px 20px var(--brand-red-glow); }
+        .btn-premium { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--brand-red); color: #fff; padding: 16px 45px; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: var(--transition); box-shadow: 0 10px 20px var(--brand-red-glow); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); letter-spacing: 1px; position: relative; overflow: hidden; border: none; cursor: pointer; text-decoration: none; }
+        .btn-premium::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; }
+        .btn-premium:hover::before { left: 100%; }
+        .btn-premium:hover { background: var(--text-dark); transform: translateY(-3px); box-shadow: var(--shadow-hover); color: #fff; }
+
+        .mobile-toggle { display: none; font-size: 1.8rem; color: var(--text-dark); cursor: pointer; }
+
+        /* ==========================================================
+           FIXED AUTOMOTIVE HERO INTERFACE
+        ========================================================== */
+        .hero { height: 100vh; min-height: 650px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #000; margin-top: 0; width: 100%; }
+        .hero-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; opacity: 0.5; object-fit: cover; }
+        .hero-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%); z-index: 1; }
+        .hero-content { text-align: center; color: #fff; z-index: 2; position: relative; width: 100%; max-width: 1100px; padding: 0 5%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .hero-content h1 { font-size: 5.5rem; margin-bottom: 25px; text-shadow: 0 15px 30px rgba(0,0,0,0.9); text-transform: uppercase; line-height: 1.15; letter-spacing: 2px; width: 100%; }
+        .hero-content p { font-size: 1.3rem; margin-bottom: 45px; color: #e2e8f0; font-weight: 400; letter-spacing: 0.5px; text-shadow: 0 5px 15px rgba(0,0,0,0.8); max-width: 800px; line-height: 1.6; }
+        
+        .breadcrumb-list { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 25px; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1.5px; color: #fff; opacity: 0.95; font-family: 'Orbitron', sans-serif; }
+        .breadcrumb-list a { color: #fff; transition: var(--transition); }
+        .breadcrumb-list a:hover { color: var(--brand-red); }
+        .breadcrumb-separator { color: var(--brand-red); font-weight: 900; }
+        .scroll-down-icon { position: absolute; bottom: 35px; font-size: 1.5rem; color: #fff; animation: bounceIndicator 2s infinite; z-index: 2; left: 50%; transform: translateX(-50%); cursor: pointer; }
+
+        /* DYNAMIC MODULE PANELS */
+        .section-title { font-size: 3.5rem; margin-bottom: 20px; color: var(--text-dark); text-transform: uppercase; line-height: 1.2; }
+        .section-subtitle { font-size: 1.1rem; color: var(--text-gray); margin-bottom: 60px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; padding: 0 15px; }
+
+        .split-grid-structure { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .split-image-panel { position: relative; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-hover); }
+        .split-text-panel h3 { font-size: 2rem; margin-bottom: 20px; text-transform: uppercase; }
+        .split-text-panel p { color: var(--text-gray); line-height: 1.7; margin-bottom: 20px; }
+        
+        .visualization-stack-wrapper { display: flex; flex-direction: column; gap: 12px; margin-top: 30px; }
+        .visualization-layer { padding: 18px 25px; border-radius: 6px; background: var(--bg-light); border-left: 4px solid var(--text-light); font-weight: 600; transition: var(--transition); font-size: 0.95rem; }
+        .visualization-layer.active-layer { border-left-color: var(--brand-red); background: rgba(192, 57, 43, 0.05); color: var(--text-dark); }
+
+        .premium-feature-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .luxury-feature-card { background: #fff; padding: 45px 35px; border-radius: 16px; box-shadow: var(--shadow-soft); border: 1px solid #edf2f7; transition: var(--transition); position: relative; overflow: hidden; }
+        .luxury-feature-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: var(--brand-red); transform: scaleX(0); transform-origin: right; transition: var(--transition); }
+        .luxury-feature-card:hover::after { transform: scaleX(1); transform-origin: left; }
+        .luxury-feature-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .feature-icon-frame { width: 70px; height: 70px; background: var(--bg-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--brand-red); margin-bottom: 25px; transition: var(--transition); }
+        .luxury-feature-card:hover .feature-icon-frame { background: var(--brand-red); color: #fff; }
+        .luxury-feature-card h3 { font-size: 1.3rem; margin-bottom: 15px; text-transform: uppercase; }
+        .luxury-feature-card p { color: var(--text-gray); line-height: 1.6; font-size: 0.95rem; }
+
+        .process-horizontal-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 30px; }
+
+        .packages-toggle-wrapper { display: flex; justify-content: center; gap: 15px; margin-bottom: 50px; }
+        .package-toggle-btn { padding: 12px 30px; background: #fff; border: 2px solid #edf2f7; font-family: 'Orbitron', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: var(--transition); border-radius: 4px; }
+        .package-toggle-btn.active-toggle { background: var(--brand-red); border-color: var(--brand-red); color: #fff; box-shadow: 0 10px 20px var(--brand-red-glow); }
+        
+        .pricing-cards-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; align-items: stretch; }
+        .pricing-card-tier { background: #fff; border: 1px solid #edf2f7; border-radius: 16px; padding: 45px 35px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-soft); transition: var(--transition); position: relative; }
+        .pricing-card-tier.most-popular-tier { border-color: var(--brand-red); transform: scale(1.03); box-shadow: var(--shadow-hover); }
+        .tier-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--brand-red); color: #fff; font-family: 'Orbitron', sans-serif; font-size: 0.75rem; font-weight: 700; padding: 6px 18px; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px; }
+        .tier-header h3 { font-size: 1.5rem; margin-bottom: 15px; text-transform: uppercase; }
+        .tier-price-display { font-family: 'Orbitron', sans-serif; font-size: 2.8rem; font-weight: 900; color: var(--text-dark); margin-bottom: 20px; }
+        .tier-meta-details { padding-bottom: 25px; border-bottom: 1px solid #edf2f7; margin-bottom: 25px; font-size: 0.9rem; color: var(--text-gray); display: flex; flex-direction: column; gap: 8px; }
+        .tier-meta-details strong { color: var(--text-dark); }
+        .tier-features-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+        .tier-features-list li { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: var(--text-gray); }
+        .tier-features-list li i { color: var(--brand-red); font-size: 0.9rem; }
+
+        /* ==========================================================
+           FIXED BEFORE/AFTER SLIDER SYSTEM (image_24d158.png Fix)
+        ========================================================== */
+        .ba-wrapper { position: relative; width: 100%; max-width: 1000px; margin: 40px auto 0; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-hover); aspect-ratio: 16/9; background: #222; }
+        .ba-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; display: block; }
+        .ba-after { z-index: 1; }
+        .ba-before { z-index: 2; clip-path: inset(0 50% 0 0); }
+        .ba-slider { position: absolute; top: 0; left: 0; width: 100%; height: 100%; outline: none; background: transparent; -webkit-appearance: none; z-index: 4; cursor: ew-resize; margin: 0; }
+        .ba-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 4px; height: 100vh; background: transparent; cursor: ew-resize; }
+        .ba-line { position: absolute; top: 0; left: 50%; width: 4px; height: 100%; background: #fff; z-index: 3; pointer-events: none; box-shadow: 0 0 15px rgba(0,0,0,0.6); transform: translateX(-50%); }
+        .ba-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 45px; height: 45px; background: var(--brand-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; border: 3px solid #fff; font-size: 1rem; box-shadow: 0 0 15px rgba(0,0,0,0.5); z-index: 3; pointer-events: none; }
+
+        .comparison-table-wrapper { width: 100%; overflow-x: auto; box-shadow: var(--shadow-soft); border-radius: 16px; border: 1px solid #edf2f7; background: #fff; }
+        .comparison-matrix-table { width: 100%; border-collapse: collapse; text-align: left; min-width: 850px; }
+        .comparison-matrix-table th, .comparison-matrix-table td { padding: 22px 30px; border-bottom: 1px solid #edf2f7; font-size: 0.95rem; }
+        .comparison-matrix-table th { font-family: 'Orbitron', sans-serif; font-weight: 700; text-transform: uppercase; background: var(--bg-light); color: var(--text-dark); letter-spacing: 0.5px; }
+        
+        .lifecycle-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+        .lifecycle-metric-card { background: #fff; padding: 35px; border-radius: 12px; border-top: 4px solid #edf2f7; box-shadow: var(--shadow-soft); transition: var(--transition); }
+        .lifecycle-metric-card.active-lifecycle-card { border-top-color: var(--brand-red); }
+        .lifecycle-timeframe { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--brand-red); margin-bottom: 15px; }
+
+        /* ==========================================================
+           FIXED FAQ CONTAINER OVERRIDES (image_24d135.png Fix)
+        ========================================================== */
+        .faq-container { max-width: 900px; margin: 0 auto; width: 100%; }
+        .faq-item { margin-bottom: 15px; border-radius: 12px; border: 1px solid #edf2f7; background: #fff; overflow: hidden; transition: var(--transition); }
+        .faq-item:hover { border-color: var(--brand-red); box-shadow: var(--shadow-soft); }
+        .faq-question { width: 100%; text-align: left; padding: 22px 30px; background: none; border: none; font-size: 1.1rem; font-weight: 600; font-family: 'Inter', sans-serif; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; outline: none; }
+        .faq-question i { color: var(--brand-red); font-size: 1.1rem; transition: var(--transition); flex-shrink: 0; margin-left: 15px; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease; padding: 0 30px; color: var(--text-gray); line-height: 1.75; font-size: 0.98rem; }
+        .faq-item.active .faq-answer { max-height: 350px; padding: 0 30px 25px 30px; }
+        .faq-item.active .faq-question i { transform: rotate(45deg); }
+
+        /* ==========================================================
+           FIXED TESTIMONIAL CARDS WRAPPER (image_24d0ff.png Fix)
+        ========================================================== */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 20px; }
+        .review-card { background: #fff; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-soft); border: 1px solid #edf2f7; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+        .review-quote-icon { position: absolute; top: 30px; right: 30px; font-size: 2.5rem; color: #f8fafc; z-index: 0; pointer-events: none; }
+        .review-stars { color: #fbbc05; font-size: 1.1rem; margin-bottom: 20px; position: relative; z-index: 1;}
+        .review-text { font-size: 1.05rem; color: var(--text-dark); line-height: 1.7; font-style: italic; margin-bottom: 30px; position: relative; z-index: 1;}
+        .review-author { display: flex; align-items: center; gap: 15px; position: relative; z-index: 1; }
+        .author-img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #edf2f7; }
+        .author-info h4 { font-family: 'Inter', sans-serif; font-size: 1.05rem; margin-bottom: 3px; font-weight: 700; }
+        .author-info p { font-size: 0.85rem; color: var(--text-gray); margin: 0; }
+        .video-box-placeholder { width: 100%; height: 160px; background: var(--bg-dark); border-radius: 12px; display: flex; justify-content: center; align-items: center; color: #fff; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 1px; border: 1px solid rgba(255,255,255,0.1); margin-top: 20px; }
+
+        /* ==========================================================
+           FIXED CONTACT SECTION & GOOGLE MAPS BLOCK
+        ========================================================== */
+        .contact-section { display: flex; flex-direction: row; width: 100%; min-height: 550px; background: var(--bg-darker); overflow: hidden; align-items: stretch; }
+        .contact-info { flex: 1; width: 50%; background: var(--bg-darker); color: #fff; padding: 80px 6%; display: flex; flex-direction: column; justify-content: center; }
+        .map-container { flex: 1; width: 50%; min-height: 100%; background: #eee; position: relative; }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; border: none !important; }
+        
+        .contact-block { margin-bottom: 35px; display: flex; gap: 20px; align-items: flex-start; text-align: left; }
+        .contact-icon { width: 55px; height: 55px; background: rgba(255,255,255,0.06); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: var(--brand-red); flex-shrink: 0; }
+        .contact-details h4 { font-family: 'Inter', sans-serif; font-size: 1.15rem; margin-bottom: 6px; color: #fff; line-height: 1.3; font-weight: 700; }
+        .contact-details p { color: var(--text-light); line-height: 1.6; margin: 0; font-size: 0.95rem; }
+
+        /* ==========================================================
+           FIXED WATERMARK FOOTER PROTECTION ALIGNMENT (image_24d0db.png Fix)[cite: 1]
+        ========================================================== */
+        .footer { background: #050505; color: #fff; padding: 90px 5% 40px; border-top: 3px solid var(--brand-red); position: relative; overflow: hidden; width: 100%; z-index: 10; }
+        .footer-watermark { position: absolute; font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 11vw; color: rgba(255,255,255,0.015); bottom: -2vw; left: -2vw; white-space: nowrap; pointer-events: none; z-index: 0; line-height: 1; text-transform: uppercase; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1.2fr 1.2fr 1.6fr; gap: 45px; position: relative; z-index: 1; margin-bottom: 60px; max-width: 1400px; margin-left: auto; margin-right: auto; }
+        .footer-logo img { height: 50px; margin-bottom: 25px; filter: brightness(0) invert(1); object-fit: contain; }
+        .footer-about { color: var(--text-light); line-height: 1.7; margin-bottom: 25px; font-size: 0.95rem; }
+        .social-icons { display: flex; gap: 12px; flex-wrap: wrap; }
+        .social-icons a { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; transition: var(--transition); font-size: 1.1rem; }
+        .social-icons a:hover { background: var(--brand-red); transform: translateY(-4px); }
+        
+        .footer-title { font-family: 'Orbitron', sans-serif; font-size: 1.15rem; margin-bottom: 25px; position: relative; padding-bottom: 10px; display: inline-block; font-weight: 700; text-transform: uppercase; }
+        .footer-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 35px; height: 3px; background: var(--brand-red); }
+        .footer-links { padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: 14px; }
+        .footer-links a { color: var(--text-light); transition: var(--transition); display: inline-flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+        .footer-links a::before { content: '\f105'; font-family: 'FontAwesome'; color: var(--brand-red); font-size: 0.8rem; flex-shrink: 0; }
+        .footer-links a:hover { color: var(--brand-red); transform: translateX(5px); }
+
+        .newsletter-form { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+        .newsletter-form input { width: 100%; padding: 14px 18px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; outline: none; transition: var(--transition); font-size: 0.9rem; }
+        .newsletter-form input:focus { border-color: var(--brand-red); background: rgba(255,255,255,0.08); }
+        
+        .footer-bottom { padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; color: var(--text-light); font-size: 0.9rem; }
+        .footer-legal a { margin-left: 20px; transition: var(--transition); }
+        .footer-legal a:hover { color: #fff; }
+
+        .sticky-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); box-shadow: 0 -5px 20px rgba(0,0,0,0.08); display: flex; z-index: 9999; }
+        .sticky-btn { flex: 1; text-align: center; padding: 18px 0; font-weight: 700; text-decoration: none; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 10px; transition: var(--transition); }
+        .sticky-call { background: var(--text-dark); color: #fff; }
+        .sticky-wa { background: #25d366; color: #fff; }
+        .sticky-book { background: var(--brand-red); color: #fff; }
+
+        /* RESPONSIVE STYLING RULES */
+        @media (max-width: 991px) {
+            .nav-center { position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 0 20px; box-shadow: var(--shadow-hover); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease; border-top: 1px solid transparent; align-items: flex-start; z-index: 1000; }
+            .nav-center.mobile-active { max-height: 60vh; opacity: 1; padding: 20px; border-top-color: #edf2f7; }
+            .mobile-toggle { display: block; }
+            .section-padding { padding: 80px 0; }
+            .split-grid-structure { grid-template-columns: 1fr; gap: 40px; }
+            .process-horizontal-track { grid-template-columns: 1fr; gap: 20px; }
+            .contact-section { flex-direction: column; }
+            .contact-info { width: 100%; padding: 60px 5%; }
+            .map-container { width: 100%; min-height: 350px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 3.2rem; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================
+       1. PREMIUM NAVBAR (UNALTERED ORIGINAL MARKUP)[cite: 1]
+    ========================================================== */ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Detailing Experts Logo"></a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            
+            <div class="mega-dropdown">
+                <a href="services.html" class="active">Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                <div class="mega-content">
+                    <div class="mega-col">
+                        <h4 class="font-heading">Core Detailing</h4>
+                        <a href="exterior.html"><i class="fa-solid fa-car"></i> Exterior Detailing</a>
+                        <a href="interior.html"><i class="fa-solid fa-couch"></i> Interior Detailing</a>
+                        <a href="paint-correction.html"><i class="fa-solid fa-spray-can-sparkles"></i> Paint Correction (SRS)</a>
+                        <a href="engine.html"><i class="fa-solid fa-gears"></i> Engine Bay Detailing</a>
+                    </div>
+                    <div class="mega-col">
+                        <h4 class="font-heading">Premium Protection</h4>
+                        <a href="ceramic-coating.html"><i class="fa-solid fa-shield-halved"></i> 9H/10H Ceramic Coating</a>
+                        <a href="graphene-coating.html"><i class="fa-solid fa-gem"></i> Armor Graphene Coating</a>
+                        <a href="ppf.html"><i class="fa-solid fa-layer-group"></i> Dragon PPF Installation</a>
+                        <a href="glass.html"><i class="fa-regular fa-window-maximize"></i> Windshield & Glass Armor</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="products.html">Products</a>
+            <a href="media.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="nav-icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="tel:+918360187994" class="nav-icon-btn" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+            <a href="appointment.html" class="btn-outline">Book Now</a>
+            <button class="nav-icon-btn mobile-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- ==========================================================
+       1. AUTOMOTIVE HERO SECTION (ALIGNMENT LOCKED)
+    ========================================================== */ -->
+    <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video" poster="https://res.cloudinary.com/dicj6mana/image/upload/v1782126271/Screenshot_2026-06-22_163348_roiorw.png">
+            <source src="https://res.cloudinary.com/dicj6mana/video/upload/v1782124976/dragonppf_ug3uju.mp4" type="video/mp4"> 
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <div class="breadcrumb-list">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">//</span>
+                <a href="services.html">Services</a>
+                <span class="breadcrumb-separator">//</span>
+                <span style="color: var(--brand-red);">Ceramic Coating</span>
+            </div>
+            <h1>Elite Nano<br>Ceramic Armour</h1>
+            <p>Molecular paint shield engineering providing 9H/10H permanent crystalline glass layer protection for luxury vehicles.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%;">
+                <a href="appointment.html" class="btn-premium">Book Appointment <i class="fa-solid fa-calendar-check"></i></a>
+                <a href="tel:+918360187994" class="btn-outline" style="border-color:#fff; color:#fff;">Call Expert Now</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-chevron-down scroll-down-icon" onclick="document.getElementById('what-is-ceramic').scrollIntoView();"></i>
+    </header>
+
+    <!-- ==========================================================
+       2. WHAT IS CERAMIC COATING? & 360 VISUALIZATION
+    ========================================================== */ -->
+    <section class="section-padding" id="what-is-ceramic">
+        <div class="container split-grid-structure">
+            <div class="split-text-panel reveal">
+                <h2 class="section-title" style="font-size:2.5rem; text-align:left; margin-bottom:15px;">Advanced Surface Crystalline Science</h2>
+                <h3 class="font-heading" style="font-size:1.1rem; color:var(--brand-red); margin-bottom:25px;">Sacrificial Barrier Engineering</h3>
+                <p>Automotive Nano Ceramic Coating is a liquid polymer processing matrix composed of premium Silicon Dioxide (SiO2). When carefully integrated by hand, it creates a permanent chemical cross-link bond over your paint clear coat layout.</p>
+                <p>Unlike standard organic waxes or temporary polymer sealants that easily degrade under heavy UV exposure, our synthetic silica layer creates an impenetrable shield resisting degradation from aggressive chemicals and thermal elements over multi-year horizons.</p>
+                
+                <div class="visualization-stack-wrapper">
+                    <div class="visualization-layer active-layer"><i class="fa-solid fa-circle-check" style="color:var(--brand-red); margin-right:8px;"></i> 10H Hardness Hydrophobic Crystalline Glass Layer</div>
+                    <div class="visualization-layer">OEM Factory High-Solid Clear Coat Matrix</div>
+                    <div class="visualization-layer">Base Automotive Color Paint Layer</div>
+                    <div class="visualization-layer">Primer Panel Undercoat Substrate</div>
+                </div>
+            </div>
+            <div class="split-image-panel reveal-zoom">
+                <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782196950/diagram_coating_y4n8vd.png" alt="Nano Ceramic Coating Cross-Section Molecular Layer Graph Visualization">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       3. BENEFITS OF CERAMIC COATING
+    ========================================================== */ -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Performance Benefits Matrix</h2>
+                <p class="section-subtitle">Unmatched molecular properties built into your vehicle paint system structure.</p>
+            </div>
+            <div class="premium-feature-matrix">
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-sun"></i></div>
+                    <h3 class="font-heading">UV Protection</h3>
+                    <p>Deflects aggressive ultra-violet radiation, permanently avoiding paint color fading, chalking, and premature clear coat oxidation.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="font-heading">Scratch Resistance</h3>
+                    <p>Crystalline structure creates a 9H/10H hard barrier minimizing paint wash swirls, fine micro-marring, and organic friction wear.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-droplet"></i></div>
+                    <h3 class="font-heading">Hydrophobic Effect</h3>
+                    <p>Delivers clean surface water contact angles exceeding 110 degrees, making rain roll off instantly while taking road dust away with it.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="font-heading">High Gloss Finish</h3>
+                    <p>Generates an incredible candy-like optical depth, boosting underlying metallic flake clarity for a wet finish appearance.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-soap"></i></div>
+                    <h3 class="font-heading">Easy Cleaning</h3>
+                    <p>Smooth surface tension cuts wash maintenance intervals in half; atmospheric grime and road tar can no longer bond tightly.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-flask"></i></div>
+                    <h3 class="font-heading">Chemical Resistance</h3>
+                    <p>Shields delicate clear coat systems from bird droppings, tree sap, bug splatters, and industrial environmental fallout marks.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="font-heading">Paint Protection</h3>
+                    <p>Functions as a reliable sacrificial barrier layer, neutralizing environmental hazards before they interact with original paint surfaces.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <div class="feature-icon-frame"><i class="fa-solid fa-hourglass-high"></i></div>
+                    <h3 class="font-heading">Long Lasting Shine</h3>
+                    <p>Retains a fresh showroom finish look for several years without needing monthly reapplications of traditional wax treatments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       4. WHY CHOOSE OUR CERAMIC COATING?
+    ========================================================== */ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">The Detailing Experts Standard</h2>
+                <p class="section-subtitle">Why automotive enthusiasts trust our luxury care networks across India.</p>
+            </div>
+            <div class="premium-feature-matrix">
+                <div class="luxury-feature-card reveal" style="text-align: center;">
+                    <div class="feature-icon-frame" style="margin: 0 auto 25px;"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3 class="font-heading">Certified Master Detailers</h3>
+                    <p>Our application teams go through intensive international training program systems to achieve precise thickness settings across exotic bodyworks.</p>
+                </div>
+                <div class="luxury-feature-card reveal" style="text-align: center;">
+                    <div class="feature-icon-frame" style="margin: 0 auto 25px;"><i class="fa-solid fa-box-open"></i></div>
+                    <h3 class="font-heading">Premium Imported Formulations</h3>
+                    <p>We source ultra-premium chemical matrixes directly from elite automotive research companies based across Germany and Japan.</p>
+                </div>
+                <div class="luxury-feature-card reveal" style="text-align: center;">
+                    <div class="feature-icon-frame" style="margin: 0 auto 25px;"><i class="fa-solid fa-microchip"></i></div>
+                    <h3 class="font-heading">Latest Curing Technology</h3>
+                    <p>Using advanced multi-point inspection lighting rigs along with short-wave infrared heat lamps for cross-linking execution.</p>
+                </div>
+                <div class="luxury-feature-card reveal" style="text-align: center;">
+                    <div class="feature-icon-frame" style="margin: 0 auto 25px;"><i class="fa-solid fa-file-invoice"></i></div>
+                    <h3 class="font-heading">Official Warranty Documentation</h3>
+                    <p>Every premium application is accompanied by official warranty paperwork tracked online across all studio networks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       5. CERAMIC COATING PACKAGES MATRIX
+    ========================================================== */ -->
+    <section class="section-padding bg-light" id="pricing">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Coating Configurations</h2>
+                <p class="section-subtitle">Select the right level of surface protection engineered for your driving routine.</p>
+            </div>
+
+            <div class="packages-toggle-wrapper reveal">
+                <button class="package-toggle-btn active-toggle" onclick="togglePricingTier('hatchback-sedan')">Hatchback / Sedan</button>
+                <button class="package-toggle-btn" onclick="togglePricingTier('suv-luxury')">SUV / Luxury Exotic</button>
+            </div>
+
+            <div class="pricing-cards-matrix">
+                <div class="pricing-card-tier reveal">
+                    <div class="tier-header">
+                        <h3 class="font-heading">Basic Shield</h3>
+                        <div class="tier-price-display" data-hatchback="[Price]" data-suv="[Price]">[Price]</div>
+                        <div class="tier-meta-details">
+                            <div>Warranty coverage: <strong>[Warranty]</strong></div>
+                            <div>Service duration: <strong>[Duration]</strong></div>
+                            <div>Surface coverage: <strong>[Coverage]</strong></div>
+                        </div>
+                    </div>
+                    <ul class="tier-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 9H Nano Ceramic Coating (1 Layer)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Single Stage Polish Cleansing</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Hydrophobic Windshield Coating</li>
+                        <li><i class="fa-solid fa-circle-xmark" style="color:var(--text-light);"></i> Shortwave IR Baking Treatment</li>
+                    </ul>
+                    <a href="appointment.html" class="btn-outline" style="text-align:center; display:block;">Book Now</a>
+                </div>
+
+                <div class="pricing-card-tier reveal">
+                    <div class="tier-header">
+                        <h3 class="font-heading">Silver Armor</h3>
+                        <div class="tier-price-display" data-hatchback="[Price]" data-suv="[Price]">[Price]</div>
+                        <div class="tier-meta-details">
+                            <div>Warranty coverage: <strong>[Warranty]</strong></div>
+                            <div>Service duration: <strong>[Duration]</strong></div>
+                            <div>Surface coverage: <strong>[Coverage]</strong></div>
+                        </div>
+                    </div>
+                    <ul class="tier-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 9H Multi-Layer System</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Skin Restoration Polishing Stage</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Outer Alloy Wheel Faces Guard</li>
+                        <li><i class="fa-solid fa-circle-xmark" style="color:var(--text-light);"></i> Controlled IR Lamp Baking</li>
+                    </ul>
+                    <a href="appointment.html" class="btn-outline" style="text-align:center; display:block;">Book Now</a>
+                </div>
+
+                <div class="pricing-card-tier most-popular-tier reveal">
+                    <div class="tier-badge">Most Requested</div>
+                    <div class="tier-header">
+                        <h3 class="font-heading">Gold Signature</h3>
+                        <div class="tier-price-display" data-hatchback="[Price]" data-suv="[Price]">[Price]</div>
+                        <div class="tier-meta-details">
+                            <div>Warranty coverage: <strong>[Warranty]</strong></div>
+                            <div>Service duration: <strong>[Duration]</strong></div>
+                            <div>Surface coverage: <strong>[Coverage]</strong></div>
+                        </div>
+                    </div>
+                    <ul class="tier-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 10H Certified Density Matrix</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Full Multi-Stage Skin Correction</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Premium Exterior Plastic Conditioning</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Infrared Curing Lamp Baking Cycle</li>
+                    </ul>
+                    <a href="appointment.html" class="btn-premium" style="width:100%;">Book Now</a>
+                </div>
+
+                <div class="pricing-card-tier reveal">
+                    <div class="tier-header">
+                        <h3 class="font-heading">Platinum Graphene</h3>
+                        <div class="tier-price-display" data-hatchback="[Price]" data-suv="[Price]">[Price]</div>
+                        <div class="tier-meta-details">
+                            <div>Warranty coverage: <strong>[Warranty]</strong></div>
+                            <div>Service duration: <strong>[Duration]</strong></div>
+                            <div>Surface coverage: <strong>[Coverage]</strong></div>
+                        </div>
+                    </div>
+                    <ul class="tier-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Elite Carbon Graphene Infusion</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Concours Precision Clear Correction</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Complete Wheel Off Internal Barrels</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Double Action IR Baking Cycles</li>
+                    </ul>
+                    <a href="appointment.html" class="btn-outline" style="text-align:center; display:block;">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. CERAMIC COATING PROCESS TIMELINE        -->
+    <!-- ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">The Master Execution Process</h2>
+                <p class="section-subtitle">Perfection demands a structured approach. How we prepare and protect your paint panels.</p>
+            </div>
+            
+            <div class="process-horizontal-track">
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">01. Inspection</h3>
+                    <p>Digital paint thickness evaluation mapping to scan for hidden body modifications or thin clear coat spaces.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">02. Wash</h3>
+                    <p>pH neutral snow foam wash and multi-stage pressure rinse workflows to clean away loose surface contamination.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">03. Clay Bar</h3>
+                    <p>Mechanical clay surface treatment pulls embedded iron flakes, industrial soot, and tar out of clear coat pores.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">04. Paint Correction</h3>
+                    <p>Surgical machine compounding to level out underlying swirls, light scratches, and oxidation blemishes.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">05. Surface Prep</h3>
+                    <p>Alcohol isopropyl technical wipe down strips leftover polishing oils to leave an optimal bonding environment.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">06. Coating Application</h3>
+                    <p>Precision manual integration of liquid polymer using clean cross-hatch applicator wipe patterns.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">07. Infrared Curing</h3>
+                    <p>Shortwave infrared array bakes speed up chemical links inside ceramic layers for baseline structural density.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">08. Quality Inspection</h3>
+                    <p>Multi-angle 3000 lumen LED diagnostic lamps evaluate clarity across panels to prevent high spots.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color: var(--brand-red); margin-bottom: 10px;">09. Vehicle Delivery</h3>
+                    <p>Final elite presentation handover alongside registered official warranty tracking papers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       7. BEFORE & AFTER SHOWCASE (image_24d158.png Slicing Fix)
+    ========================================================== */ -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">The Visual Proof</h2>
+                <p class="section-subtitle">Slide to check the depth, reflection, and cloudiness reduction achieved through our detailing matrix.</p>
+            </div>
+            
+            <div class="ba-wrapper reveal">
+                <div class="ba-label ba-label-before">Before Treatment</div>
+                <div class="ba-label ba-label-after">After Protection</div>
+                <img src="https://via.placeholder.com/1200x675/1a1a1a/ffffff?text=AFTER+NANO+CERAMIC+(MIRROR+GLOSS)" alt="After Ceramic Coating mirror gloss panels" class="ba-image ba-after">
+                <img src="https://via.placeholder.com/1200x675/444444/ffffff?text=BEFORE+(SWIRLED+AND+OXIDIZED)" alt="Before Ceramic Coating oxidation paint flaws" class="ba-image ba-before" id="ba-before-img">
+                <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-input" aria-label="Before after dynamic visual comparison slider control">
+                <div class="ba-line" id="ba-line"></div>
+                <div class="ba-button" id="ba-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 8. CERAMIC COATING COMPARISON TABLE        -->
+    <!-- ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Protection Technology Matrix</h2>
+                <p class="section-subtitle">An objective structural breakdown outlining protection tier properties.</p>
+            </div>
+            
+            <div class="comparison-table-wrapper reveal">
+                <table class="comparison-matrix-table">
+                    <thead>
+                        <tr>
+                            <th>Metric Criteria</th>
+                            <th>Traditional Wax</th>
+                            <th>Polymer Sealant</th>
+                            <th class="table-row-highlight table-cell-brand">Ceramic Coating</th>
+                            <th>Dragon PPF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Durability Lifespan</strong></td>
+                            <td>1 - 3 Months</td>
+                            <td>3 - 6 Months</td>
+                            <td class="table-row-highlight table-cell-brand">2 - 7+ Years Guaranteed</td>
+                            <td>5 - 10 Years Shield</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gloss & Visual Depth</strong></td>
+                            <td>Warm Glow / Low Depth</td>
+                            <td>Slick Surface Reflectivity</td>
+                            <td class="table-row-highlight table-cell-brand">Optically Deep Glass Finish</td>
+                            <td>High Factory Clarity Luster</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Abrasion Protection</strong></td>
+                            <td>None</td>
+                            <td>Extremely Low</td>
+                            <td class="table-row-highlight table-cell-brand">High Swirl Deflection (10H)</td>
+                            <td>Max Impact Deflection (Self-Healing)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hydrophobic Sheeting</strong></td>
+                            <td>Low Contact Angle</td>
+                            <td>Moderate Beading</td>
+                            <td class="table-row-highlight table-cell-brand">Extreme Water Shedding (>110°)</td>
+                            <td>Premium Hydrophobic Topcoat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maintenance Routine</strong></td>
+                            <td>High Frequency Care Needed</td>
+                            <td>Regular Intermittent Topping</td>
+                            <td class="table-row-highlight table-cell-brand">Extremely Low (Self-Cleaning)</td>
+                            <td>Standard Car Washing Workflows</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 9. TECHNOLOGY WE USE                       -->
+    <!-- ========================================== -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Precision Instrumentation</h2>
+                <p class="section-subtitle">We configure your automotive surfaces using professional-grade studio instruments.</p>
+            </div>
+            <div class="premium-feature-matrix">
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Nano Ceramic Silica</h3>
+                    <p>Cross-linking chemical formulations utilizing silica molecules under 100 nanometers to seal microclearcoat openings.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Graphene Oxide Layering</h3>
+                    <p>Incorporate an atom-thick carbon structural grid lowering surface thermal limits to significantly reduce mineral water spots.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Spectroscopic IR Lamps</h3>
+                    <p>Shortwave infrared panel lamps accelerate cross-linking deeper within liquid polymers, delivering predictable core shell curing.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Paint Thickness Gauges</h3>
+                    <p>Non-destructive ultrasound measuring sensors chart microscopic clear coat profiles prior to any machine paint correction polish steps.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Refined Dual-Action Polishers</h3>
+                    <p>Precision dynamic orbital tools from international tool firms execute paint leveling without leaving micro-holograms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 10. LIFECYCLE & EXCLUSIVE CONFIGURATIONS   -->
+    <!-- ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Coating Lifecycle Performance</h2>
+                <p class="section-subtitle">A realistic look at performance changes over time across your warranty period.</p>
+            </div>
+            <div class="lifecycle-metrics-grid">
+                <div class="lifecycle-metric-card active-lifecycle-card reveal">
+                    <div class="lifecycle-timeframe">Months 1 - 12</div>
+                    <h4>Peak Hydrophobic State</h4>
+                    <p>Surface water behavior is exceptionally high. Self-cleaning functions operate at maximum capability during wash sessions.</p>
+                </div>
+                <div class="lifecycle-metric-card reveal">
+                    <div class="lifecycle-timeframe">Years 2 - 3</div>
+                    <h4>Stable Gloss Horizon</h4>
+                    <p>Crystalline chemical matrix handles constant UV exposure. Gloss depth stays consistent with routine maintenance washes.</p>
+                </div>
+                <div class="lifecycle-metric-card reveal">
+                    <div class="lifecycle-timeframe">Years 4 - 5</div>
+                    <h4>Mid-Life Sacrificial Stage</h4>
+                    <p>Minor decline across top water-beading performance angles. Core base silica keeps clear coat pores safe from oxidation.</p>
+                </div>
+                <div class="lifecycle-metric-card reveal">
+                    <div class="lifecycle-timeframe">Years 6+</div>
+                    <h4>Matured Paint Protection</h4>
+                    <p>The chemical structure continues providing basic clear coat protection. Deeper valleys stay sealed against environment staining hazards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container split-grid-structure">
+            <div class="reveal">
+                <h3 class="font-heading" style="font-size:1.8rem; margin-bottom:20px;">Maintenance Guidelines</h3>
+                <ul class="tier-features-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>The Two-Bucket Clean Method:</strong> Use separate wash and rinse bucket pairs to isolate sand debris particles.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>pH Neutral Shampoo Blends:</strong> Clean using paint soaps free from gloss conditioners or aggressive silicon additives.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Avoid Automatic Car Washes:</strong> Avoid stiff mechanical rotating spin brushes that run the risk of introducing micro-marring flaws.</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <h3 class="font-heading" style="font-size:1.8rem; margin-bottom:20px;">Industry Myths vs Facts</h3>
+                <div style="margin-bottom:15px;">
+                    <p style="color:var(--brand-red); font-weight:700;">Myth: Ceramic coatings protect panels from high-speed rock chips.</p>
+                    <p style="color:var(--text-gray); font-size:0.95rem;">Fact: They resist fine micro-swirls. Preventing fast stone impacts requires an application of Dragon PPF.</p>
+                </div>
+                <div>
+                    <p style="color:#27ae60; font-weight:700;">Myth: Coated vehicles never require manual washing ever again.</p>
+                    <p style="color:var(--text-gray); font-size:0.95rem;">Fact: The topcoat becomes highly self-cleaning, but occasional gentle hand wash sessions remain vital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       10. FAQ ACCORDION (image_24d135.png Curing and Expanding Fix)
+    ========================================================== */ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our luxury nano-protection coatings.</p>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">What exactly is an automotive ceramic coating? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>A ceramic coating is a liquid silica polymer applied to your car's exterior. It chemically binds with the clear coat to produce a durable, semi-permanent sacrificial glass barrier layer.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How long do your coating layers endure? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Depending on your chosen protection pack configuration (Basic to Platinum), performance lifespans vary from 2 years up to more than 7 years with scheduled upkeep.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Does a ceramic layer stop heavy impact stone chips? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>No, coatings do not contain the structural thickness required to disperse heavy blunt forces. Deflecting gravel chips requires our thick thermoplastic Dragon PPF wraps.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is the estimated service duration for installation? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>A master studio application takes between 2 to 4 days, allowing proper windows for meticulous paint correction, clean-room application, and multi-point IR curing lamps processes.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is paint correction mandatory prior to coating application? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, because nano-coatings are completely transparent, any underlying paint swirl marks or cloudiness will be permanently locked beneath. Correcting defects first is vital.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How should I wash my car after it is coated? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>We highly suggest hand washing intervals using a plush microfiber mitt, a pH balanced car wash shampoo, and the classic two-bucket framework with dirt grit-guards.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I take my coated vehicle into automatic spin car washes? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>We strongly recommend avoiding automatic brush washes. The fast-spinning abrasive nylon brushes can degrade and scratch the top hydrophobic ceramic protection layer over time.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Does ceramic coating prevent water spotting completely? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>While coatings shed water effectively, mineral-heavy hard water left to dry in direct sunlight can still leave spots. Choosing a Graphene configuration reduces this behavior.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is your studio warranty transferable if I decide to sell my car? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, our premium packages come with an official transferable warranty. This can be moved over to the next vehicle owner, helping boost your luxury car's overall market resale value.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can a ceramic coating be applied on top of vinyl wraps or PPF? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, we use distinct flexible ceramic formulas specially created to bond with both porous polyurethane paint films (PPF) and standard vinyl wrap materials.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What happens if a coated panel shows unexpected premature wear? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Under our official studio warranty guidelines, if a panel shows premature failure or loss of gloss, our studio will machine correct the target panel and re-apply the coating.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Will the coating add an unneeded shine to matte factory finish paints? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>No, we carry specialized matte ceramic formulas that protect and seal satin or matte paint systems without adding unwanted artificial shine or glossy reflections.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I apply traditional carnauba paste wax over a fresh ceramic layer? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>It is not recommended. Traditional waxes will mask the superior hydrophobic self-cleaning attributes of the ceramic coating underneath, trapping road dust easier.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How does cold road salt affect the nano-ceramic shield? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Our synthetic silica formulas feature high chemical resistance, preventing road salts and winter brines from penetrating down to oxidize underlying body panels.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are alloy wheel barrels and glass windows covered in basic packages? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer"><p>Windshield glass treatments are included starting from our Silver tier packs. Full wheels-off internal barrel spray detailing is exclusive to our Platinum packages.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       11. CUSTOMER REVIEWS (image_24d0ff.png Overflow Track Fix)
+    ========================================================== */ -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Verified Client Feedback</h2>
+                <p class="section-subtitle">Real feedback from automobile enthusiasts who trust our studios with their vehicles.</p>
+            </div>
+            
+            <div class="reviews-grid reveal">
+                <div class="review-card">
+                    <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"[Customer Review: The deep gloss reflection on my black vehicle is exceptional after the Gold package treatment. Water beads off immediately during weekly maintenance washes.]"</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Verified client portrait placeholder" class="author-img">
+                        <div class="author-info">
+                            <h4>[Customer Name]</h4>
+                            <p>[Vehicle Model Owner]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"[Customer Review: Professional service from start to finish. The shortwave infrared lamp baking gave me great confidence in the long-term durability of the finish.]"</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Verified client portrait placeholder" class="author-img">
+                        <div class="author-info">
+                            <h4>[Customer Name]</h4>
+                            <p>[Vehicle Model Owner]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"[Customer Review: They removed severe water etching and swirl damage I thought was permanent before laying down the ceramic protection. It looks better than showroom floor day.]"</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Verified client portrait placeholder" class="author-img">
+                        <div class="author-info">
+                            <h4>[Customer Name]</h4>
+                            <p>[Vehicle Model Owner]</p>
+                        </div>
+                    </div>
+                    <div class="video-box-placeholder"><i class="fa-solid fa-play-circle" style="color:var(--brand-red); margin-right:8px;"></i> [Video Review Placeholder]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDED ADD-ON SERVICES MODULE -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Recommended Add-On System Services</h2>
+                <p class="section-subtitle">Combine premium paint treatments together for complete defense synergy.</p>
+            </div>
+            <div class="premium-feature-matrix">
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading">High Impact PPF Film</h3>
+                    <p>Install clear polyurethane film on high-exposure spaces like the front bumper to stop stone chips, then coat remaining spaces with nano ceramic.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading">Multi-Stage Paint Correction</h3>
+                    <p>Upgrade to a complete machine abrasive jeweling treatment to clear away deeper random deep scratches before sealing the clear coat layer.</p>
+                </div>
+                <div class="luxury-feature-card reveal">
+                    <h3 class="font-heading">Graphene Top Coat Enhancement</h3>
+                    <p>Infuse an additional reduced graphene oxide coating layer over base ceramic to lower water spotting risks on dark vehicle paints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       12. CALL TO ACTION LUXURY BANNER[cite: 1]
+    ========================================================== */ -->
+    <section class="cta-banner">
+        <div class="container reveal">
+            <h2 class="font-heading">Ready to Transform Your Ride?</h2>
+            <p>Book a free, no-obligation inspection today. Let our master detailers assess your vehicle and recommend the perfect protection package.</p>
+            <a href="appointment.html" class="btn-premium" style="background: #fff; color: var(--brand-red);">Book Appointment <i class="fa-solid fa-calendar-check"></i></a>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       13. GOOGLE MAPS BLOCK (STRUCTURE PROTECTED)
+    ========================================================== */ -->
+    <section class="contact-section" id="contact">
+        <div class="contact-info">
+            <div class="reveal">
+                <h2 class="font-heading" style="font-size: 2.5rem; margin-bottom: 40px; color: #fff;">Get In Touch</h2>
+                
+                <div class="contact-block">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-details">
+                        <h4>Headquarters Studio</h4>
+                        <p>Lower Basement -2, Eva Mall,<br>Manjalpur, Vadodara 390011</p>
+                    </div>
+                </div>
+                
+                <div class="contact-block">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-details">
+                        <h4>Call Us Directly</h4>
+                        <p><a href="tel:+918360187994">+91 83601 87994</a><br>Mon - Sun: 9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-block">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:info@detailingexperts.com">info@detailingexperts.com</a><br>We reply within 2 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container reveal">
+            <iframe src="https://maps.google.com/maps?q=Eva%20Mall,%20Manjalpur,%20Vadodara&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Detailing Experts Studio Location" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+       14. GLOBAL FOOTER (image_24d0db.png Dimension Constraints Restored)[cite: 1]
+    ========================================================== */ -->
+    <footer class="footer">
+        <div class="footer-watermark">DETAILING</div>
+        <div class="footer-grid">
+            <div class="footer-col reveal">
+                <a href="index.html" class="footer-logo"><img src="logo.png" alt="Detailing Experts"></a>
+                <p class="footer-about">Detailing Experts is India's premier luxury automotive detailing studio. With over 140+ locations, we specialize in advanced Skin Restoration, 10H Armor Graphene Coatings, and Self-Healing Dragon PPF to protect your prized investment.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                <h4 class="footer-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="paint-correction.html">Paint Correction (SRS)</a></li>
+                    <li><a href="ceramic-coating.html">Ceramic Coating</a></li>
+                    <li><a href="graphene-coating.html">Graphene Coating</a></li>
+                    <li><a href="ppf.html">Paint Protection Film</a></li>
+                    <li><a href="interior-detailing.html">Interior Detailing</a></li>
+                    <li><a href="maintenance.html">Maintenance Wash</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="media.html">Gallery & Videos</a></li>
+                    <li><a href="blog.html">Detailing Blog</a></li>
+                    <li><a href="franchise.html">Franchise Inquiry</a></li>
+                    <li><a href="contact.html">Find a Studio</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.3s;">
+                <h4 class="footer-title">Stay Protected</h4>
+                <p class="footer-about">Subscribe to our newsletter for the latest car care tips, exclusive offers, and product launches.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-premium" style="width: 100%; padding: 12px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom reveal" style="transition-delay: 0.4s;">
+            <p>© 2026 Detailing Experts. All Rights Reserved. Protected by Dragon PPF.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY ACTION BAR FOR MOBILE PRESERVATION -->
+    <div class="sticky-bar">
+        <a href="tel:+918360187994" class="sticky-btn sticky-call"><i class="fa-solid fa-phone"></i> <span>Call Us</span></a>
+        <a href="https://wa.me/918360187994" target="_blank" rel="noopener" class="sticky-btn sticky-wa"><i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span></a>
+        <a href="appointment.html" class="sticky-btn sticky-book"><i class="fa-regular fa-calendar-check"></i> <span>Book Now</span></a>
+    </div>
+
+    <!-- ==========================================================
+       SCRIPT ENGINE MATRIX
+    ========================================================== */ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Sticky Navbar Action[cite: 1]
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 2. Mobile Navigation Menu Controller[cite: 1]
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navCenter = document.querySelector('.nav-center');
+            if(mobileToggle && navCenter) {
+                mobileToggle.addEventListener('click', () => {
+                    navCenter.classList.toggle('mobile-active');
+                });
+            }
+
+            // 3. Scroll Reveal Engine[cite: 1]
+            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 4. Before/After Dynamic Slider Control Engine[cite: 1]
+            const baSlider = document.getElementById('ba-slider-input');
+            const baBeforeImg = document.getElementById('ba-before-img');
+            const baLine = document.getElementById('ba-line');
+            const baButton = document.getElementById('ba-button');
+
+            if(baSlider && baBeforeImg && baLine && baButton) {
+                baSlider.addEventListener('input', (e) => {
+                    const sliderPos = e.target.value;
+                    baBeforeImg.style.clipPath = `inset(0 ${100 - sliderPos}% 0 0)`;
+                    baLine.style.left = `${sliderPos}%`;
+                    baButton.style.left = `${sliderPos}%`;
+                });
+            }
+
+            // 5. Accordion Interactive FAQ Controller (image_24d135.png Functional Fix)[cite: 1]
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if(question) {
+                    question.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        
+                        // Collapse all open tabs cleanly
+                        faqItems.forEach(faq => {
+                            faq.classList.remove('active');
+                            faq.querySelector('.faq-answer').style.maxHeight = null;
+                        });
+
+                        if (!isActive) {
+                            item.classList.add('active');
+                            const answerBlock = item.querySelector('.faq-answer');
+                            answerBlock.style.maxHeight = answerBlock.scrollHeight + "px";
+                        }
+                    });
+                }
+            });
+
+            // 6. Mobile Submenu Toggle Logic[cite: 1]
+            const megaDropdowns = document.querySelectorAll('.mega-dropdown');
+            megaDropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', (e) => {
+                    if(window.innerWidth <= 991) {
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            });
+
+        });
+
+        // 7. Dynamic Package Segment Metric Switcher
+        function togglePricingTier(tierClass) {
+            const toggleButtons = document.querySelectorAll('.package-toggle-btn');
+            toggleButtons.forEach(btn => btn.classList.remove('active-toggle'));
+            event.target.classList.add('active-toggle');
+
+            const targets = document.querySelectorAll('.tier-price-display');
+            targets.forEach(priceBox => {
+                if(tierClass === 'hatchback-sedan') {
+                    priceBox.textContent = priceBox.getAttribute('data-hatchback');
+                } else {
+                    priceBox.textContent = priceBox.getAttribute('data-suv');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

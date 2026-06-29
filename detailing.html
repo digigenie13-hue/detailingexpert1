@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailing | Detailing Experts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root { --brand-red: #c0392b; --text-dark: #1a202c; --text-gray: #4a5568; --bg-light: #f8fafc; --shadow-soft: 0 10px 30px rgba(0,0,0,0.05); --shadow-hover: 0 15px 35px rgba(0,0,0,0.1); --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; padding-bottom: 60px; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px; }
+
+        /* Existing Nav */
+        .dropdown { position: relative; display: inline-block; padding-bottom: 15px;}
+        .dropdown-content { display: none; position: absolute; background-color: #fff; min-width: 220px; box-shadow: var(--shadow-soft); z-index: 1000; top: 100%; left: 0; border-top: 3px solid var(--brand-red); padding: 10px 0; border-radius: 0 0 8px 8px; opacity: 0; transform: translateY(10px); transition: var(--transition); }
+        .dropdown-content a { color: var(--text-dark) !important; padding: 12px 20px !important; text-decoration: none; display: block; font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+        .dropdown-content a:hover { background-color: #fdf2f0; color: var(--brand-red) !important; padding-left: 25px !important; }
+        .dropdown:hover .dropdown-content { display: block; opacity: 1; transform: translateY(0); }
+        
+        /* Hero & Existing Content */
+        .detailing-hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://res.cloudinary.com/dicj6mana/image/upload/v1782382330/detailing11_gvcmjn.png') center/cover no-repeat; background-color: #1a1a1a; padding: 100px 5%; min-height: 400px; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .detailing-hero h1 { color: #fff; font-size: 4.5rem; text-transform: uppercase; margin-bottom: 10px; text-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .detailing-hero p { color: #e2e8f0; font-size: 1.2rem; font-weight: 500; letter-spacing: 1px; }
+        
+        .product-section { padding: 5rem 5%; background-color: #fff; }
+        .bg-light-grey { background-color: var(--bg-light); }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto; align-items: center; }
+        .product-text p { font-size: 1.05rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 20px; text-align: justify; }
+        .product-text h2 { font-size: 3rem; color: var(--text-dark); margin-bottom: 25px; text-transform: capitalize; }
+        .product-text h3 { font-size: 1.5rem; color: var(--text-dark); margin: 30px 0 20px 0; font-weight: 700; text-transform: uppercase;}
+        
+        .custom-bullets { list-style: none; padding: 0; margin-bottom: 30px; }
+        .custom-bullets li { position: relative; padding-left: 40px; margin-bottom: 15px; font-size: 1.05rem; color: var(--text-gray); line-height: 1.6; transition: var(--transition); }
+        .custom-bullets li:hover { color: var(--text-dark); transform: translateX(5px); }
+        .custom-bullets li i { position: absolute; left: 0; top: 4px; color: var(--brand-red); font-size: 1.3rem; }
+        
+        .product-images img { max-width: 100%; height: auto; border-radius: 16px; box-shadow: var(--shadow-soft); transition: var(--transition); }
+        .product-images img:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+
+        /* --- NEW: Before/After Slider --- */
+        .ba-container { position: relative; width: 100%; max-width: 1000px; margin: 50px auto 0; overflow: hidden; border-radius: 16px; box-shadow: var(--shadow-hover); height: 450px; }
+        .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        .ba-img-after { z-index: 1; }
+        .ba-img-before { z-index: 2; width: 50%; border-right: 4px solid #fff; }
+        .ba-slider { position: absolute; top: 0; left: 50%; width: 40px; height: 100%; transform: translateX(-50%); z-index: 3; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+        .ba-slider-btn { width: 45px; height: 45px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--brand-red); box-shadow: 0 0 15px rgba(0,0,0,0.3); font-size: 1.2rem; }
+        .ba-input { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; opacity: 0; cursor: ew-resize; }
+
+        /* --- NEW: Process Timeline --- */
+        .timeline { max-width: 800px; margin: 0 auto; position: relative; padding-left: 40px; }
+        .timeline::before { content: ''; position: absolute; left: 15px; top: 0; height: 100%; width: 2px; background: #edf2f7; }
+        .timeline-item { position: relative; margin-bottom: 40px; }
+        .timeline-item::before { content: ''; position: absolute; left: -34px; top: 5px; width: 18px; height: 18px; background: var(--brand-red); border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--brand-red); }
+        .timeline-item h4 { font-size: 1.3rem; margin-bottom: 10px; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text-dark); }
+        .timeline-item p { color: var(--text-gray); line-height: 1.6; }
+
+        /* --- NEW: Pricing Cards --- */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .pricing-card { background: #fff; border-radius: 16px; padding: 40px; box-shadow: var(--shadow-soft); text-align: center; position: relative; overflow: hidden; transition: var(--transition); border: 1px solid rgba(0,0,0,0.03); }
+        .pricing-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .pricing-card.popular { border: 2px solid var(--brand-red); transform: scale(1.05); }
+        .pricing-card.popular:hover { transform: scale(1.05) translateY(-10px); }
+        .popular-badge { position: absolute; top: 20px; right: -35px; background: var(--brand-red); color: #fff; font-size: 0.8rem; font-weight: 700; padding: 5px 40px; transform: rotate(45deg); }
+        .pricing-price { font-size: 2.5rem; font-family: 'Orbitron', sans-serif; margin: 20px 0; color: var(--text-dark); }
+        .pricing-price span { font-size: 1rem; color: var(--text-gray); font-family: 'Inter', sans-serif; }
+        .pricing-features { list-style: none; margin-bottom: 30px; text-align: left; }
+        .pricing-features li { padding: 10px 0; border-bottom: 1px solid #edf2f7; color: var(--text-gray); }
+        .pricing-features li i { color: var(--brand-red); margin-right: 10px; }
+        
+        .btn-premium { display: inline-block; background: var(--brand-red); color: #fff; padding: 15px 40px; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; text-decoration: none; border-radius: 4px; transition: var(--transition); box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); letter-spacing: 1px; width: 100%;}
+        .btn-premium:hover { background: var(--text-dark); transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+
+        /* --- NEW: Sticky Action Bar --- */
+        .sticky-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); display: flex; z-index: 9999; }
+        .sticky-btn { flex: 1; text-align: center; padding: 15px 0; font-weight: 700; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 8px; transition: var(--transition); }
+        .sticky-call { background: var(--text-dark); color: #fff; }
+        .sticky-wa { background: #25d366; color: #fff; }
+        .sticky-book { background: var(--brand-red); color: #fff; }
+        .sticky-btn:hover { filter: brightness(1.1); }
+
+        @media (max-width: 900px) { .product-grid { grid-template-columns: 1fr; gap: 40px; } .reverse-mobile { flex-direction: column-reverse; display: flex; } .detailing-hero h1 { font-size: 3rem; } .sticky-btn span { display: none; } .sticky-btn i { font-size: 1.2rem; } }
+    </style>
+</head>
+<body>
+    <div class="top-strip"></div>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-logo"><a href="index.html" aria-label="Home"><img src="logo.png" alt="Detailing Experts Logo"></a></div>
+        <div class="nav-links-container">
+            <div class="nav-bottom">
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <a href="index.html#what-we-do" class="highlight-bold" style="cursor: pointer; color: var(--brand-red);">Services <i class="fa-solid fa-angle-down" style="font-size: 12px; margin-left: 4px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products.html">Products</a>
+                        <a href="detailing.html" style="color: var(--brand-red) !important;">Detailing</a>
+                        <a href="protection.html">Protection</a>
+                        <a href="maintenance.html">Maintenance</a>
+                    </div>
+                </div>
+                <a href="index.html#packages">Dragon PPF</a>
+                <a href="appointment.html">Support</a>
+                <a href="media.html">Media</a>
+                <a href="#">Shop</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="detailing-hero">
+            <div class="container">
+                <h1>Detailing</h1>
+                <p>Complete Vehicle Restoration & Care</p>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="container">
+                <div class="product-grid">
+                    <div class="product-text">
+                        <h2 class="font-heading">About Detailing</h2>
+                        <p>Car detailing is the process of thoroughly cleaning and restoring a vehicle to its original condition. It is an art of enhancing the overall look and feel of your vehicle by removing swirl marks, scratches, and dullness from the exterior paint, while deeply sanitizing the interior.</p>
+                        <ul class="custom-bullets">
+                            <li><i class="fa-solid fa-check-circle"></i> Enhances the resale value of the vehicle.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Restores original factory shine and gloss.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Protects exterior clear coat from environmental damage.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Ensures a hygienic and odor-free interior cabin.</li>
+                        </ul>
+                    </div>
+                    <div class="product-images">
+                        <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782196980/dragonppf_emvmtt.png" alt="Car Detailing Process">
+                    </div>
+                </div>
+
+                <!-- ADDED: Before & After Slider -->
+                <div class="ba-container">
+                    <img src="https://via.placeholder.com/1000x500/1a1a1a/ffffff?text=AFTER+DETAILING" alt="After" class="ba-img ba-img-after">
+                    <img src="https://via.placeholder.com/1000x500/444444/ffffff?text=BEFORE+DETAILING" alt="Before" class="ba-img ba-img-before" id="ba-before-detailing">
+                    <input type="range" min="0" max="100" value="50" class="ba-input" id="ba-slider-detailing">
+                    <div class="ba-slider" id="ba-line-detailing">
+                        <div class="ba-slider-btn"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADDED: Process Timeline -->
+        <section class="product-section bg-light-grey">
+            <div class="container">
+                <h2 class="font-heading" style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Our Detailing Process</h2>
+                <div class="timeline">
+                    <div class="timeline-item"><h4>1. Foam Wash & Decontamination</h4><p>Deep cleaning to safely remove surface dirt, iron particles, and tar without scratching the paint.</p></div>
+                    <div class="timeline-item"><h4>2. Paint Correction (Skin Restoration)</h4><p>Multi-stage machine compounding to eliminate swirl marks, oxidation, and deep scratches.</p></div>
+                    <div class="timeline-item"><h4>3. Interior Deep Cleaning</h4><p>Steam cleaning and sanitization of fabric, leather, dashboard, and AC vents.</p></div>
+                    <div class="timeline-item"><h4>4. Final Polishing & Finishing</h4><p>Restoring chrome trims, headlights, and alloys to bring back the showroom shine.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="container product-grid reverse-mobile">
+                <div class="product-images">
+                    <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782196926/bottles_kzuwy5.png" alt="Detailing Products">
+                </div>
+                <div class="product-text">
+                    <h2 class="font-heading">Skin Restoration Service</h2>
+                    <p>In Skin Restoration Service (SRS), the surface of the vehicle is carefully buffed to get rid of the old and dull layer of the paint to reveal a brand new, vibrant, and shiny layer underneath. This is crucial before applying any ceramic coating or PPF.</p>
+                    <h3 class="font-heading">Our Detailed Restoration Includes:</h3>
+                    <ul class="custom-bullets">
+                        <li><i class="fa-solid fa-spray-can-sparkles"></i> <strong>Paint Correction:</strong> Removing deep scratches and swirl marks.</li>
+                        <li><i class="fa-solid fa-lightbulb"></i> <strong>Headlight Restoration:</strong> Bringing back clarity.</li>
+                        <li><i class="fa-solid fa-ring"></i> <strong>Chrome Restoration:</strong> Polishing to a mirror finish.</li>
+                        <li><i class="fa-solid fa-compact-disc"></i> <strong>Wheel Restoration:</strong> Deep cleaning alloys.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADDED: Pricing Cards -->
+        <section class="product-section bg-light-grey">
+            <div class="container">
+                <h2 class="font-heading" style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Detailing Packages</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="font-heading">Express Detail</h3>
+                        <div class="pricing-price">Ask <span>for quote</span></div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Exterior Foam Wash</li>
+                            <li><i class="fa-solid fa-check"></i> Basic Interior Vacuum</li>
+                            <li><i class="fa-solid fa-check"></i> Tire Dressing</li>
+                            <li><i class="fa-solid fa-times" style="color:#ccc;"></i> Paint Correction</li>
+                        </ul>
+                        <a href="appointment.html" class="btn-premium">Book Now</a>
+                    </div>
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">POPULAR</div>
+                        <h3 class="font-heading">Premium Detail (SRS)</h3>
+                        <div class="pricing-price">Ask <span>for quote</span></div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Full Paint Correction</li>
+                            <li><i class="fa-solid fa-check"></i> Deep Interior Steam Cleaning</li>
+                            <li><i class="fa-solid fa-check"></i> Headlight & Chrome Restoration</li>
+                            <li><i class="fa-solid fa-check"></i> 6-Month Wax Protection</li>
+                        </ul>
+                        <a href="appointment.html" class="btn-premium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ADDED: Sticky Action Bar -->
+    <div class="sticky-bar">
+        <a href="tel:+918360187994" class="sticky-btn sticky-call"><i class="fa-solid fa-phone"></i> <span>Call Us</span></a>
+        <a href="https://wa.me/918360187994" target="_blank" class="sticky-btn sticky-wa"><i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span></a>
+        <a href="appointment.html" class="sticky-btn sticky-book"><i class="fa-regular fa-calendar-check"></i> <span>Book Now</span></a>
+    </div>
+
+    <!-- Existing Footer -->
+    <footer id="contact" class="new-premium-footer" style="padding-bottom: 80px;">
+        <div class="footer-watermark"><div>DETAILING</div><div>EXPERTS</div></div>
+        <div class="container footer-content-container">
+            <div class="footer-top">
+                <div class="footer-logo-area"><img src="logo.png" alt="Detailing Experts"><p>A Blend of Perfection & Protection</p></div>
+                <div class="footer-links-area">
+                    <div class="footer-col"><h4>ABOUT</h4><a href="about.html">Brands We have Worked on</a></div>
+                    <div class="footer-col"><h4>SUPPORT</h4><a href="appointment.html">APPOINTMENT</a></div>
+                    <div class="footer-col"><h4>SERVICES</h4><a href="products.html">PRODUCTS</a><a href="detailing.html">DETAILING</a><a href="protection.html">PROTECTION</a></div>
+                    <div class="footer-col"><h4>MEDIA</h4><a href="media.html">GALLERY</a></div>
+                    <div class="footer-col"><h4>CONTACT US</h4><a href="contact.html">EMAIL</a><a href="contact.html">WHATSAPP</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 DETAILING EXPERTS. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        // Before/After Slider Logic
+        const sliderInput = document.getElementById('ba-slider-detailing');
+        const beforeImg = document.getElementById('ba-before-detailing');
+        const sliderLine = document.getElementById('ba-line-detailing');
+        if(sliderInput) {
+            sliderInput.addEventListener('input', (e) => {
+                const val = e.target.value;
+                beforeImg.style.width = val + '%';
+                sliderLine.style.left = val + '%';
+            });
+        }
+    </script>
+</body>
+</html>

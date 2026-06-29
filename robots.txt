@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.detailingexperts.com/sitemap.xml
+
+# Disallow specific system or private folders if necessary
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/

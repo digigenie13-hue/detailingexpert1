@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c0392b">
+    <meta name="author" content="Detailing Experts">
+    
+    <title>Premium Auto Detailing & Ceramic Coating | Detailing Experts</title>
+    <meta name="description" content="Detailing Experts offers luxury car detailing, 9H/10H nano ceramic coating, and Dragon PPF across 140+ studios in India. Transform your ride today.">
+    <meta name="keywords" content="car detailing, auto detailing, PPF, paint protection film, ceramic coating, skin restoration, luxury car care, Vadodara detailing">
+    <link rel="canonical" href="https://www.detailingexperts.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AutoBodyShop",
+          "@id": "https://www.detailingexperts.com/#localbusiness",
+          "name": "Detailing Experts",
+          "image": "https://www.detailingexperts.com/logo.png",
+          "url": "https://www.detailingexperts.com/",
+          "telephone": "+918360187994"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        
+        :root { 
+            --brand-red: #c0392b; 
+            --brand-red-dark: #962d22;
+            --brand-red-glow: rgba(192, 57, 43, 0.4); 
+            --text-dark: #1a202c; 
+            --text-gray: #4a5568; 
+            --text-light: #a0aec0;
+            --bg-light: #f8fafc; 
+            --bg-dark: #0a0a0a;
+            --bg-darker: #111111;
+            --glass-bg: rgba(255, 255, 255, 0.95); 
+            --glass-border: rgba(0, 0, 0, 0.05); 
+            --shadow-soft: 0 10px 30px rgba(0,0,0,0.05); 
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.12); 
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        html, body { max-width: 100vw; overflow-x: hidden; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: var(--text-dark); -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Orbitron', sans-serif; letter-spacing: 0.5px; }
+        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 5%; }
+        .section-padding { padding: 100px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .bg-dark { background-color: var(--bg-dark); color: #fff; }
+        .text-center { text-align: center; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+       
+        .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-zoom { opacity: 0; transform: scale(0.9); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-zoom.active { opacity: 1; transform: scale(1); }
+
+       /* navbar css */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--glass-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); position: fixed; width: 100%; top: 0; z-index: 1000; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .navbar.scrolled { padding: 10px 5%; background: rgba(255,255,255,0.98); box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .nav-logo img { height: 50px; object-fit: contain; transition: var(--transition); }
+        .navbar.scrolled .nav-logo img { height: 40px; }
+        
+        .nav-center { display: flex; gap: 30px; align-items: center; transition: var(--transition); }
+        .nav-center > a, .mega-dropdown > a { color: var(--text-dark); font-weight: 600; font-size: 0.95rem; position: relative; padding: 10px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .nav-center > a::after, .mega-dropdown > a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--brand-red); transition: var(--transition); }
+        .nav-center > a:hover::after, .mega-dropdown:hover > a::after, .nav-center > a.active::after { width: 100%; }
+        
+        /* MEGA MENU */
+        .mega-dropdown { position: relative; cursor: pointer; }
+        .mega-content { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(20px); width: 700px; background: #fff; border-radius: 12px; box-shadow: var(--shadow-hover); padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; opacity: 0; visibility: hidden; transition: var(--transition); border-top: 4px solid var(--brand-red); z-index: 1001; }
+        .mega-dropdown:hover .mega-content { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+        .mega-col h4 { color: var(--brand-red); font-size: 1rem; margin-bottom: 20px; border-bottom: 1px solid #edf2f7; padding-bottom: 10px; }
+        .mega-col a { display: flex; align-items: center; gap: 10px; padding: 10px 0; font-weight: 500; font-size: 0.95rem; color: var(--text-gray); border: none; transition: var(--transition); text-transform: none; letter-spacing: normal;}
+        .mega-col a i { color: var(--brand-red); opacity: 0; transform: translateX(-10px); transition: var(--transition); }
+        .mega-col a:hover { color: var(--text-dark); transform: translateX(10px); }
+        .mega-col a:hover i { opacity: 1; transform: translateX(0); }
+
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+        .nav-icon-btn { font-size: 1.2rem; color: var(--text-dark); cursor: pointer; transition: var(--transition); background: transparent; border: none; outline: none; }
+        .nav-icon-btn:hover { color: var(--brand-red); transform: scale(1.1); }
+        
+        .btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--brand-red); color: var(--brand-red); padding: 10px 25px; font-weight: 700; border-radius: 4px; text-transform: uppercase; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; letter-spacing: 1px; }
+        .btn-outline:hover { background: var(--brand-red); color: #fff; box-shadow: 0 10px 20px var(--brand-red-glow); }
+        .btn-premium { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--brand-red); color: #fff; padding: 16px 45px; font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: var(--transition); box-shadow: 0 10px 20px var(--brand-red-glow); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); letter-spacing: 1px; position: relative; overflow: hidden; border: none; cursor: pointer; }
+        .btn-premium::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; }
+        .btn-premium:hover::before { left: 100%; }
+        .btn-premium:hover { background: var(--text-dark); transform: translateY(-3px); box-shadow: var(--shadow-hover); color: #fff; }
+
+        .mobile-toggle { display: none; font-size: 1.8rem; color: var(--text-dark); cursor: pointer; }
+
+        /* 2. VIDEO HERO */
+        .hero { height: 100vh; min-height: 600px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #000; margin-top: 0; }
+        .hero-video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translateX(-50%) translateY(-50%); z-index: 0; opacity: 0.5; object-fit: cover; }
+        .hero-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%); z-index: 1; }
+        .hero-content { text-align: center; color: #fff; z-index: 2; position: relative; width: 100%; max-width: 1000px; padding: 0 5%; }
+        .hero-content h1 { font-size: 6rem; margin-bottom: 20px; text-shadow: 0 15px 30px rgba(0,0,0,0.9); text-transform: uppercase; line-height: 1.1; letter-spacing: 2px;}
+        .hero-content p { font-size: 1.4rem; margin-bottom: 40px; color: #e2e8f0; font-weight: 400; letter-spacing: 1px; text-shadow: 0 5px 15px rgba(0,0,0,0.8); }
+
+        /*3. TRUSTED STATS (ANIMATED COUNTERS)*/
+        .stats-wrap { background: var(--bg-dark); padding: 40px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; }
+        .stat-box h3 { font-size: 3.5rem; color: #fff; margin: 0 0 5px 0; font-weight: 900; line-height: 1; text-decoration: none !important; border: none !important; box-shadow: none !important; }
+        .stat-box h3 span { color: var(--brand-red); }
+        .stat-box p { color: var(--text-light); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; font-weight: 600; margin: 0; }
+
+        /* 4. FEATURED SERVICES*/
+        .section-title { font-size: 3.5rem; margin-bottom: 20px; color: var(--text-dark); text-transform: uppercase; line-height: 1.2; }
+        .section-subtitle { font-size: 1.1rem; color: var(--text-gray); margin-bottom: 60px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; padding: 0 15px; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .service-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #edf2f7; position: relative; }
+        .service-img-wrap { width: 100%; height: 250px; overflow: hidden; position: relative; }
+        .service-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: 0.8s; }
+        .service-card:hover .service-img-wrap img { transform: scale(1.1); }
+        .service-icon { position: absolute; bottom: -25px; left: 30px; width: 60px; height: 60px; background: var(--brand-red); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; border-radius: 12px; border: 4px solid #fff; z-index: 2; transition: var(--transition); }
+        .service-card:hover .service-icon { transform: translateY(-10px); box-shadow: 0 10px 20px var(--brand-red-glow); }
+        .service-content { padding: 40px 30px 30px; }
+        .service-content h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        .service-content p { color: var(--text-gray); line-height: 1.7; margin-bottom: 25px; }
+        .service-link { display: inline-flex; align-items: center; gap: 8px; color: var(--brand-red); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+        .service-link i { transition: var(--transition); }
+        .service-link:hover i { transform: translateX(5px); }
+        .service-card:hover { transform: translateY(-15px); box-shadow: var(--shadow-hover); }
+
+        /*5. PREMIUM BEFORE/AFTER SLIDER*/
+        .ba-wrapper { position: relative; width: 100%; max-width: 1200px; margin: 0 auto; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-hover); aspect-ratio: 16/9; background: #000; }
+        .ba-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+        .ba-after { z-index: 1; }
+        .ba-before { z-index: 2; clip-path: inset(0 50% 0 0); }
+        .ba-slider { position: absolute; top: 0; left: 0; width: 100%; height: 100%; outline: none; background: transparent; -webkit-appearance: none; z-index: 4; cursor: ew-resize; margin: 0; }
+        .ba-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 4px; height: 100vh; background: transparent; cursor: ew-resize; }
+        .ba-line { position: absolute; top: 0; left: 50%; width: 4px; height: 100%; background: #fff; z-index: 3; pointer-events: none; box-shadow: 0 0 15px rgba(0,0,0,0.5); transform: translateX(-50%); }
+        .ba-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; background: var(--brand-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; border: 3px solid #fff; font-size: 1.2rem; box-shadow: 0 0 20px rgba(0,0,0,0.5); z-index: 3; pointer-events: none; }
+        .ba-label { position: absolute; top: 30px; padding: 8px 20px; background: rgba(0,0,0,0.7); color: #fff; font-family: 'Orbitron', sans-serif; font-weight: 700; border-radius: 4px; z-index: 2; text-transform: uppercase; letter-spacing: 2px; }
+        .ba-label-before { left: 30px; }
+        .ba-label-after { right: 30px; z-index: 1; }
+
+        /* 6. WHY CHOOSE US */
+        .wcu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .wcu-card { background: #fff; padding: 50px 30px; border-radius: 20px; box-shadow: var(--shadow-soft); text-align: center; transition: var(--transition); border: 1px solid rgba(0,0,0,0.03); position: relative; overflow: hidden; z-index: 1;}
+        .wcu-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--brand-red); transform: scaleX(0); transform-origin: left; transition: var(--transition); z-index: -1;}
+        .wcu-card:hover::before { transform: scaleX(1); }
+        .wcu-card:hover { transform: translateY(-15px); box-shadow: var(--shadow-hover); }
+        .wcu-icon-box { width: 80px; height: 80px; margin: 0 auto 25px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--brand-red); transition: var(--transition); }
+        .wcu-card:hover .wcu-icon-box { background: var(--brand-red); color: #fff; transform: rotateY(180deg); box-shadow: 0 10px 20px var(--brand-red-glow); }
+        .wcu-card h4 { font-size: 1.4rem; margin-bottom: 15px; }
+        .wcu-card p { color: var(--text-gray); line-height: 1.6; }
+
+        /*7. OUR PROCESS (TIMELINE)*/
+        .process-wrapper { position: relative; max-width: 1000px; margin: 0 auto; }
+        .process-wrapper::after { content: ''; position: absolute; width: 4px; background: #edf2f7; top: 0; bottom: 0; left: 50%; margin-left: -2px; border-radius: 2px; }
+        .process-step { padding: 10px 40px; position: relative; background-color: inherit; width: 50%; box-sizing: border-box; }
+        .process-step:nth-child(odd) { left: 0; text-align: right; }
+        .process-step:nth-child(even) { left: 50%; text-align: left; }
+        .process-icon { position: absolute; width: 60px; height: 60px; right: -30px; background-color: #fff; border: 4px solid var(--brand-red); top: 15px; border-radius: 50%; z-index: 1; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--brand-red); font-family: 'Orbitron', sans-serif; font-weight: 900; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        .process-step:nth-child(even) .process-icon { left: -30px; }
+        .process-content { padding: 30px; background-color: #fff; position: relative; border-radius: 16px; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #edf2f7; }
+        .process-content:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--brand-red); }
+        .process-content h3 { font-size: 1.5rem; margin-bottom: 10px; color: var(--text-dark); }
+        .process-content p { color: var(--text-gray); line-height: 1.6; }
+
+        /*product we used */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .product-brand-card { background: #fff; padding: 40px; border-radius: 16px; text-align: center; border: 1px solid #edf2f7; transition: var(--transition); }
+        .product-brand-card img { height: 80px; width: auto; object-fit: contain; margin: 0 auto 20px; filter: grayscale(100%); opacity: 0.7; transition: var(--transition); }
+        .product-brand-card:hover { border-color: var(--brand-red); box-shadow: var(--shadow-soft); transform: translateY(-10px); }
+        .product-brand-card:hover img { filter: grayscale(0%); opacity: 1; }
+        .product-brand-card h4 { font-size: 1.2rem; margin-bottom: 10px; }
+        .product-brand-card p { font-size: 0.9rem; color: var(--text-gray); }
+
+        /* gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .gallery-item { position: relative; aspect-ratio: 1; overflow: hidden; border-radius: 12px; cursor: pointer; }
+        .gallery-item.large { grid-column: span 2; grid-row: span 2; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.8s; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay { position: absolute; inset: 0; background: rgba(192, 57, 43, 0.8); opacity: 0; transition: var(--transition); display: flex; align-items: center; justify-content: center; flex-direction: column; color: #fff; text-align: center; padding: 15px; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay i { font-size: 2.5rem; margin-bottom: 10px; transform: translateY(20px); transition: 0.4s; }
+        .gallery-item:hover .gallery-overlay i { transform: translateY(0); }
+
+        /* ==========================================================
+           10. CUSTOMER REVIEWS
+        ========================================================== */
+        .reviews-grid { display: flex; gap: 30px; overflow-x: auto; padding: 20px 0 40px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+        .reviews-grid::-webkit-scrollbar { display: none; }
+        .review-card { min-width: 400px; max-width: 100%; background: #fff; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-soft); scroll-snap-align: start; border: 1px solid #edf2f7; position: relative; }
+        .review-quote-icon { position: absolute; top: 30px; right: 30px; font-size: 3rem; color: #f8fafc; z-index: 0; }
+        .review-stars { color: #fbbc05; font-size: 1.1rem; margin-bottom: 20px; position: relative; z-index: 1;}
+        .review-text { font-size: 1.1rem; color: var(--text-dark); line-height: 1.7; font-style: italic; margin-bottom: 30px; position: relative; z-index: 1;}
+        .review-author { display: flex; align-items: center; gap: 15px; position: relative; z-index: 1;}
+        .author-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+        .author-info h4 { font-family: 'Inter', sans-serif; font-size: 1.1rem; margin-bottom: 5px; }
+        .author-info p { font-size: 0.9rem; color: var(--text-gray); }
+
+        /* ==========================================================
+           11. EMBEDDED VIDEO
+        ========================================================== */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; max-width: 1000px; margin: 0 auto; border-radius: 24px; box-shadow: var(--shadow-hover); background: #000; }
+        .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+        /* ==========================================================
+           12. FAQ ACCORDION
+        ========================================================== */
+        .faq-container { max-width: 800px; margin: 0 auto; width: 100%; }
+        .faq-item { margin-bottom: 15px; border-radius: 12px; border: 1px solid #edf2f7; background: #fff; overflow: hidden; transition: var(--transition); }
+        .faq-item:hover { border-color: var(--brand-red); box-shadow: var(--shadow-soft); }
+        .faq-question { width: 100%; text-align: left; padding: 25px 30px; background: none; border: none; font-size: 1.1rem; font-weight: 600; font-family: 'Inter', sans-serif; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; outline: none; }
+        .faq-question i { color: var(--brand-red); font-size: 1.2rem; transition: var(--transition); flex-shrink: 0; margin-left: 15px; }
+        .faq-answer { padding: 0 30px; max-height: 0; overflow: hidden; transition: all 0.4s ease; color: var(--text-gray); line-height: 1.7; }
+        .faq-item.active .faq-answer { padding: 0 30px 25px; max-height: 1000px; }
+        .faq-item.active .faq-question i { transform: rotate(45deg); }
+
+        /* ==========================================================
+           13. LATEST BLOGS
+        ========================================================== */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .blog-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #edf2f7; }
+        .blog-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .blog-img { width: 100%; height: 240px; object-fit: cover; transition: 0.8s; }
+        .blog-card:hover .blog-img { transform: scale(1.05); }
+        .blog-content { padding: 30px; }
+        .blog-meta { display: flex; gap: 15px; font-size: 0.85rem; color: var(--text-gray); margin-bottom: 15px; font-weight: 500; text-transform: uppercase; flex-wrap: wrap; }
+        .blog-meta span { color: var(--brand-red); }
+        .blog-content h3 { font-size: 1.4rem; margin-bottom: 15px; line-height: 1.4; }
+        .blog-content p { color: var(--text-gray); line-height: 1.6; margin-bottom: 20px; }
+
+        /* ==========================================================
+           14. INSTAGRAM FEED
+        ========================================================== */
+        .insta-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; width: 100%; }
+        .insta-item { position: relative; aspect-ratio: 1; overflow: hidden; }
+        .insta-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .insta-item:hover img { filter: brightness(0.6); transform: scale(1.05); }
+        .insta-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 2rem; opacity: 0; transition: var(--transition); }
+        .insta-item:hover .insta-icon { opacity: 1; }
+
+        /* ==========================================================
+           15. PREMIUM CTA BANNER
+        ========================================================== */
+        .cta-banner { background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(192,57,43,0.9) 100%), url('https://res.cloudinary.com/dicj6mana/image/upload/v1782126271/Screenshot_2026-06-22_163348_roiorw.png') center/cover fixed; padding: 100px 5%; text-align: center; color: #fff; margin: 0; width: 100%; }
+        .cta-banner h2 { font-size: 4rem; margin-bottom: 20px; line-height: 1.1; }
+        .cta-banner p { font-size: 1.2rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+        /* ==========================================================
+           16. CONTACT & MAP
+        ========================================================== */
+        .contact-section { display: flex; flex-wrap: wrap; width: 100%; }
+        .contact-info { flex: 1; min-width: 320px; background: var(--bg-darker); color: #fff; padding: 100px 5%; display: flex; flex-direction: column; justify-content: center; }
+        .map-container { flex: 1; min-width: 320px; min-height: 500px; background: #eee; position: relative; }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; border: none !important; filter: none !important; }
+        
+        .contact-block { margin-bottom: 40px; display: flex; gap: 20px; align-items: flex-start; }
+        .contact-icon { width: 60px; height: 60px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--brand-red); flex-shrink: 0; }
+        .contact-details h4 { font-family: 'Inter', sans-serif; font-size: 1.2rem; margin-bottom: 8px; color: #fff; line-height: 1.3; }
+        .contact-details p { color: var(--text-light); line-height: 1.6; margin: 0; word-break: break-word; }
+
+        /* ==========================================================
+           17. MEGA FOOTER
+        ========================================================== */
+        .footer { background: #050505; color: #fff; padding: 100px 5% 100px; border-top: 3px solid var(--brand-red); position: relative; overflow: hidden; width: 100%; }
+        .footer-watermark { position: absolute; font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 15vw; color: rgba(255,255,255,0.02); bottom: -5vw; left: 0; white-space: nowrap; pointer-events: none; z-index: 0; line-height: 1; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; position: relative; z-index: 1; margin-bottom: 60px; max-width: 1400px; margin-left: auto; margin-right: auto; }
+        .footer-logo img { height: 60px; margin-bottom: 25px; filter: brightness(0) invert(1); }
+        .footer-about { color: var(--text-light); line-height: 1.7; margin-bottom: 30px; font-size: 0.95rem; }
+        .social-icons { display: flex; gap: 15px; flex-wrap: wrap; }
+        .social-icons a { width: 45px; height: 45px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; transition: var(--transition); font-size: 1.2rem; }
+        .social-icons a:hover { background: var(--brand-red); transform: translateY(-5px); }
+        
+        .footer-title { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; margin-bottom: 30px; position: relative; padding-bottom: 10px; display: inline-block; }
+        .footer-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 40px; height: 3px; background: var(--brand-red); }
+        
+        .footer-links { padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: 15px; }
+        .footer-links a { color: var(--text-light); transition: var(--transition); display: inline-flex; align-items: center; gap: 10px; font-size: 0.95rem; word-break: break-word; }
+        .footer-links a::before { content: '\f105'; font-family: 'FontAwesome'; color: var(--brand-red); font-size: 0.8rem; flex-shrink: 0; }
+        .footer-links a:hover { color: var(--brand-red); transform: translateX(5px); }
+
+        .newsletter-form { display: flex; flex-direction: column; gap: 15px; width: 100%; }
+        .newsletter-form input { width: 100%; padding: 15px 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; outline: none; transition: var(--transition); }
+        .newsletter-form input:focus { border-color: var(--brand-red); background: rgba(255,255,255,0.1); }
+        
+        .footer-bottom { padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; color: var(--text-light); font-size: 0.9rem; }
+        .footer-legal a { margin-left: 20px; transition: var(--transition); }
+        .footer-legal a:hover { color: #fff; }
+
+        /* STICKY MOBILE BOTTOM BAR */
+        .sticky-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: 0 -5px 20px rgba(0,0,0,0.1); display: flex; z-index: 9999; }
+        .sticky-btn { flex: 1; text-align: center; padding: 18px 0; font-weight: 700; text-decoration: none; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 10px; transition: var(--transition); }
+        .sticky-call { background: var(--text-dark); color: #fff; }
+        .sticky-wa { background: #25d366; color: #fff; }
+        .sticky-book { background: var(--brand-red); color: #fff; }
+        .sticky-btn:hover { filter: brightness(1.15); }
+
+        /* ==========================================================
+           RESPONSIVE DESIGN (Flawless Mobile Alignment)
+        ========================================================== */
+        @media (max-width: 1200px) {
+            .hero-content h1 { font-size: 5rem; }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        @media (max-width: 991px) {
+            .nav-center { position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 0 20px; box-shadow: var(--shadow-hover); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease; border-top: 1px solid transparent; align-items: flex-start; z-index: 1000; }
+            .nav-center.mobile-active { max-height: 60vh; opacity: 1; padding: 20px; border-top-color: #edf2f7; overflow-y: auto; }
+            .nav-center > a, .mega-dropdown { width: 100%; padding: 12px 0; border-bottom: 1px solid #f1f5f9; display: block; }
+            .nav-center > a::after, .mega-dropdown > a::after { display: none; }
+            .mega-content { position: static; transform: none; width: 100%; opacity: 1; visibility: visible; display: none; box-shadow: none; padding: 15px 0 0 15px; border: none; grid-template-columns: 1fr; gap: 15px; }
+            .mega-dropdown.active .mega-content { display: grid; }
+            .nav-actions .btn-outline { display: none; }
+            .mobile-toggle { display: block; }
+            
+            .hero-content h1 { font-size: 4rem; }
+            .section-padding { padding: 80px 0; }
+            
+            /* TIMELINE MOBILE FIX */
+            .process-wrapper::after { left: 30px; margin-left: -2px; }
+            .process-step, .process-step:nth-child(even), .process-step:nth-child(odd) { width: 100% !important; left: 0 !important; padding: 0 0 40px 80px !important; text-align: left !important; }
+            .process-icon { left: 0 !important; right: auto !important; top: 0 !important; transform: none !important; margin: 0 !important; }
+            .process-step:nth-child(even) .process-icon { left: 0 !important; }
+            
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-item.large { grid-column: span 1; grid-row: span 1; }
+            .insta-grid { grid-template-columns: repeat(3, 1fr); }
+            .review-card { min-width: 320px; }
+            .contact-info { padding: 80px 5%; }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 3rem; }
+            .section-title { font-size: 2.5rem; }
+            .cta-banner h2 { font-size: 3rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+            .footer-bottom { flex-direction: column; text-align: center; justify-content: center; }
+            .footer-legal a { margin: 0 10px; }
+            .insta-grid { grid-template-columns: repeat(2, 1fr); }
+            .ba-label { font-size: 0.8rem; padding: 5px 10px; }
+            .sticky-btn span { display: none; }
+            .sticky-btn i { font-size: 1.4rem; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { font-size: 1.1rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+            .stat-box h3 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .process-step { padding: 0 0 30px 60px !important; }
+            .process-wrapper::after { left: 20px; }
+            .process-icon { width: 40px; height: 40px; font-size: 1.1rem; border-width: 3px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .contact-info, .cta-banner { padding: 60px 5%; }
+            .review-card { min-width: 100%; padding: 30px 20px; }
+            .review-author { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .footer { padding-top: 60px; padding-bottom: 80px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="logo.png" alt="Detailing Experts Logo"></a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            
+            <div class="mega-dropdown">
+                <a href="services.html">Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                <div class="mega-content">
+                    <div class="mega-col">
+                        <h4 class="font-heading">Core Detailing</h4>
+                        <a href="exterior.html"><i class="fa-solid fa-car"></i> Exterior Detailing</a>
+                        <a href="interior.html"><i class="fa-solid fa-couch"></i> Interior Detailing</a>
+                        <a href="paint-correction.html"><i class="fa-solid fa-spray-can-sparkles"></i> Paint Correction (SRS)</a>
+                        <a href="engine.html"><i class="fa-solid fa-gears"></i> Engine Bay Detailing</a>
+                    </div>
+                    <div class="mega-col">
+                        <h4 class="font-heading">Premium Protection</h4>
+                        <a href="ceramic-coating.html"><i class="fa-solid fa-shield-halved"></i> 9H/10H Ceramic Coating</a>
+                        <a href="graphene-coating.html"><i class="fa-solid fa-gem"></i> Armor Graphene Coating</a>
+                        <a href="ppf.html"><i class="fa-solid fa-layer-group"></i> Dragon PPF Installation</a>
+                        <a href="glass.html"><i class="fa-regular fa-window-maximize"></i> Windshield & Glass Armor</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="products.html">Products</a>
+            <a href="media.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="nav-icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="tel:+918360187994" class="nav-icon-btn" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+            <a href="appointment.html" class="btn-outline">Book Now</a>
+            <button class="nav-icon-btn mobile-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video" poster="https://res.cloudinary.com/dicj6mana/image/upload/v1782126271/Screenshot_2026-06-22_163348_roiorw.png">
+            <source src="https://res.cloudinary.com/dicj6mana/video/upload/v1782124988/IMG_5251_vrflzx.mp4" type="video/mp4"> 
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>The Art of<br>Perfection</h1>
+            <p>Experience world-class detailing, 10H Graphene Coating, and Dragon PPF tailored exclusively for luxury vehicles.</p>
+            <a href="appointment.html" class="btn-premium">Book Free Inspection <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <section class="stats-wrap">
+        <div class="container stats-grid">
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="4.9">0</h3>
+                <p>Google Rating</p>
+            </div>
+            <div class="stat-box reveal-zoom" style="transition-delay: 0.1s;">
+                <h3><span class="counter" data-target="10">0</span>+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-box reveal-zoom" style="transition-delay: 0.2s;">
+                <h3><span class="counter" data-target="15000">0</span>+</h3>
+                <p>Cars Detailed</p>
+            </div>
+            <div class="stat-box reveal-zoom" style="transition-delay: 0.3s;">
+                <h3><span class="counter" data-target="7">0</span> Yrs</h3>
+                <p>Max Warranty</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light" id="services">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Premium Services</h2>
+                <p class="section-subtitle">We don't just wash cars; we perform automotive alchemy. Discover our flagship treatments designed to restore, enhance, and protect your investment.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-img-wrap">
+                        <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782382330/detailing11_gvcmjn.png" alt="Skin Restoration Service">
+                        <div class="service-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="font-heading">Skin Restoration (SRS)</h3>
+                        <p>Multi-stage machine compounding and polishing to permanently eliminate swirl marks, oxidation, and deep scratches, restoring a flawless mirror finish.</p>
+                        <a href="paint-correction.html" class="service-link">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.1s;">
+                    <div class="service-img-wrap">
+                        <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782196950/diagram_coating_y4n8vd.png" alt="Armor Graphene Coating">
+                        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="font-heading">Armor Graphene Coating</h3>
+                        <p>Our proprietary 10H hardness nano-coating chemically bonds to your clear coat, offering extreme heat resistance, candy gloss, and up to 5 years of protection.</p>
+                        <a href="graphene-coating.html" class="service-link">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="service-img-wrap">
+                        <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782196980/dragonppf_emvmtt.png" alt="Dragon PPF">
+                        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="font-heading">Dragon PPF</h3>
+                        <p>The ultimate invisible shield. Self-healing thermoplastic polyurethane (TPU) that protects against rock chips, keys, and environmental damage.</p>
+                        <a href="ppf.html" class="service-link">Explore Service <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" style="margin-top: 60px;">
+                <a href="services.html" class="btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Witness The Magic</h2>
+                <p class="section-subtitle">Slide to see the dramatic difference our Skin Restoration Service and Nano Coating can make on a faded, scratched vehicle.</p>
+            </div>
+            
+            <div class="ba-wrapper reveal">
+                <div class="ba-label ba-label-before">Before</div>
+                <div class="ba-label ba-label-after">After Detailing</div>
+                <img src="https://via.placeholder.com/1200x675/1a1a1a/ffffff?text=AFTER+DETAIL+(GLOSS)" alt="After" class="ba-image ba-after">
+                <img src="https://via.placeholder.com/1200x675/444444/ffffff?text=BEFORE+(SCRATCHED)" alt="Before" class="ba-image ba-before" id="ba-before-img">
+                <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider-input" aria-label="Slider">
+                <div class="ba-line" id="ba-line"></div>
+                <div class="ba-button" id="ba-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Why Choose Us</h2>
+                <p class="section-subtitle">We set the benchmark for automotive luxury care in India.</p>
+            </div>
+            
+            <div class="wcu-grid">
+                <div class="wcu-card reveal">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-microscope"></i></div>
+                    <h4 class="font-heading">Advanced Technology</h4>
+                    <p>We use globally imported, chemical-free nano coatings and IR curing lamps to ensure maximum bonding and 10H hardness.</p>
+                </div>
+                <div class="wcu-card reveal" style="transition-delay: 0.1s;">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4 class="font-heading">Certified Master Detailers</h4>
+                    <p>Our technicians undergo rigorous international training programs to handle exotic and luxury vehicles with absolute precision.</p>
+                </div>
+                <div class="wcu-card reveal" style="transition-delay: 0.2s;">
+                    <div class="wcu-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                    <h4 class="font-heading">Official Warranties</h4>
+                    <p>Peace of mind guaranteed. We provide official documentation and warranties ranging from 3 to 7 years on our premium coatings and PPF.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">The Detailing Process</h2>
+                <p class="section-subtitle">Perfection cannot be rushed. Discover the meticulous steps we take to transform your vehicle.</p>
+            </div>
+            
+            <div class="process-wrapper">
+                <div class="process-step reveal">
+                    <div class="process-icon">1</div>
+                    <div class="process-content">
+                        <h3 class="font-heading">Comprehensive Inspection</h3>
+                        <p>We begin with a thorough assessment of your vehicle's paint thickness using digital gauges, identifying deep scratches, swirl marks, and oxidation levels.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-icon">2</div>
+                    <div class="process-content">
+                        <h3 class="font-heading">Decontamination Wash</h3>
+                        <p>A pH-neutral snow foam wash followed by clay bar treatment to safely extract embedded iron particles, tar, and industrial fallout from the clear coat.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-icon">3</div>
+                    <div class="process-content">
+                        <h3 class="font-heading">Paint Correction (SRS)</h3>
+                        <p>Multi-stage machine compounding and polishing to surgically remove defects. We literally restore the skin of your vehicle to a factory-fresh mirror finish.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-icon">4</div>
+                    <div class="process-content">
+                        <h3 class="font-heading">Coating & IR Curing</h3>
+                        <p>Application of 9H/10H Ceramic or Graphene coating in a temperature-controlled dust-free room, followed by Infrared (IR) lamp baking for maximum hardness.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-icon">5</div>
+                    <div class="process-content">
+                        <h3 class="font-heading">Final Delivery</h3>
+                        <p>A rigorous multi-point quality check under high-intensity inspection lights. Your vehicle is delivered with a pristine finish and official warranty documents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Premium Materials</h2>
+                <p class="section-subtitle">We partner with the world's leading automotive care brands to ensure uncompromised quality.</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-brand-card reveal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/3M_wordmark.svg/1200px-3M_wordmark.svg.png" alt="3M">
+                    <h4 class="font-heading">3M Automotive</h4>
+                    <p>Premium compounds, polishes, and masking systems.</p>
+                </div>
+                <div class="product-brand-card reveal" style="transition-delay: 0.1s;">
+                    <img src="https://via.placeholder.com/200x100/ffffff/c0392b?text=DRAGON+PPF" alt="Dragon PPF">
+                    <h4 class="font-heading">Dragon PPF</h4>
+                    <p>Self-healing, anti-yellowing TPU Paint Protection Film.</p>
+                </div>
+                <div class="product-brand-card reveal" style="transition-delay: 0.2s;">
+                    <img src="https://via.placeholder.com/200x100/ffffff/1a1a1a?text=ARMOR+GRAPHENE" alt="Armor Graphene">
+                    <h4 class="font-heading">Armor Graphene</h4>
+                    <p>10H Hardness Nano-coatings with extreme durability.</p>
+                </div>
+                <div class="product-brand-card reveal" style="transition-delay: 0.3s;">
+                    <img src="https://via.placeholder.com/200x100/ffffff/1a1a1a?text=RUPES" alt="Rupes">
+                    <h4 class="font-heading">Rupes BigFoot</h4>
+                    <p>Italian engineered dual-action polishers for flawless correction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Masterpieces</h2>
+                <p class="section-subtitle">A glimpse into our studios. Luxury, protected.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal">
+                    <img src="https://img.youtube.com/vi/mfmalcQa0OA/hqdefault.jpg" alt="Gallery 1">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><h4 class="font-heading">BMW M4 Ceramic</h4></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://img.youtube.com/vi/CNBr7Bti0Jo/hqdefault.jpg" alt="Gallery 2">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://img.youtube.com/vi/NMd_uN-kQ18/hqdefault.jpg" alt="Gallery 3">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782280699/media_vsvry1.png" alt="Gallery 4">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://res.cloudinary.com/dicj6mana/image/upload/v1782196926/bottles_kzuwy5.png" alt="Gallery 5">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="media.html" class="btn-outline">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading" style="color: #fff;">Client Testimonials</h2>
+                <p class="section-subtitle" style="color: var(--text-light);">Don't just take our word for it. Hear from automobile enthusiasts who trust us with their prized possessions.</p>
+            </div>
+            
+            <div class="reviews-grid reveal">
+                <div class="review-card">
+                    <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Got Dragon PPF done on my new BMW X5. The finish is flawless and the team is highly professional. The self-healing property is mind-blowing. Highly recommended!"</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul S." class="author-img">
+                        <div class="author-info">
+                            <h4>Rahul Sharma</h4>
+                            <p>BMW X5 Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"The Armor Graphene coating brought my 4-year-old Audi back to life. The depth of the gloss literally looks better than the day I bought it from the showroom."</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Amit P." class="author-img">
+                        <div class="author-info">
+                            <h4>Amit Patel</h4>
+                            <p>Audi A6 Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"Incredible interior detailing and skin restoration. They removed stains from my leather seats I thought were permanent. The car smells and feels brand new."</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K." class="author-img">
+                        <div class="author-info">
+                            <h4>Priya Kapoor</h4>
+                            <p>Mercedes GLC Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container text-center reveal">
+            <h2 class="section-title font-heading">See Us In Action</h2>
+            <p class="section-subtitle">Watch the mesmerizing transformation of a luxury vehicle in our state-of-the-art studio.</p>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/mfmalcQa0OA?rel=0&showinfo=0" title="Detailing Experts Showcase" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-wrap" style="background: url('https://res.cloudinary.com/dicj6mana/image/upload/v1782283285/about_nxvq9p.png') center/cover fixed; position: relative;">
+        <div style="position: absolute; inset: 0; background: rgba(192, 57, 43, 0.85);"></div>
+        <div class="container stats-grid" style="position: relative; z-index: 2; padding: 60px 0;">
+            <div class="stat-box reveal-zoom">
+                <h3 class="counter" data-target="25000" style="color: #fff;">0</h3>
+                <p style="color: #fff;">Happy Clients</p>
+            </div>
+            <div class="stat-box reveal-zoom" style="transition-delay: 0.1s;">
+                <h3 class="counter" data-target="15" style="color: #fff;">0</h3>
+                <p style="color: #fff;">Industry Awards</p>
+            </div>
+            <div class="stat-box reveal-zoom" style="transition-delay: 0.2s;">
+                <h3 class="counter" data-target="50" style="color: #fff;">0</h3>
+                <p style="color: #fff;">Cities Covered</p>
+            </div>
+            <div class="stat-box reveal-zoom" style="transition-delay: 0.3s;">
+                <h3 style="color: #fff; display: flex; justify-content: center; align-items: baseline; gap: 5px;"><span class="counter" style="color: #fff;" data-target="100">0</span> %</h3>
+                <p style="color: #fff;">Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our premium detailing and protection services.</p>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">What is the difference between Ceramic Coating and PPF? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer">
+                        <p>Ceramic coating is a liquid nano-polymer that chemically bonds with the factory paint to provide extreme gloss, hydrophobicity, and chemical resistance against bird droppings and sap. PPF (Paint Protection Film) is a physical, self-healing polyurethane film that offers heavy-duty protection against rock chips, deep scratches, and physical damage. Many clients opt to apply ceramic coating OVER PPF for the ultimate combination.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How long does the detailing process take? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer">
+                        <p>A standard premium exterior and interior detail (Skin Restoration) takes about 4-8 hours. Graphene or Ceramic coating usually takes 1-2 days due to the intensive paint correction and IR curing time required. Full body Dragon PPF installation can take 3-5 days to ensure perfect edge-wrapping and curing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I maintain my car after ceramic coating? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer">
+                        <p>Maintenance is significantly easier! We recommend washing the car every 2 weeks using a pH-neutral shampoo and the two-bucket method. Avoid automated brush car washes as they cause micro-scratches. We also offer annual maintenance packages to top-up the coating's hydrophobic properties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you provide an official warranty? <i class="fa-solid fa-plus"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. All our Ceramic Coating and PPF packages come with an official, written warranty ranging from 3 to 7 years depending on the tier selected. This covers yellowing, cracking, peeling, and loss of gloss under normal maintenance conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title font-heading">Detailing Insights</h2>
+                <p class="section-subtitle">Read our latest articles on car care, maintenance tips, and industry news.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card reveal">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=PPF+vs+Ceramic" alt="Blog 1" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta"><span>Guide</span> • Jun 24, 2026</div>
+                        <h3 class="font-heading">PPF vs Ceramic Coating: Which is Right For Your Luxury Car?</h3>
+                        <p>An in-depth breakdown of the pros, cons, and costs of Paint Protection Film versus Nano Ceramic Coatings...</p>
+                        <a href="blog-post.html" class="service-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card reveal" style="transition-delay: 0.1s;">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Washing+Mistakes" alt="Blog 2" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta"><span>Maintenance</span> • Jun 18, 2026</div>
+                        <h3 class="font-heading">Top 10 Car Washing Mistakes That Ruin Your Clear Coat</h3>
+                        <p>Are you unknowingly scratching your car every Sunday? Learn the professional two-bucket method...</p>
+                        <a href="blog-post.html" class="service-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card reveal" style="transition-delay: 0.2s;">
+                    <img src="https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Graphene" alt="Blog 3" class="blog-img">
+                    <div class="blog-content">
+                        <div class="blog-meta"><span>Technology</span> • Jun 05, 2026</div>
+                        <h3 class="font-heading">The Science of Armor Graphene: Why It Beats Standard Ceramic</h3>
+                        <p>Discover how the addition of reduced Graphene Oxide (rGO) lowers surface temperature and prevents water spotting...</p>
+                        <a href="blog-post.html" class="service-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="insta-section">
+        <div class="insta-grid">
+            <a href="#" class="insta-item">
+                <img src="https://via.placeholder.com/400x400/111/fff?text=IG+1" alt="Instagram Post">
+                <i class="fa-brands fa-instagram insta-icon"></i>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://via.placeholder.com/400x400/222/fff?text=IG+2" alt="Instagram Post">
+                <i class="fa-brands fa-instagram insta-icon"></i>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://via.placeholder.com/400x400/111/fff?text=IG+3" alt="Instagram Post">
+                <i class="fa-brands fa-instagram insta-icon"></i>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://via.placeholder.com/400x400/222/fff?text=IG+4" alt="Instagram Post">
+                <i class="fa-brands fa-instagram insta-icon"></i>
+            </a>
+            <a href="#" class="insta-item">
+                <img src="https://via.placeholder.com/400x400/111/fff?text=IG+5" alt="Instagram Post">
+                <i class="fa-brands fa-instagram insta-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container reveal">
+            <h2 class="font-heading">Ready to Transform Your Ride?</h2>
+            <p>Book a free, no-obligation inspection today. Let our master detailers assess your vehicle and recommend the perfect protection package.</p>
+            <a href="appointment.html" class="btn-premium" style="background: #fff; color: var(--brand-red);">Book Appointment <i class="fa-solid fa-calendar-check"></i></a>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-info">
+            <div class="reveal">
+                <h2 class="font-heading" style="font-size: 2.5rem; margin-bottom: 40px; color: #fff;">Get In Touch</h2>
+                
+                <div class="contact-block">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-details">
+                        <h4>Headquarters Studio</h4>
+                        <p>Lower Basement -2, Eva Mall,<br>Manjalpur, Vadodara 390011</p>
+                    </div>
+                </div>
+                
+                <div class="contact-block">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-details">
+                        <h4>Call Us Directly</h4>
+                        <p><a href="tel:+918360187994">+91 83601 87994</a><br>Mon - Sun: 9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-block">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:info@detailingexperts.com">info@detailingexperts.com</a><br>We reply within 2 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container reveal">
+            <iframe src="https://maps.google.com/maps?q=Eva%20Mall,%20Manjalpur,%20Vadodara&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Detailing Experts Studio Location" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-watermark">DETAILING</div>
+        <div class="footer-grid">
+            <div class="footer-col reveal">
+                <a href="index.html" class="footer-logo"><img src="logo.png" alt="Detailing Experts"></a>
+                <p class="footer-about">Detailing Experts is India's premier luxury automotive detailing studio. With over 140+ locations, we specialize in advanced Skin Restoration, 10H Armor Graphene Coatings, and Self-Healing Dragon PPF to protect your prized investment.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.1s;">
+                <h4 class="footer-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="paint-correction.html">Paint Correction (SRS)</a></li>
+                    <li><a href="ceramic-coating.html">Ceramic Coating</a></li>
+                    <li><a href="graphene-coating.html">Graphene Coating</a></li>
+                    <li><a href="ppf.html">Paint Protection Film</a></li>
+                    <li><a href="interior-detailing.html">Interior Detailing</a></li>
+                    <li><a href="maintenance.html">Maintenance Wash</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.2s;">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="media.html">Gallery & Videos</a></li>
+                    <li><a href="blog.html">Detailing Blog</a></li>
+                    <li><a href="franchise.html">Franchise Inquiry</a></li>
+                    <li><a href="contact.html">Find a Studio</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal" style="transition-delay: 0.3s;">
+                <h4 class="footer-title">Stay Protected</h4>
+                <p class="footer-about">Subscribe to our newsletter for the latest car care tips, exclusive offers, and product launches.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-premium" style="width: 100%; padding: 12px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom reveal" style="transition-delay: 0.4s;">
+            <p>© 2026 Detailing Experts. All Rights Reserved. Protected by Dragon PPF.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-bar">
+        <a href="tel:+918360187994" class="sticky-btn sticky-call"><i class="fa-solid fa-phone"></i> <span>Call Us</span></a>
+        <a href="https://wa.me/918360187994" target="_blank" rel="noopener" class="sticky-btn sticky-wa"><i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span></a>
+        <a href="appointment.html" class="sticky-btn sticky-book"><i class="fa-regular fa-calendar-check"></i> <span>Book Now</span></a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Sticky Navbar & Scroll Styling
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 2. Mobile Menu Toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navCenter = document.querySelector('.nav-center');
+            if(mobileToggle && navCenter) {
+                mobileToggle.addEventListener('click', () => {
+                    navCenter.classList.toggle('mobile-active');
+                });
+            }
+
+            // 3. Scroll Reveal Animations (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 4. Animated Counters (Triggered on scroll)
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const countersInThisSection = entry.target.querySelectorAll('.counter');
+                        countersInThisSection.forEach(counter => {
+                            const target = parseFloat(counter.getAttribute('data-target'));
+                            const isFloat = target % 1 !== 0;
+                            const speed = 100; 
+                            
+                            const updateCount = () => {
+                                const count = parseFloat(counter.innerText) || 0;
+                                const inc = target / speed;
+                                
+                                if (count < target) {
+                                    counter.innerText = isFloat ? (count + inc).toFixed(1) : Math.ceil(count + inc);
+                                    setTimeout(updateCount, 20);
+                                } else {
+                                    counter.innerText = target;
+                                }
+                            };
+                            updateCount();
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.stats-wrap').forEach(section => {
+                counterObserver.observe(section);
+            });
+
+            // 5. Before/After Slider
+            const baSlider = document.getElementById('ba-slider-input');
+            const baBeforeImg = document.getElementById('ba-before-img');
+            const baLine = document.getElementById('ba-line');
+            const baButton = document.getElementById('ba-button');
+
+            if(baSlider && baBeforeImg && baLine && baButton) {
+                baSlider.addEventListener('input', (e) => {
+                    const sliderPos = e.target.value;
+                    baBeforeImg.style.clipPath = `inset(0 ${100 - sliderPos}% 0 0)`;
+                    baLine.style.left = `${sliderPos}%`;
+                    baButton.style.left = `${sliderPos}%`;
+                });
+            }
+
+            // 6. FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if(question) {
+                    question.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        faqItems.forEach(faq => faq.classList.remove('active'));
+                        if (!isActive) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            // 7. Mobile Mega Dropdown Toggle
+            const megaDropdowns = document.querySelectorAll('.mega-dropdown');
+            megaDropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', (e) => {
+                    if(window.innerWidth <= 991) {
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
