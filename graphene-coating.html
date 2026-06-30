@@ -48,7 +48,7 @@
         {
           "@type": "Service",
           "@id": "https://www.detailingexperts.com/graphene-coating#service",
-          "serviceType": "Premium Armor Graphene Coating Installation",
+          "serviceType": "Premium Graphene Coating Installation",
           "provider": {
             "@type": "AutoBodyShop",
             "name": "Detailing Experts",
@@ -169,6 +169,14 @@
         .split-image-panel { position: relative; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-hover); }
         .split-text-panel h3 { font-size: 2rem; margin-bottom: 20px; text-transform: uppercase; }
         .split-text-panel p { color: var(--text-gray); line-height: 1.7; margin-bottom: 20px; }
+        .feature-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:35px; }
+        .feature-card{ background:#fff; padding:25px; border-radius:14px; box-shadow:var(--shadow-soft); border:1px solid #edf2f7; transition:var(--transition); text-align:center; }
+        .feature-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-hover); }
+        .feature-card i{ font-size:34px; color:var(--brand-red); margin-bottom:15px; }
+        .feature-card h3{ font-size:18px; margin-bottom:12px; color:var(--text-dark); }
+        .feature-card p{  font-size:15px; color:var(--text-gray); line-height:1.6; margin:0; }
+        
+        @media(max-width:768px){ .feature-grid{ grid-template-columns:1fr; }}
 
         .premium-feature-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .luxury-feature-card { background: #fff; padding: 45px 35px; border-radius: 16px; box-shadow: var(--shadow-soft); border: 1px solid #edf2f7; transition: var(--transition); position: relative; overflow: hidden; }
@@ -379,7 +387,7 @@
                 <span class="breadcrumb-separator">//</span>
                 <span style="color: var(--brand-red);">Graphene Coating</span>
             </div>
-            <h1>Premium Graphene Coating<br>in Vadodara & Godhra</h1>
+            <h1>Premium Graphene Coating<br>Services in Vadodara & Godhra</h1>
             <p>Experience the next generation of paint protection with our premium 10H Graphene Coating. Enjoy exceptional gloss, superior heat resistance, outstanding hydrophobic performance and long-lasting protection against UV rays, water spots and environmental contaminants. Professionally applied at our Detailing Experts studios in Vadodara and Godhra.</p>
             
             <div class="hero-trust-badges">
@@ -391,7 +399,7 @@
             
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%;">
                 <a href="appointment.html" class="btn-premium">Get Free Inspection <i class="fa-solid fa-calendar-check"></i></a>
-                <a href="https://wa.me/+917778883856" class="btn-outline" style="border-color:#fff; color:#fff;">WhatsApp Expert</a>
+                <a href="https://wa.me/917778883856" class="btn-outline" style="border-color:#fff; color:#fff;">WhatsApp Expert</a>
             </div>
         </div>
         <i class="fa-solid fa-chevron-down scroll-down-icon" onclick="document.getElementById('what-is-graphene').scrollIntoView();"></i>
@@ -631,7 +639,7 @@
                         <li><i class="fa-solid fa-circle-check"></i> Hydrophobic Protection</li>
                         <li><i class="fa-solid fa-circle-check"></i> UV Protection</li>
                         <li><i class="fa-solid fa-circle-check"></i> Chemical Resistance</li>
-                        <li><i class="fa-solid fa-circle-xmark" style="color:var(--text-light);"></i> Professional Application</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--text-light);"></i> Professional Application</li>
                     </ul>
                     <a href="appointment.html" class="btn-outline" style="text-align:center; display:block;">Get Quote</a>
                 </div>
@@ -695,7 +703,7 @@
         <div class="container">
             <div class="text-center reveal">
                 <h2 class="section-title font-heading">Our Graphene Coating Process</h2>
-                <p class="Every Graphene Coating application follows a carefully planned process to ensure maximum bonding, exceptional gloss and long-lasting paint protection.</p>
+                <p class="section-subtitle">Every Graphene Coating application follows a carefully planned process to ensure maximum bonding, exceptional gloss and long-lasting paint protection.</p>
             </div>
             
             <div class="process-horizontal-track">
@@ -764,15 +772,15 @@
             </div>
             <div class="premium-feature-matrix">
                 <div class="luxury-feature-card reveal">
-                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Graphene Oxide rGO</h3>
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Advanced Graphene Technology</h3>
                     <p>Authentic atom-thick hexagonal carbon matrices providing excellent resistance to heat build-ups and water spots[cite: 1].</p>
                 </div>
                 <div class="luxury-feature-card reveal">
-                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Nano SiO2 Polymers</h3>
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Premium Graphene Coating Formula</h3>
                     <p>Interlocking cross-link structures secure the carbon layer to factory automotive panels indefinitely.</p>
                 </div>
                 <div class="luxury-feature-card reveal">
-                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">IR Curing Arrays</h3>
+                    <h3 class="font-heading" style="color:var(--brand-red); font-size:1.1rem; margin-bottom:10px;">Controlled Curing Process</h3>
                     <p>Infrared heat lamp treatment units deliver shortwave heat directly to liquid polymers to form core molecular links[cite: 1].</p>
                 </div>
                 <div class="luxury-feature-card reveal">
