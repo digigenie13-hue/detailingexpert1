@@ -35,8 +35,18 @@
           "@type": "BreadcrumbList",
           "@id": "https://www.detailingexperts.com/products.html#breadcrumb",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.detailingexperts.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.detailingexperts.com/products.html" }
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.detailingexperts.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Products",
+              "item": "https://www.detailingexperts.com/products.html"
+            }
           ]
         },
         {
@@ -46,12 +56,50 @@
             {
               "@type": "Question",
               "name": "Which protection option is best for my car?",
-              "acceptedAnswer": { "@type": "Answer", "text": "The right option depends on your vehicle, usage, condition, and protection goals. Paint protection film is designed for physical surface protection, while ceramic and graphene coatings focus on gloss, hydrophobic performance, and easier maintenance. Our team can recommend a suitable option after inspecting your vehicle." }
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The right option depends on your priorities. Paint protection film is suited to owners seeking physical protection from everyday road exposure, while ceramic and graphene coatings focus on gloss, water repellency, and easier maintenance. Our team can recommend an option after inspecting the vehicle and discussing how it is used."
+              }
             },
             {
               "@type": "Question",
-              "name": "Can I buy car care products directly?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Selected car care and maintenance products may be available through our Vadodara and Godhra studios. Please contact the nearest studio to confirm current availability and suitable products for your vehicle." }
+              "name": "Should I choose PPF or a coating?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Choose based on the type of protection you need. PPF is intended for physical surface protection, while ceramic and graphene coatings are chosen mainly for gloss, water repellency, and easier cleaning. Some owners combine services after a professional assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I buy maintenance products directly from Detailing Experts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Selected maintenance products and accessories may be available through our Vadodara and Godhra studios. Please contact the team to confirm current availability before visiting or placing an enquiry."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do products or services include a warranty?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Warranty coverage depends on the selected product or service. Our team will explain the applicable terms before work begins or a product is supplied."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the recommended aftercare for a protected vehicle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use careful washing methods, suitable car-care products, and follow the aftercare guidance provided for the specific service. Avoid harsh cleaning methods that may damage the protected surface."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do professional protection services require studio application?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Services such as PPF, ceramic coating, and graphene coating require professional preparation and application. Selected maintenance products and accessories can be used by vehicle owners when suitable instructions are followed."
+              }
             }
           ]
         }
@@ -91,6 +139,7 @@
         img { max-width: 100%; height: auto; display: block; }
         a { text-decoration: none; color: inherit; transition: var(--transition); }
         ul { list-style: none; }
+        .sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
 
         /* SCROLL REVEAL ANIMATIONS */
         .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -148,7 +197,7 @@
         .breadcrumb-list a:hover { color: var(--brand-red); }
         .breadcrumb-separator { color: var(--brand-red); font-weight: 900; }
         
-        .scroll-down-icon { position: absolute; bottom: 35px; font-size: 1.5rem; color: #fff; animation: bounceIndicator 2s infinite; z-index: 2; left: 50%; transform: translateX(-50%); cursor: pointer; }
+        .scroll-down-icon { position: absolute; background: transparent; border: none; bottom: 35px; font-size: 1.5rem; color: #fff; animation: bounceIndicator 2s infinite; z-index: 2; left: 50%; transform: translateX(-50%); cursor: pointer; }
         @keyframes bounceIndicator { 0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); } 40% { transform: translate(-50%, -12px); } 60% { transform: translate(-50%, -6px); } }
 
         /* ==========================================================
@@ -335,7 +384,7 @@
         .footer-logo img { height: 50px; margin-bottom: 25px; filter: brightness(0) invert(1); object-fit: contain; }
         .footer-about { color: var(--text-light); line-height: 1.7; margin-bottom: 25px; font-size: 0.95rem; }
         .social-icons { display: flex; gap: 12px; flex-wrap: wrap; }
-        .social-icons a { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; transition: var(--transition); font-size: 1.1rem; }
+        .social-icons a, .social-icons span { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; transition: var(--transition); font-size: 1.1rem; }
         .social-icons a:hover { background: var(--brand-red); transform: translateY(-4px); }
         
         .footer-title { font-family: 'Orbitron', sans-serif; font-size: 1.15rem; margin-bottom: 25px; position: relative; padding-bottom: 10px; display: inline-block; font-weight: 700; text-transform: uppercase; }
@@ -362,6 +411,9 @@
         @media (max-width: 991px) {
             .nav-center { position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 0 20px; box-shadow: var(--shadow-hover); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease; border-top: 1px solid transparent; align-items: flex-start; z-index: 1000; }
             .nav-center.mobile-active { max-height: 60vh; opacity: 1; padding: 20px; border-top-color: #edf2f7; overflow-y: auto; }
+            .mega-dropdown { width: 100%; }
+            .mega-content { position: static; width: 100%; transform: none; display: none; grid-template-columns: 1fr; padding: 20px; margin-top: 10px; opacity: 1; visibility: visible; box-shadow: none; border-radius: 8px; }
+            .mega-dropdown.active .mega-content { display: grid; transform: none; }
             .mobile-toggle { display: block; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
@@ -388,13 +440,13 @@
             <a href="index.html"><img src="logo.png" alt="Detailing Experts Logo"></a>
         </div>
         
-        <div class="nav-center">
+        <div class="nav-center" id="primary-navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             
             <div class="mega-dropdown">
-                <a href="services.html">Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
-                <div class="mega-content">
+                <a href="services.html" class="services-link" aria-haspopup="true" aria-expanded="false" aria-controls="services-menu">Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                <div class="mega-content" id="services-menu">
                     <div class="mega-col">
                         <h4 class="font-heading">Core Detailing</h4>
                         <a href="exterior.html"><i class="fa-solid fa-car"></i> Exterior Detailing</a>
@@ -422,7 +474,7 @@
             <button class="nav-icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
             <a href="tel:+917778883856" class="nav-icon-btn" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
             <a href="appointment.html" class="btn-outline">Book Now</a>
-            <button class="nav-icon-btn mobile-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            <button class="nav-icon-btn mobile-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
 
@@ -433,7 +485,7 @@
             <div class="breadcrumb-list">
                 <a href="index.html">Home</a>
                 <span class="breadcrumb-separator">//</span>
-                <span style="color: var(--brand-red);">Premium Products</span>
+                <span style="color: var(--brand-red);">Products</span>
             </div>
             <h1>Professional Car Care<br>Products & Solutions</h1>
             <p>Explore professional car care products, detailing essentials, and maintenance solutions used and recommended by our experts to help protect and preserve your vehicle.</p>
@@ -442,48 +494,48 @@
                 <a href="contact.html" class="btn-outline" style="border-color:#fff; color:#fff;">Get Expert Advice</a>
             </div>
         </div>
-        <i class="fa-solid fa-chevron-down scroll-down-icon" onclick="document.getElementById('explore-products').scrollIntoView();"></i>
+        <button class="scroll-down-icon" type="button" aria-label="Scroll to products" onclick="document.getElementById('explore-products').scrollIntoView({ behavior: 'smooth' });"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
     </header>
 
     <main id="explore-products">
         <section class="container">
             <div class="category-grid reveal">
-                <div class="cat-card" data-filter="ppf">
+                <div class="cat-card" data-filter="ppf" role="button" tabindex="0">
                     <i class="fa-solid fa-layer-group cat-icon"></i>
                     <h3>Paint Protection Film</h3>
                     <p>Professional paint protection solutions.</p>
                 </div>
-                <div class="cat-card" data-filter="ceramic">
+                <div class="cat-card" data-filter="ceramic" role="button" tabindex="0">
                     <i class="fa-solid fa-spray-can-sparkles cat-icon"></i>
                     <h3>Ceramic Coating</h3>
                     <p>Professional gloss and surface protection.</p>
                 </div>
-                <div class="cat-card" data-filter="graphene">
+                <div class="cat-card" data-filter="graphene" role="button" tabindex="0">
                     <i class="fa-solid fa-gem cat-icon"></i>
                     <h3>Graphene Coating</h3>
                     <p>Advanced gloss and surface protection.</p>
                 </div>
-                <div class="cat-card" data-filter="glass">
+                <div class="cat-card" data-filter="glass" role="button" tabindex="0">
                     <i class="fa-solid fa-droplet cat-icon"></i>
                     <h3>Glass Coating</h3>
                     <p>Hydrophobic protection for automotive glass.</p>
                 </div>
-                <div class="cat-card" data-filter="interior" style="margin-top: 30px;">
+                <div class="cat-card" data-filter="interior" role="button" tabindex="0">
                     <i class="fa-solid fa-couch cat-icon"></i>
                     <h3>Interior Care</h3>
                     <p>Products for leather, fabric and cabin care.</p>
                 </div>
-                <div class="cat-card" data-filter="exterior" style="margin-top: 30px;">
+                <div class="cat-card" data-filter="exterior" role="button" tabindex="0">
                     <i class="fa-solid fa-car-burst cat-icon"></i>
                     <h3>Exterior Care</h3>
                     <p>Products for safe washing and exterior maintenance.</p>
                 </div>
-                <div class="cat-card" data-filter="maintenance" style="margin-top: 30px;">
+                <div class="cat-card" data-filter="maintenance" role="button" tabindex="0">
                     <i class="fa-solid fa-box-open cat-icon"></i>
                     <h3>Maintenance Products</h3>
                     <p>Essentials for regular vehicle care.</p>
                 </div>
-                <div class="cat-card" data-filter="accessories" style="margin-top: 30px;">
+                <div class="cat-card" data-filter="accessories" role="button" tabindex="0">
                     <i class="fa-solid fa-wrench cat-icon"></i>
                     <h3>Detailing Accessories</h3>
                     <p>Microfibers, applicators and care accessories.</p>
@@ -495,7 +547,8 @@
             <div class="filter-bar reveal">
                 <div class="search-box">
                     <i class="fa-solid fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="Search premium products...">
+                    <label for="searchInput" class="sr-only">Search products</label>
+                    <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off">
                 </div>
                 <div class="filter-controls">
                     <select class="filter-select" id="categoryFilter" aria-label="Filter by Category">
@@ -508,6 +561,11 @@
                         <option value="exterior">Exterior Care</option>
                         <option value="maintenance">Maintenance Products</option>
                         <option value="accessories">Detailing Accessories</option>
+                    </select>
+                    <select class="filter-select" id="sortFilter" aria-label="Sort products">
+                        <option value="default">Recommended Order</option>
+                        <option value="az">Name: A to Z</option>
+                        <option value="za">Name: Z to A</option>
                     </select>
                 </div>
             </div>
@@ -692,15 +750,15 @@
         <section class="section-padding bg-light">
             <div class="container">
                 <div class="text-center reveal">
-                    <h2 class="section-title font-heading">Vehicle Protection Comparison</h2>
-                    <p class="section-subtitle">Compare the primary purpose, benefits, and maintenance considerations of our professional protection solutions.</p>
+                    <h2 class="section-title font-heading">Protection Options at a Glance</h2>
+                    <p class="section-subtitle">Compare the main purpose of our professional protection services before speaking with our team.</p>
                 </div>
                 
                 <div class="comparison-table-wrapper reveal">
                     <table class="comparison-matrix-table">
                         <thead>
                             <tr>
-                                <th>Comparison Point</th>
+                                <th>Consideration</th>
                                 <th class="table-row-highlight table-cell-brand">Ceramic Coating</th>
                                 <th>Graphene Coating</th>
                                 <th>Paint Protection Film</th>
@@ -710,59 +768,45 @@
                         <tbody>
                             <tr>
                                 <td><strong>Primary Purpose</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Gloss &amp; Easier Maintenance</td>
-                                <td>Premium Gloss &amp; Hydrophobic Performance</td>
-                                <td>Physical Paint Surface Protection</td>
-                                <td>Water Repellency for Automotive Glass</td>
+                                <td class="table-row-highlight table-cell-brand">Gloss and easier maintenance</td>
+                                <td>Premium gloss and easier maintenance</td>
+                                <td>Physical surface protection</td>
+                                <td>Water repellency for automotive glass</td>
                             </tr>
                             <tr>
                                 <td><strong>Best Suited For</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Daily-Driven Vehicles</td>
-                                <td>Owners Seeking Premium Surface Care</td>
-                                <td>Vehicles Exposed to Everyday Road Hazards</td>
-                                <td>Windshields &amp; Automotive Glass</td>
+                                <td class="table-row-highlight table-cell-brand">Owners seeking gloss and simpler upkeep</td>
+                                <td>Owners considering a premium coating option</td>
+                                <td>Owners concerned about everyday road exposure</td>
+                                <td>Owners seeking easier glass maintenance</td>
                             </tr>
                             <tr>
-                                <td><strong>Surface Enhancement</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Enhanced Gloss</td>
-                                <td>Premium Gloss Enhancement</td>
-                                <td>Helps Preserve the Existing Finish</td>
-                                <td>Clear, Hydrophobic Surface Treatment</td>
+                                <td><strong>Application</strong></td>
+                                <td class="table-row-highlight table-cell-brand">Professional studio application</td>
+                                <td>Professional studio application</td>
+                                <td>Professional studio application</td>
+                                <td>Professional studio application</td>
                             </tr>
                             <tr>
-                                <td><strong>Protection Focus</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Environmental Exposure &amp; Maintenance</td>
-                                <td>Environmental Exposure &amp; Surface Maintenance</td>
-                                <td>Minor Abrasion &amp; Road Exposure</td>
-                                <td>Water &amp; Routine Glass Contamination</td>
+                                <td><strong>Aftercare</strong></td>
+                                <td class="table-row-highlight table-cell-brand">Service-specific guidance provided</td>
+                                <td>Service-specific guidance provided</td>
+                                <td>Service-specific guidance provided</td>
+                                <td>Service-specific guidance provided</td>
                             </tr>
                             <tr>
-                                <td><strong>Hydrophobic Performance</strong></td>
-                                <td class="table-row-highlight table-cell-brand">High</td>
-                                <td>High</td>
-                                <td>Varies by Film and Aftercare</td>
-                                <td>Designed for Water Repellency</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Maintenance</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Regular Safe Washing</td>
-                                <td>Regular Safe Washing</td>
-                                <td>Safe Washing &amp; Film Aftercare</td>
-                                <td>Routine Glass Cleaning</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Service Life</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Depends on Package &amp; Maintenance</td>
-                                <td>Depends on Package &amp; Maintenance</td>
-                                <td>Depends on Film, Installation &amp; Care</td>
-                                <td>Depends on Product, Use &amp; Care</td>
+                                <td><strong>Warranty</strong></td>
+                                <td class="table-row-highlight table-cell-brand">Varies by selected product</td>
+                                <td>Varies by selected product</td>
+                                <td>Varies by selected product</td>
+                                <td>Varies by selected product</td>
                             </tr>
                             <tr>
                                 <td><strong>Pricing</strong></td>
-                                <td class="table-row-highlight table-cell-brand">Based on Vehicle &amp; Package</td>
-                                <td>Based on Vehicle &amp; Package</td>
-                                <td>Based on Coverage &amp; Vehicle</td>
-                                <td>Based on Vehicle &amp; Treatment</td>
+                                <td class="table-row-highlight table-cell-brand">Contact for pricing</td>
+                                <td>Contact for pricing</td>
+                                <td>Contact for pricing</td>
+                                <td>Contact for pricing</td>
                             </tr>
                         </tbody>
                     </table>
@@ -774,18 +818,18 @@
             <div class="container">
                 <div class="text-center reveal">
                     <h2 class="section-title font-heading">The Detailing Experts Advantage</h2>
-                    <p class="section-subtitle">Why vehicle owners choose our professional guidance, studio-applied protection, and carefully selected car care solutions.</p>
+                    <p class="section-subtitle">Why vehicle owners choose our guidance for professional protection and ongoing car care.</p>
                 </div>
                 
                 <div class="icon-grid">
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-certificate"></i></div><h4>Carefully Selected Solutions</h4><p>Products and protection options are selected according to vehicle needs and studio application requirements.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-plane-arrival"></i></div><h4>Expert Recommendations</h4><p>Our team helps you choose suitable care and protection options for your vehicle and usage.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-file-contract"></i></div><h4>Clear Service Guidance</h4><p>Coverage, care requirements, and applicable warranty terms are explained before service.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-flask-vial"></i></div><h4>Professional Application</h4><p>Studio-applied solutions are prepared and installed using service-specific processes.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-award"></i></div><h4>Vehicle-Specific Approach</h4><p>Recommendations consider the vehicle, surface condition, usage, and desired outcome.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-user-shield"></i></div><h4>Aftercare Support</h4><p>We provide practical guidance to help you maintain detailed and protected surfaces.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><h4>Protection Options</h4><p>Choose from professional solutions for paint, glass, interior, and exterior care.</p></div>
-                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-sun"></i></div><h4>UV & Weather Resistant</h4><p>Blocks solar degradation and chemical fallout effectively.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-certificate"></i></div><h4>Selected Products</h4><p>We select automotive care products based on vehicle needs and current availability.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-plane-arrival"></i></div><h4>Product Options</h4><p>Product options are recommended according to the vehicle, service, and maintenance needs.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-file-contract"></i></div><h4>Clear Warranty Guidance</h4><p>Applicable warranty terms are explained for the selected product or service.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-flask-vial"></i></div><h4>Professional Grade</h4><p>Professional-grade products selected for studio services and vehicle care.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-award"></i></div><h4>Premium Quality</h4><p>Product selection focuses on practical care, finish quality, and suitability for the vehicle.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-user-shield"></i></div><h4>Experienced Guidance</h4><p>Our team helps owners choose suitable products and services for their vehicles.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><h4>Ongoing Protection Care</h4><p>Aftercare guidance helps owners maintain protected surfaces in everyday driving conditions.</p></div>
+                    <div class="icon-card reveal"><div class="icon-box"><i class="fa-solid fa-sun"></i></div><h4>Surface Care Support</h4><p>Selected protection options are matched to the surface and the owner’s maintenance priorities.</p></div>
                 </div>
             </div>
         </section>
@@ -793,17 +837,17 @@
         <section class="section-padding bg-light">
             <div class="container">
                 <div class="text-center reveal">
-                    <h2 class="section-title font-heading">Professional Product Categories</h2>
-                    <p class="section-subtitle">Explore the types of professional car care and maintenance solutions available through our studios.</p>
+                    <h2 class="section-title font-heading">Selected Automotive Care Brands</h2>
+                    <p class="section-subtitle">We work with selected premium automotive protection and detailing products based on vehicle requirements and product availability.</p>
                 </div>
                 <div class="brands-grid reveal">
-                    <div class="brand-logo-card"><div class="brand-placeholder">PPF Solutions</div></div>
-                    <div class="brand-logo-card"><div class="brand-placeholder">Ceramic Care</div></div>
-                    <div class="brand-logo-card"><div class="brand-placeholder">Graphene Care</div></div>
-                    <div class="brand-logo-card"><div class="brand-placeholder">Glass Care</div></div>
-                    <div class="brand-logo-card"><div class="brand-placeholder">Interior Care</div></div>
-                    <div class="brand-logo-card"><div class="brand-placeholder">Exterior Care</div></div>
-                    <div class="brand-logo-card"><div class="brand-placeholder">Maintenance</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">Grace Shield</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">3M</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">Garware</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">Llumar</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">Selected Products</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">Care Products</div></div>
+                    <div class="brand-logo-card"><div class="brand-placeholder">Studio Products</div></div>
                     <div class="brand-logo-card"><div class="brand-placeholder">Accessories</div></div>
                 </div>
             </div>
@@ -812,78 +856,40 @@
         <section class="section-padding">
             <div class="container">
                 <div class="text-center reveal">
-                    <h2 class="section-title font-heading">The Professional Care Process</h2>
-                    <p class="section-subtitle">A clear journey from consultation and preparation to professional application and ongoing aftercare.</p>
+                    <h2 class="section-title font-heading">From Selection to Aftercare</h2>
+                    <p class="section-subtitle">A clear process for choosing, applying, and maintaining the right protection or care solution.</p>
                 </div>
                 
                 <div class="process-horizontal-track reveal">
                     <div class="process-node">
                         <div class="process-icon-wrap"><i class="fa-solid fa-cart-shopping"></i></div>
-                        <h4>Consultation</h4>
-                        <p>Discuss your vehicle, usage, surface condition, and protection goals with our team.</p>
+                        <h4>Choose the Option</h4>
+                        <p>Discuss your vehicle, usage, and care priorities with our team.</p>
                     </div>
                     <div class="process-node">
                         <div class="process-icon-wrap"><i class="fa-solid fa-soap"></i></div>
                         <h4>Preparation</h4>
-                        <p>The required cleaning and surface preparation are completed for the selected service.</p>
+                        <p>The vehicle is inspected and prepared according to the selected service.</p>
                     </div>
                     <div class="process-node">
                         <div class="process-icon-wrap"><i class="fa-solid fa-spray-can-sparkles"></i></div>
                         <h4>Application</h4>
-                        <p>The selected product or protection solution is professionally applied at the studio.</p>
+                        <p>The selected service is applied using the appropriate professional process.</p>
                     </div>
                     <div class="process-node">
                         <div class="process-icon-wrap"><i class="fa-solid fa-temperature-arrow-up"></i></div>
-                        <h4>Initial Care</h4>
-                        <p>Our team explains any service-specific settling, curing, or first-wash precautions.</p>
+                        <h4>Curing</h4>
+                        <p>Where required, the applied product is allowed to settle or cure according to its process.</p>
                     </div>
                     <div class="process-node">
                         <div class="process-icon-wrap"><i class="fa-solid fa-hands-bubbles"></i></div>
                         <h4>Maintenance</h4>
-                        <p>Follow safe washing and product-specific aftercare guidance for ongoing vehicle care.</p>
+                        <p>Follow the washing and care guidance provided for the selected service.</p>
                     </div>
                     <div class="process-node">
                         <div class="process-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h4>Ongoing Support</h4>
-                        <p>Contact our team whenever you need maintenance advice or a professional inspection.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-padding bg-light">
-            <div class="container">
-                <div class="text-center reveal">
-                    <h2 class="section-title font-heading">Customer Feedback</h2>
-                    <p class="section-subtitle">We only publish customer feedback that can be matched to genuine reviews received by our studios.</p>
-                </div>
-                
-                <div class="reviews-grid reveal">
-                    <div class="review-card">
-                        <i class="fa-solid fa-quote-right review-quote-icon"></i>
-                        <div class="review-stars"><i class="fa-regular fa-message"></i></div>
-                        <p class="review-text">Genuine customer review content will be added here after it is verified against feedback received by our Vadodara studio.</p>
-                        <div class="review-author">
-                            <div class="author-info"><h4>Vadodara Studio</h4><p>Verified review to be added</p></div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <i class="fa-solid fa-quote-right review-quote-icon"></i>
-                        <div class="review-stars"><i class="fa-regular fa-message"></i></div>
-                        <p class="review-text">Genuine customer review content will be added here after it is verified against feedback received by our Godhra studio.</p>
-                        <div class="review-author">
-                            <div class="author-info"><h4>Godhra Studio</h4><p>Verified review to be added</p></div>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <i class="fa-solid fa-quote-right review-quote-icon"></i>
-                        <div class="review-stars"><i class="fa-regular fa-message"></i></div>
-                        <p class="review-text">We do not use invented customer names, stock profile photos, or fabricated testimonials on this page.</p>
-                        <div class="review-author">
-                            <div class="author-info"><h4>Detailing Experts</h4><p>Authentic feedback only</p></div>
-                        </div>
+                        <h4>Ongoing Care</h4>
+                        <p>Regular care helps maintain the appearance and performance of the protected surface.</p>
                     </div>
                 </div>
             </div>
@@ -893,69 +899,33 @@
             <div class="container">
                 <div class="text-center reveal">
                     <h2 class="section-title font-heading">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Everything you need to know about our product lines and application guidelines.</p>
+                    <p class="section-subtitle">Everything you need to know about our products, professional services, and aftercare guidance.</p>
                 </div>
                 
                 <div class="faq-container reveal">
                     <div class="faq-item">
-                        <button class="faq-question" type="button">Which protection option is best for my car? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>The right option depends on your vehicle, usage, current surface condition, and protection goals. Paint protection film focuses on physical surface protection, while ceramic and graphene coatings focus on gloss, hydrophobic performance, and easier maintenance. Our team can recommend a suitable option after inspecting your vehicle.</p></div>
+                        <button class="faq-question" type="button" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1">Which protection option is best for my car? <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><p>The right option depends on your priorities. Paint protection film is suited to owners seeking physical protection from everyday road exposure, while ceramic and graphene coatings focus on gloss, water repellency, and easier maintenance. Our team can recommend an option after inspecting the vehicle and discussing how it is used.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">How long does a ceramic or graphene coating last? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Service life varies by the selected product or package, surface preparation, vehicle usage, washing methods, storage conditions, and maintenance. Please ask our studio team for the expected service life and care requirements of the specific option recommended for your vehicle.</p></div>
+                        <button class="faq-question" type="button" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2">Should I choose PPF or a coating? <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2"><p>Choose based on the type of protection you need. PPF is intended for physical surface protection, while ceramic and graphene coatings are chosen mainly for gloss, water repellency, and easier cleaning. Some owners combine services after a professional assessment.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">Should I choose PPF or a coating? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Choose based on the type of protection you need. PPF is intended to help protect painted surfaces from everyday road exposure and minor abrasion, while coatings focus on gloss, hydrophobic behaviour, and easier maintenance. Some owners may choose both after professional consultation.</p></div>
+                        <button class="faq-question" type="button" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3">Can I buy maintenance products directly from Detailing Experts? <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3"><p>Selected maintenance products and accessories may be available through our Vadodara and Godhra studios. Please contact the team to confirm current availability before visiting or placing an enquiry.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">Can I buy car care products directly? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Selected car care and maintenance products may be available through our Vadodara and Godhra studios. Please contact the nearest studio to confirm current availability and suitable products for your vehicle.</p></div>
+                        <button class="faq-question" type="button" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4">Do products or services include a warranty? <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><p>Warranty coverage depends on the selected product or service. Our team will explain the applicable terms before work begins or a product is supplied.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">Do your services come with a warranty? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Warranty availability and terms depend on the specific product, service package, installer requirements, and applicable manufacturer or studio conditions. We will explain any relevant warranty coverage before you confirm the service.</p></div>
+                        <button class="faq-question" type="button" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5">What is the recommended aftercare for a protected vehicle? <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><p>Use careful washing methods, suitable car-care products, and follow the aftercare guidance provided for the specific service. Avoid harsh cleaning methods that may damage the protected surface.</p></div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question" type="button">How should I maintain a coated car? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Use safe washing methods, suitable car care products, and the aftercare guidance provided for your specific coating. Avoid harsh cleaning methods that may reduce surface performance, and contact our team if you are unsure which products to use.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">What aftercare does PPF require? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Follow the installation-specific aftercare instructions provided by our studio. Safe washing, careful cleaning around film edges, and prompt removal of contaminants can help maintain the film. Contact us before using unfamiliar chemicals or abrasive products.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">Which products require professional application? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Paint protection film and professional coating services should be applied by trained technicians with appropriate preparation. Selected maintenance products and accessories may be suitable for owner use when used according to the product instructions and our guidance.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">Is graphene coating better than ceramic coating? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Neither option is automatically best for every vehicle. The suitable choice depends on the specific product, your expectations, budget, vehicle usage, and maintenance routine. Our team can explain the available options without relying on unsupported one-size-fits-all claims.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">Can a coating be applied over PPF? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Some compatible coating products can be applied over certain paint protection films. Compatibility depends on the film and coating system, so the surface should be inspected and the specific products confirmed before application.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">How do I check product availability? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Contact our Vadodara or Godhra studio by phone or WhatsApp and tell us which product category you are interested in. Our team can confirm current availability and recommend an appropriate option.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">Do you deliver products? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Delivery options may vary by product and location. Please contact our Vadodara or Godhra studio to confirm whether the selected item is available for collection or delivery.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">What is the return policy for products? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Return or exchange eligibility depends on the product condition, packaging, purchase channel, and applicable store policy. Please confirm the current terms with the studio before purchase, especially for chemical or opened products.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">Are maintenance products safe for coated or PPF-protected cars? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Suitability depends on the specific product and protected surface. Use products recommended for your coating or film and follow the applicable instructions. Our team can help you choose a suitable maintenance option.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" type="button">How often should I use a maintenance product? <i class="fa-solid fa-plus"></i></button>
-                        <div class="faq-answer"><p>Frequency depends on the specific product, vehicle usage, washing routine, and protection system. Follow the product instructions and the aftercare plan provided for your vehicle rather than using a fixed schedule for every product.</p></div>
+                        <button class="faq-question" type="button" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6">Do professional protection services require studio application? <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><p>Services such as PPF, ceramic coating, and graphene coating require professional preparation and application. Selected maintenance products and accessories can be used by vehicle owners when suitable instructions are followed.</p></div>
                     </div>
                 </div>
             </div>
@@ -964,15 +934,15 @@
         <section class="section-padding bg-light">
             <div class="container">
                 <div class="text-center reveal">
-                    <h3 class="font-heading" style="font-size:1.8rem; text-transform:uppercase; margin-bottom:10px;">Products In Action</h3>
-                    <p style="color:var(--text-gray); margin-bottom:30px;">See professional detailing, protection, and car care work from our studios on <span style="color:var(--brand-red); font-weight:700;">@DetailingExperts</span></p>
+                    <h3 class="font-heading" style="font-size:1.8rem; text-transform:uppercase; margin-bottom:10px;">Car Care Updates</h3>
+                    <p style="color:var(--text-gray); margin-bottom:30px;">Product availability, service updates, and vehicle care highlights from Detailing Experts.</p>
                     <div class="instagram-embed-grid">
-                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>PPF Work</span></div>
-                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Coating Work</span></div>
-                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Detailing Work</span></div>
-                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Car Care</span></div>
+                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Update Coming Soon</span></div>
+                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Update Coming Soon</span></div>
+                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Update Coming Soon</span></div>
+                        <div class="instagram-card-placeholder"><i class="fa-brands fa-instagram"></i><span>Update Coming Soon</span></div>
                     </div>
-                    <a href="contact.html" class="btn-outline" style="margin-top:10px;"><i class="fa-brands fa-instagram" style="margin-right:8px;"></i> View Studio Updates</a>
+                    <span class="btn-outline" style="margin-top:10px;" aria-disabled="true"><i class="fa-brands fa-instagram" style="margin-right:8px;"></i> Social Link Coming Soon</span>
                 </div>
             </div>
         </section>
@@ -980,7 +950,7 @@
         <section class="cta-banner">
             <div class="container reveal">
                 <h2 class="font-heading">Need Help Choosing the Right Product?</h2>
-                <p>Don't guess when it comes to your luxury vehicle. Speak with our team for product guidance and vehicle-specific protection recommendations.</p>
+                <p>Speak with our team for practical guidance on products, maintenance, and professional protection options for your vehicle.</p>
                 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                     <a href="appointment.html" class="btn-premium" style="background:#fff; color:var(--brand-red);"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
                     <a href="tel:+917778883856" class="btn-outline" style="border-color:#fff; color:#fff;"><i class="fa-solid fa-phone"></i> Call Now</a>
@@ -998,9 +968,9 @@
                 <a href="index.html" class="footer-logo"><img src="logo.png" alt="Detailing Experts"></a>
                 <p class="footer-about">Detailing Experts provides professional automotive detailing and paint protection services in Vadodara and Godhra. We specialize in paint correction, ceramic coating, graphene coating, paint protection film (PPF), interior detailing, and premium car care.</p>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <span aria-label="Facebook link unavailable" role="img"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span aria-label="Instagram link unavailable" role="img"><i class="fa-brands fa-instagram"></i></span>
+                    <span aria-label="YouTube link unavailable" role="img"><i class="fa-brands fa-youtube"></i></span>
                 </div>
             </div>
             
@@ -1011,8 +981,8 @@
                     <li><a href="ceramic-coating.html">Ceramic Coating</a></li>
                     <li><a href="graphene-coating.html">Graphene Coating</a></li>
                     <li><a href="ppf.html">Paint Protection Film</a></li>
-                    <li><a href="interior-detailing.html">Interior Detailing</a></li>
-                    <li><a href="maintenance.html">Maintenance Wash</a></li>
+                    <li><a href="interior.html">Interior Detailing</a></li>
+                    <li><a href="exterior.html">Exterior Detailing</a></li>
                 </ul>
             </div>
             
@@ -1030,8 +1000,10 @@
             <div class="footer-col reveal" style="transition-delay: 0.3s;">
                 <h4 class="footer-title">Stay Protected</h4>
                 <p class="footer-about">Subscribe to our newsletter for the latest car care tips, exclusive offers, and product launches.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
+                <form class="newsletter-form" id="newsletterForm" novalidate>
+                    <label for="newsletterEmail" class="sr-only">Email address</label>
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required aria-describedby="newsletterStatus">
+                    <p id="newsletterStatus" aria-live="polite" style="font-size:0.85rem; color:var(--text-light);"></p>
                     <button type="submit" class="btn-premium" style="width: 100%; padding: 12px;">Subscribe</button>
                 </form>
             </div>
@@ -1054,7 +1026,7 @@
     </div>
 
     <div class="sticky-bar">
-        <a href="#explore-products" class="sticky-btn sticky-dir" onclick="window.scrollTo(0,0)"><i class="fa-solid fa-box-open"></i> <span>Products</span></a>
+        <a href="#explore-products" class="sticky-btn sticky-dir"><i class="fa-solid fa-box-open"></i> <span>Products</span></a>
         <a href="tel:+917778883856" class="sticky-btn sticky-call"><i class="fa-solid fa-phone"></i> <span>Call</span></a>
         <a href="https://wa.me/918360187994" target="_blank" rel="noopener" class="sticky-btn sticky-wa"><i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span></a>
         <a href="appointment.html" class="sticky-btn sticky-book"><i class="fa-regular fa-calendar-check"></i> <span>Book</span></a>
@@ -1062,135 +1034,149 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            
-            // 1. Sticky Navbar & Back To Top Logic
             const navbar = document.getElementById('navbar');
             const backToTop = document.getElementById('backToTopBtn');
+
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
+                navbar?.classList.toggle('scrolled', window.scrollY > 50);
+                backToTop?.classList.toggle('visible', window.scrollY > 400);
+            }, { passive: true });
 
-                if (window.scrollY > 400) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            });
-
-            backToTop.addEventListener('click', () => {
+            backToTop?.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // 2. Mobile Menu Toggle
             const mobileToggle = document.querySelector('.mobile-toggle');
             const navCenter = document.querySelector('.nav-center');
-            if(mobileToggle && navCenter) {
-                mobileToggle.addEventListener('click', () => {
-                    navCenter.classList.toggle('mobile-active');
-                });
-            }
+            const servicesDropdown = document.querySelector('.mega-dropdown');
+            const servicesLink = document.querySelector('.services-link');
 
-            // 3. Scroll Reveal Engine
-            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom, .product-card, .cat-card, .process-node, .icon-card');
-            const revealObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
+            mobileToggle?.addEventListener('click', () => {
+                const isOpen = navCenter.classList.toggle('mobile-active');
+                mobileToggle.setAttribute('aria-expanded', String(isOpen));
+                mobileToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+            });
+
+            servicesLink?.addEventListener('click', (event) => {
+                if (window.innerWidth <= 991) {
+                    const isOpen = servicesDropdown.classList.contains('active');
+                    if (!isOpen) {
+                        event.preventDefault();
+                        servicesDropdown.classList.add('active');
+                        servicesLink.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            });
+
+            document.querySelectorAll('.mega-content a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 991) {
+                        navCenter?.classList.remove('mobile-active');
+                        mobileToggle?.setAttribute('aria-expanded', 'false');
                     }
                 });
-            }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+            });
 
-            revealElements.forEach(el => revealObserver.observe(el));
+            const revealElements = document.querySelectorAll('.reveal, .reveal-zoom, .product-card, .cat-card, .process-node, .icon-card');
+            if ('IntersectionObserver' in window) {
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+                revealElements.forEach(element => revealObserver.observe(element));
+            } else {
+                revealElements.forEach(element => element.classList.add('active'));
+            }
 
-            // 4. FAQ Accordion Logic
             const faqItems = document.querySelectorAll('.faq-item');
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
-                if(question) {
-                    question.addEventListener('click', () => {
-                        const isActive = item.classList.contains('active');
-                        faqItems.forEach(faq => {
-                            faq.classList.remove('active');
-                            faq.querySelector('.faq-answer').style.maxHeight = null;
-                        });
-                        if (!isActive) {
-                            item.classList.add('active');
-                            const answerBlock = item.querySelector('.faq-answer');
-                            answerBlock.style.maxHeight = answerBlock.scrollHeight + "px";
-                        }
-                    });
-                }
-            });
+                const answer = item.querySelector('.faq-answer');
 
-            // 5. Mobile Submenu Toggle
-            const megaDropdowns = document.querySelectorAll('.mega-dropdown');
-            megaDropdowns.forEach(dropdown => {
-                dropdown.addEventListener('click', (e) => {
-                    if(window.innerWidth <= 991) {
-                        dropdown.classList.toggle('active');
+                question?.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    faqItems.forEach(faq => {
+                        faq.classList.remove('active');
+                        const faqQuestion = faq.querySelector('.faq-question');
+                        const faqAnswer = faq.querySelector('.faq-answer');
+                        faqQuestion?.setAttribute('aria-expanded', 'false');
+                        if (faqAnswer) faqAnswer.style.maxHeight = '';
+                    });
+
+                    if (!isActive) {
+                        item.classList.add('active');
+                        question.setAttribute('aria-expanded', 'true');
+                        answer.style.maxHeight = `${answer.scrollHeight}px`;
                     }
                 });
             });
 
-            // 6. Product Filtering Logic
             const searchInput = document.getElementById('searchInput');
             const categoryFilter = document.getElementById('categoryFilter');
-            const productCards = document.querySelectorAll('.product-card');
+            const sortFilter = document.getElementById('sortFilter');
+            const productGrid = document.getElementById('productGrid');
+            const productCards = Array.from(document.querySelectorAll('.product-card'));
             const noProductsMsg = document.getElementById('noProductsMsg');
 
-            function filterProducts() {
-                const searchTerm = searchInput.value.toLowerCase();
-                const catValue = categoryFilter.value;
+            function updateProducts() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                const categoryValue = categoryFilter.value;
                 let visibleCount = 0;
 
                 productCards.forEach(card => {
-                    const title = card.querySelector('.product-name').textContent.toLowerCase();
-                    const desc = card.querySelector('.product-desc').textContent.toLowerCase();
-                    const cardCat = card.getAttribute('data-category');
+                    const searchableText = card.textContent.toLowerCase();
+                    const cardCategory = card.dataset.category;
+                    const matchesSearch = searchableText.includes(searchTerm);
+                    const matchesCategory = categoryValue === 'all' || cardCategory === categoryValue;
+                    const isVisible = matchesSearch && matchesCategory;
 
-                    const matchesSearch = title.includes(searchTerm) || desc.includes(searchTerm);
-                    const matchesCat = (catValue === 'all' || cardCat === catValue);
-
-                    if (matchesSearch && matchesCat) {
-                        card.style.display = 'flex';
-                        setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 10);
-                        visibleCount++;
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(10px)';
-                        setTimeout(() => { card.style.display = 'none'; }, 300);
-                    }
+                    card.hidden = !isVisible;
+                    card.style.display = isVisible ? 'flex' : 'none';
+                    if (isVisible) visibleCount += 1;
                 });
 
-                if (visibleCount === 0) {
-                    setTimeout(() => { noProductsMsg.style.display = 'block'; }, 300);
-                } else {
-                    noProductsMsg.style.display = 'none';
-                }
+                const visibleCards = productCards.filter(card => !card.hidden);
+                visibleCards.sort((a, b) => {
+                    const aName = a.querySelector('.product-name').textContent.trim();
+                    const bName = b.querySelector('.product-name').textContent.trim();
+                    if (sortFilter.value === 'az') return aName.localeCompare(bName);
+                    if (sortFilter.value === 'za') return bName.localeCompare(aName);
+                    return productCards.indexOf(a) - productCards.indexOf(b);
+                });
+                visibleCards.forEach(card => productGrid.appendChild(card));
+
+                noProductsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
             }
 
-            if (searchInput) searchInput.addEventListener('keyup', filterProducts);
-            if (categoryFilter) categoryFilter.addEventListener('change', filterProducts);
+            searchInput?.addEventListener('input', updateProducts);
+            categoryFilter?.addEventListener('change', updateProducts);
+            sortFilter?.addEventListener('change', updateProducts);
 
-            // Click category cards to filter
-            const catCards = document.querySelectorAll('.cat-card');
-            catCards.forEach(card => {
-                card.addEventListener('click', () => {
-                    const filterValue = card.getAttribute('data-filter');
-                    
-                    if (filterValue) {
-                        categoryFilter.value = filterValue;
-                        filterProducts();
+            document.querySelectorAll('.cat-card[data-filter]').forEach(card => {
+                const activateCategory = () => {
+                    categoryFilter.value = card.dataset.filter;
+                    updateProducts();
+                    document.querySelector('.filter-bar')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                };
+                card.addEventListener('click', activateCategory);
+                card.addEventListener('keydown', event => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        activateCategory();
+                    }
+                });
+            });
 
-                        document.querySelector('.filter-bar').scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });                    
-                   }
+            const newsletterForm = document.getElementById('newsletterForm');
+            const newsletterStatus = document.getElementById('newsletterStatus');
+            newsletterForm?.addEventListener('submit', event => {
+                event.preventDefault();
+                newsletterStatus.textContent = 'Online subscription is not available yet. Please contact our team for updates.';
             });
         });
     </script>
