@@ -341,7 +341,7 @@
         /* VIEWPORT OPTIMIZATIONS RULES */
         @media (max-width: 991px) {
             .nav-center { position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 0 20px; box-shadow: var(--shadow-hover); flex-direction: column; gap: 0; max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease; border-top: 1px solid transparent; align-items: flex-start; z-index: 1000; }
-            .nav-center.mobile-active { max-height: 60vh; opacity: 1; padding: 20px; border-top-color: #edf2f7; }
+            .nav-center.mobile-active { max-height: 60vh; opacity: 1; padding: 20px; border-top-color: #edf2f7; overflow-y: auto; }
             .mobile-toggle { display: block; }
             .section-padding { padding: 80px 0; }
             .contact-section { flex-direction: column; }
@@ -357,7 +357,7 @@
             <a href="index.html"><img src="logo.png" alt="Detailing Experts Logo"></a>
         </div>
         
-        <div class="nav-center">
+        <div class="nav-center" id="primary-navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             
@@ -375,8 +375,8 @@
                         <h4 class="font-heading">Premium Protection</h4>
                         <a href="ceramic-coating.html"><i class="fa-solid fa-shield-halved"></i> Ceramic Coating</a>
                         <a href="graphene-coating.html"><i class="fa-solid fa-gem"></i> Graphene Coating</a>
-                        <a href="ppf.html"><i class="fa-solid fa-layer-group"></i> PPF Installation</a>
-                        <a href="glass.html"><i class="fa-regular fa-window-maximize"></i> Glass Treatment</a>
+                        <a href="ppf.html"><i class="fa-solid fa-layer-group"></i> Paint Protection Film (PPF)</a>
+                        <a href="glass.html"><i class="fa-regular fa-window-maximize"></i> Windshield & Glass Protection</a>
                     </div>
                 </div>
             </div>
@@ -391,7 +391,7 @@
             <button class="nav-icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
             <a href="tel:+918360187994" class="nav-icon-btn" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
             <a href="appointment.html" class="btn-outline">Book Now</a>
-            <button class="nav-icon-btn mobile-toggle" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            <button class="nav-icon-btn mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
         </div>
     </nav>
 
